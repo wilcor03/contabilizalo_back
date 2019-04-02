@@ -1,0 +1,1 @@
+<div class="fb-comments" data-width="100%" data-href="{{request()->url()}}" data-numposts="10" data-order-by="reverse_time"></div>

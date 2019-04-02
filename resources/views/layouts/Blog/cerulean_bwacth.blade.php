@@ -67,14 +67,11 @@
 
         
 
-        <!--<a href="{{ route('promo.apl.renta.j') }}" title="Descarga Liquidador Renta Personas Jurídicas">
+        <a href="{{ route('promo.apl.renta.j') }}" title="Descarga Liquidador Renta Personas Jurídicas">
         <picture class="text-center">
           {!! Html::image('images/renta-personas-juridicas-banner.png', 'renta personas jurídicas en Excel', ['width' => '280px','height' => '220px','class' => 'img-responsive']) !!}
         </picture>
-        </a>-->
-  
-
-        
+        </a>
 
           <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <!-- 01. right_in_posts -->

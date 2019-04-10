@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Cache;
+use Illuminate\Support\Str;
 
 /////////////////
 //MODELS
@@ -43,20 +44,29 @@ class PostController extends Controller
     $this->soldCategories = $this->post->setSellingCourses();
   }
 
-  public function create()
-  { //dd();   
+  public function create() 
+  { 
     $categories = Category::pluck('title', 'id');      
     return view('Blog.post.create', compact('categories'));
   }
 
   public function store(Request $request)
   {
+    $validatedData = $request->validate([
+        'title'       => 'required|unique:posts|max:255',
+        'category_id' => 'required|exists:categories,id',
+        'slug'        => 'required|max:200',
+        'description' => 'required'
+    ]);
+
+
     $post     = $this->post->_store($request->all());
     $this->video->attachObj($post);
     $this->file->attachObj($post);
     $this->post->attachObj($post); 
-    $images   = $this->image->attachImage($post);
 
+    $images   = $this->image->attachImage($post);
+    
     $totImages = $this->image->availableFiles($post);     
 
     if(!count($totImages))
@@ -102,7 +112,7 @@ class PostController extends Controller
       $collectionOfPosts = $this->post->_getCollectionCategory($post);
     }
 
-    $principalPost = $this->post->_principalPost($post);    
+    $principalPost = $this->post->_principalPost($post);     
 
     $prevPost = $this->post->_previousPost($post);
     $nextPost = $this->post->_nextPost($post);
@@ -125,6 +135,13 @@ class PostController extends Controller
     {
       Cache::forget($post->slug);
     }
+
+    $validatedData = $request->validate([
+        'title'       => 'required|max:255',
+        'category_id' => 'required|exists:categories,id',
+        'slug'        => 'required|max:200',
+        'description' => 'required'
+    ]);
     
 
     $post     = $this->post->_update($request->all(), $post);
@@ -229,4 +246,21 @@ class PostController extends Controller
     $soldCategories = $this->soldCategories;
     return view('Blog.promo.courses', compact('soldCategories'));
   }
+
+  public function getUrl(Request $r){      
+    $parts = explode('/', $r->route);
+    $slugArt = end($parts);
+    $newSlug = Str::slug($r->title, '-');
+
+    if(Post::where('slug', $slugArt)->exists()){
+      return response()->json(['new_slug' => $newSlug], 200);
+    }       
+    
+    if(Post::where('slug', $newSlug)->exists()){
+      return response()->json(['new_slug' => ''], 404);
+    } 
+
+    return response()->json(['new_slug' => $newSlug], 200);
+  }
+
 }

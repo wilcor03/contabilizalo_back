@@ -2,6 +2,7 @@
 namespace App\Repositories\Blog;
 
 use Illuminate\Http\UploadedFile;
+use Illuminate\Http\Request;
 
 /*-----------------------------------
 ! FACADES
@@ -25,12 +26,12 @@ class ImageRepository
 	protected $randomName;
 	private 	$user;
 
+
 	use AditionalsFunctions;
 
 	public function __construct(ImageObj $image)
 	{
 		$this->image 	= $image;
-		$this->user  	= \Auth::user();
 	}
 
 	public function deleteFile($file)//eliminar el archivo de la carpeta
@@ -54,11 +55,11 @@ class ImageRepository
   							->get();
   }
 
-	public function _store($data, $object = null, $text = null)
-	{		
+	public function _store($data, $object = null, $text = null, $userDB = NULL)
+	{
 		if($data['image'] != null)
 		{
-			$savedObject = $this->saveInDB($data, $object);
+			$savedObject = $this->saveInDB($data, $object, $userDB);
 
 			if(count($savedObject))
 			{
@@ -97,10 +98,17 @@ class ImageRepository
 			}
 
 			$img->insert($logo, 'bottom-right', 30, 20);
+			$img->resize(847, 220);				
+			$img = $img->save(config('custom.images.settings.base-folder').$this->randomName, 80);
 		}
+
+		/*$img->resize(900, null, function ($constraint) {
+		   $constraint->aspectRatio();
+		});*/
+		$img->resize(847, 400);	
+		$img = $img->save(config('custom.images.settings.base-folder').$this->randomName, 90);
 		
-		$img->resize(847, 220);				
-		$img = $img->save(config('custom.images.settings.base-folder').$this->randomName, 80);
+		
 
 		$thumbnail = $img;
 		$thumbnail->resize(140, 80); 		
@@ -111,7 +119,7 @@ class ImageRepository
 
 	public function attachImage($post)
 	{
-		$user = \Auth::user();
+		$user = \Auth::user();		
 
 		$userImages = $this->image->where(function($q) use($user) {
   									$q->where('imageable_id', $user->id)
@@ -127,11 +135,11 @@ class ImageRepository
 		return storage_path().'/app/image_templates/orange.jpg';
 	}
 
-	public function saveInDB($data = null, $object = null)
+	public function saveInDB($data = null, $object = null, $userDB=null)
 	{
-		$user 						= $this->user;
+		$user 						= $userDB;
 		
-		if($data != null)
+		if(isset($data['image']))
 		{
 			$fileName 				= $data['image']->getClientOriginalName();
 			$extension 				= $this->getExtensionFile($fileName);

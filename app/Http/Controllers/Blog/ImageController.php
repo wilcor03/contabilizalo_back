@@ -42,7 +42,12 @@ class ImageController extends Controller
 
   public function store(Request $request, $post = null)
   {  
-  	$this->image->_store($request->all(), $post);	
+    $validatedData = $request->validate([
+        'image'       => 'required|image|dimensions:min_width=700,min_height=200',
+        'alt'         => 'required|max:255',
+
+    ]);
+    $this->image->_store($request->all(), $post, '', auth()->user());	
 
   	return response()->json(['success' => true]);
   }

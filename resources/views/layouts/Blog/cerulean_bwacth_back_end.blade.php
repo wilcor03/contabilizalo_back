@@ -29,6 +29,7 @@
 
     </script>
     <script src="https://use.fontawesome.com/1d29805766.js"></script>
+    @yield('header')
   </head>
   <body>
     <div class="navbar navbar-default navbar-fixed-top">

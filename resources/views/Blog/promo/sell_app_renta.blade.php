@@ -34,7 +34,7 @@
 
 	<div class="panel panel-danger text-muted">	  
 	  <div class="panel-body text-justify">
-	  	<p><strong class="text-primary">BUSINESS TAX</strong> es un aplicativo diseñado bajo Excel con programación en el editor de Visual Basic, que le ayudará a la elaboración de la declaración de renta de personas jurídicas por el año gravable 2018 con todos los cambios normativos introducidos por la última reforma tributaria ley 1819 de 2016.</p>
+	  	<p><a href="https://contabilizalo.com">CONTABILIZALO.COM</a> en sus mas de 7 años en el mundo online presenta <strong class="text-primary">BUSINESS TAX:</strong> es un aplicativo diseñado bajo Excel con programación en el editor de Visual Basic, que le ayudará a la elaboración de la declaración de renta de personas jurídicas por el año gravable 2018 con todos los cambios normativos introducidos por la última reforma tributaria ley 1819 de 2016.</p>
  
 			<p>Al aplicativo se deben ingresar una serie de información, y diligenciando los respectivos anexos y los ajustes fiscales, al final arrojará el borrador del formulario 110.</p>
 
@@ -168,7 +168,7 @@
 
 		      <hr>
 
-		      <p><strong class="text text-primary">Business 110 TAX</strong>  incluye el aplicativo para el año gravable 2017, sus respectivos manuales y el soporte de su funcionamiento vía mail o teléfono durante la época de las declaraciones.</p>
+		      <p><strong class="text text-primary">Business 110 TAX</strong>  incluye el aplicativo para el año gravable 2018, sus respectivos manuales y el soporte de su funcionamiento vía mail o teléfono durante la época de las declaraciones.</p>
 
 		      <p><i class="fa fa-long-arrow-right text-danger" aria-hidden="true"></i> Podrá hacer todas las rentas sin ninguna limitante, y podrá usar el aplicativo en cualquier computador que tenga Excel.</p>
 

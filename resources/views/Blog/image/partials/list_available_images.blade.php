@@ -12,10 +12,7 @@
 			<tbody>
 				@foreach($images as $image)
 					<tr>
-						<td> {{ $image->full_url_file }}
-							<br>
-							{{ $image->full_url_file_thumb }}
-
+						<td> 
 							<img class="img-responsive" src="{{ asset($image->full_path_thumb) }}" alt="...">							
 						</td>
 						<td>

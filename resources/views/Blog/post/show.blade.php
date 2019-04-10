@@ -55,8 +55,12 @@
 	<picture class="text-center">
 	   {!! Html::image($post->principal_image->full_path, $post->image_alt, ['width' => '1000px','height' => '220px','class' => 'img-responsive']) !!}
 	</picture>
+	<hr>
 	<div class="panel panel-danger">	  
 	  <div class="panel-body text-justify">
+	  	@if(!$post->hasCategory)
+	  		<p class="text-right"><small>publicado el: {{ Carbon\Carbon::parse($post->updated_at)->format('d-m-Y') }}</small></p>
+	  	@endif
 			{!! $post->description !!}
 		</div>
 	</div>
@@ -91,7 +95,12 @@
 						@if($ps->id !== $post->id)
 						<a class="list-group-item" href="{{ route('post.show', $ps) }}" title="{{ $ps->title }}"> 
 						<span> {{ $ps->title }} </span>
-						<span class="pull-right">(Video) <i class="fa fa-video-camera" aria-hidden="true" style="color:#AF3E42;"></i></span>
+
+						@if(count($ps->videos))
+							<span class="pull-right">(Video) <i class="fa fa-video-camera" aria-hidden="true" style="color:#AF3E42;"></i></span>
+						@else
+						<span class="pull-right">(Texto) <i class="fa fa-file-text-o" aria-hidden="true"></i></span>
+						@endif
 						</a>		
 						@endif		
 					@endforeach	
@@ -273,7 +282,7 @@
 	{{--@include('partials.modal_promo')--}}
 @endsection
 
-@section('scripts')
+@section('scripts')	
 	<script type="text/javascript" src="{{ asset('js/cookie.js') }}"></script>
 
 	<script type="text/javascript"

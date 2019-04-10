@@ -55,6 +55,12 @@ Route::group(['middleware' => 'auth.basic'], function(){
 			Route::get('image-by-post/{editingPost?}', ['as' => 'image.by.post', 'uses' => 'ImageController@byPost']);
 			Route::delete('image/{image}', ['as' => 'image.destroy', 'uses' => 'ImageController@destroy']);
 
+			/*
+			!------------------------------------------
+			! VARIOUS
+			!--------------------------------------------*/
+			Route::get('get-url', 'PostController@getUrl');
+
 		});
 	});
 

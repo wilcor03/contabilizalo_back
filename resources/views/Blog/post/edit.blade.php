@@ -1,5 +1,10 @@
 @extends('layouts.Blog.cerulean_bwacth_back_end')
 
+@section('header')
+	<!-- include summernote css/js -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.css" rel="stylesheet">
+@endsection
+
 @section('content')
 	<div class="panel panel-danger">
 	  <div class="panel-heading">
@@ -33,9 +38,9 @@
 								</div>
 							</div>
 
-			  			{!! Form::model($post, ['route' => ['post.update', $post], 'method' => 'PUT']) !!}
+			  			{!! Form::model($post, ['route' => ['post.update', $post], 'method' => 'PUT', 'id' => 'edit-post']) !!}
 
-			  			<div class="form-group">
+			  			<!--<div class="form-group">
 						    <label for="title">Titulo</label>
 						      {!! Form::text('title', null, ['class' => 'form-control']) !!}
 					  	</div>
@@ -76,7 +81,8 @@
 							  	</div>
 
 							  </div>
-							</div>   	
+							</div>-->   
+							@include('Blog.post.partials.form')
 
 							<div class="form-group">
 						    <label for="title"></label>
@@ -252,4 +258,14 @@
 
 @section('scripts')
 	{!! Html::script('js/postsEdit.js') !!}
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.11/summernote.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		  $('#summernote').summernote({
+        placeholder: 'Descripción del artículo...',
+        tabsize: 2,
+        height: 100
+      });
+		});
+	</script>
 @endsection

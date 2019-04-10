@@ -66,7 +66,7 @@ trait AditionalsFunctions
   protected function deleteFilesDB($files)
   {
     foreach($files as $file)        
-    {
+    {      
       if(is_file($file->full_url_file_thumb))
       {        
         @unlink($file->full_url_file_thumb);        

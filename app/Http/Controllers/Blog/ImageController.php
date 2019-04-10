@@ -26,7 +26,7 @@ class ImageController extends Controller
   public function byPost($post = null)
   {
   	$images = $this->image->availableFiles($post);
-  	if(count($images))
+  	if($images)
   	{
   		return view('Blog.image.partials.list_available_images', compact('images', 'post'));
   	}

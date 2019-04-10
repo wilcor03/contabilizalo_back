@@ -87,7 +87,8 @@
 		  <div class="panel-heading">
 		    <h3 class="panel-title">
 		    	<i class="fa fa-list-alt fa-3x" aria-hidden="true"></i> 
-		    	Videos y Artículos Relacionados con <span class="text-uppercase">{{ $post->hasCategory->title }}</span></h3>
+		    	Videos y Artículos Relacionados con <span class="text-uppercase">
+		    		{{ $post->hasCategory->title }}</span></h3>
 		  </div>
 		  <div class="panel-body">  	
 				<div class="list-group table-of-contents">            

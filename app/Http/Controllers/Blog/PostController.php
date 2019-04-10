@@ -106,7 +106,7 @@ class PostController extends Controller
   {
     //Cache::forget('postsCat'.$post->category_id);
     //Cache::flush(); 
-
+    $collectionOfPosts = [];
     if($post->category->post->id === $post->id)
     {
       $collectionOfPosts = $this->post->_getCollectionCategory($post);

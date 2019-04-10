@@ -82,7 +82,7 @@
 	</div>
 	@endif
 
-	@if(isset($collectionOfPosts))
+	@if(count($collectionOfPosts))
 		<div class="panel panel-danger">
 		  <div class="panel-heading">
 		    <h3 class="panel-title">

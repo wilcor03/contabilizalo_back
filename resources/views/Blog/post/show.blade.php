@@ -52,9 +52,11 @@
 
 	@include('partials.mailchimp_form')
 
+	@if($post->principal_image)
 	<picture class="text-center">
 	   {!! Html::image($post->principal_image->full_path, $post->image_alt, ['width' => '1000px','height' => '220px','class' => 'img-responsive']) !!}
 	</picture>
+	@endif
 	<hr>
 	<div class="panel panel-danger">	  
 	  <div class="panel-body text-justify">

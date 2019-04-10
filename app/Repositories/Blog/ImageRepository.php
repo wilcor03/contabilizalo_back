@@ -101,13 +101,14 @@ class ImageRepository
 			$img->resize(847, 220);				
 			$img = $img->save(config('custom.images.settings.base-folder').$this->randomName, 80);
 		}
-
-		/*$img->resize(900, null, function ($constraint) {
+		else
+		{
+			/*$img->resize(900, null, function ($constraint) {
 		   $constraint->aspectRatio();
 		});*/
-		$img->resize(847, 400);	
-		$img = $img->save(config('custom.images.settings.base-folder').$this->randomName, 90);
-		
+			$img->resize(847, 400);	
+			$img = $img->save(config('custom.images.settings.base-folder').$this->randomName, 90);	
+		}	
 		
 
 		$thumbnail = $img;

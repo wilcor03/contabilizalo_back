@@ -59,8 +59,8 @@
 	@endif
 	<hr>
 	<div class="panel panel-danger">	  
-	  <div class="panel-body text-justify">
-	  	@if(!$post->hasCategory)
+	  <div class="panel-body text-justify">	  	
+	  	@if(!$post->hasCategory && $post->category->id == 9)
 	  		<p class="text-right"><small>publicado el: {{ Carbon\Carbon::parse($post->updated_at)->format('d-m-Y') }}</small></p>
 	  	@endif
 			{!! $post->description !!}

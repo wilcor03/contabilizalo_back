@@ -48,7 +48,7 @@ class Image extends Model
   ------------------------------*/
   public function scopeOfImageable($q, $object)
   {
-    if(count($object))
+    if($object)
     {
   	  return $q->orWhere(function($q) use($object) {
   						return 	$q->where('imageable_id', $object->id)

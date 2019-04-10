@@ -61,7 +61,7 @@ class ImageRepository
 		{
 			$savedObject = $this->saveInDB($data, $object, $userDB);
 
-			if(count($savedObject))
+			if($savedObject)
 			{
 				return $this->saveFilesInFolder($data['image'], null);
 			}

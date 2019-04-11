@@ -102,7 +102,7 @@ class FileController extends Controller
 				
         $objFile = $this->file->_storeAndAttach($data, $post);
         $file->move($this->storage_path, $objFile->encode_name);
-        if(count($objFile))
+        if($objFile)
         $saved = true;
 			}			
 		}

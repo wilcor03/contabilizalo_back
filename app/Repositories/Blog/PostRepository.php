@@ -22,7 +22,7 @@ class PostRepository
 	{
 		$exitsPost = Recommendedable::existsRecommended($recommendedPost, $editingPost);
 
-		if(count($exitsPost))
+		if($exitsPost)
 		{
 			$exitsPost->delete();
 			return true;

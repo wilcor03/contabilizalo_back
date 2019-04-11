@@ -86,6 +86,12 @@
             </li>                  
           </ul>
         </li>
+        @if(Auth::check())
+        <li>
+          <a href="{{ route('post.edit', $post) }}" target="_blank" class="text-success">
+            <i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i></a>
+        </li>
+        @endif
       </ul>
     </div>
   </div>

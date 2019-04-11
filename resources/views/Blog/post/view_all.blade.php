@@ -10,7 +10,7 @@
 	  <div class="panel-body">  	
 	  	<p>Administrar Artículos publicados en el Blog</p>
 	  	<p>
-	  		<a href="{{ route('post.create') }}" class="btn btn-primary">Crear articulo</a>
+	  		<a href="{{ route('post.create') }}" target="_blank" class="btn btn-primary">Crear articulo</a>
 	  	</p>
 		</div>
 
@@ -30,7 +30,7 @@
 						<td>{{ str_limit($post->description, 80) }}</td>						
 						<td>
 							<a href="{{ route('post.show', $post) }}" target="_blank">V</a> ||
-							<a href="{{ route('post.edit', $post) }}" class="text-success"><i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i></a> !! 
+							<a href="{{ route('post.edit', $post) }}" target="_blank" class="text-success"><i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i></a> !! 
 							<span class="text-danger"><i class="fa fa-trash fa-2x" aria-hidden="true"></i></span>
 						</td>
 					</tr>

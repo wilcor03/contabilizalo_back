@@ -178,7 +178,7 @@ class PostController extends Controller
 
   public function viewAll()
   {
-  	$posts = Post::paginate(15);
+  	$posts = Post::orderBy('updated_at', 'desc')->paginate(15);
 
   	return view('Blog.post.view_all', compact('posts'));
   }

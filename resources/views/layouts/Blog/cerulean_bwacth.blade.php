@@ -67,13 +67,14 @@
 
         
 
-        <a href="{{ route('promo.apl.renta.j') }}" title="Descarga Liquidador Renta Personas Jurídicas">
+        <!--<a href="{{ route('promo.apl.renta.j') }}" title="Descarga Liquidador Renta Personas Jurídicas">
         <picture class="text-center">
           {!! Html::image('images/renta-personas-juridicas-banner.png', 'renta personas jurídicas en Excel', ['width' => '280px','height' => '220px','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
             box-shadow: 1px 2px 2px #000;']) !!}
         </picture>
         </a>
-          <br>
+          <br>-->
+          @if(Route::currentRouteName() != "promo.apl.renta.j")
           <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <!-- 01. right_in_posts -->
           <ins class="adsbygoogle"
@@ -84,6 +85,8 @@
           (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
           <hr>
+
+          @endif
 
             @if(isset($soldCategories[@$post->category_id]))
               <div class="panel panel-primary">
@@ -104,13 +107,14 @@
               </div>
               <hr>
             @endif
-          
+          @if(Route::currentRouteName() != "promo.apl.renta.j")
           <div class="fb-page"
           data-href="https://www.facebook.com/Contabilizalocom-559714470714981/" 
           data-width="340"
           data-hide-cover="false"
           data-show-facepile="true"
           data-adapt-container-width="true"></div>
+          @endif
         
         </div>
       </div>  

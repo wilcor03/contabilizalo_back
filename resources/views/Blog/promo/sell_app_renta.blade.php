@@ -20,6 +20,8 @@
 	  c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
 	})(document);
 	</script>
+
+	@include('layouts.Blog.partials.analytics')
 @endsection
 
 @section('content')	

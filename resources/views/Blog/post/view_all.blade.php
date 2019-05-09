@@ -27,7 +27,7 @@
 					@foreach($posts as $post)
 					<tr>
 						<td>{{ str_limit($post->title, 50) }}</td>
-						<td>{!! str_limit($post->description, 80) !!}</td>						
+						<td>{!! $post->description !!}</td>						
 						<td>
 							<a href="{{ route('post.show', $post) }}" target="_blank">V</a> ||
 							<a href="{{ route('post.edit', $post) }}" target="_blank" class="text-success"><i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i></a> !! 

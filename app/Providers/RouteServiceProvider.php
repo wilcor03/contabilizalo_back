@@ -39,17 +39,23 @@ class RouteServiceProvider extends ServiceProvider
         parent::boot();
 
         Route::model('category', Category::class);
-        Route::bind('post', function($value){   
-        echo $value;            
+        Route::bind('post', function($value){               
           $minutes = config('custom.cache.time_duration_in_post');     
-          //$post = Cache::remember($value, $minutes, function() use($value){            
-            $post =  Post::where('slug', $value)
+          $post = Cache::remember($value, $minutes, function() use($value){ 
+
+            if(!auth()->check()){
+              $post =  Post::where('slug', $value)
                         ->where('status', 'public')
                         ->with('videos', 'comments', 'images', 'files', 'posts', 'postsBelongs', 'hasCategory', 'comments.parentComment', 'category.post')                       
+                        ->first();  
+            }else{
+              $post =  Post::where('slug', $value)                        
+                        ->with('videos', 'comments', 'images', 'files', 'posts', 'postsBelongs', 'hasCategory', 'comments.parentComment', 'category.post')                       
                         ->first();
-
-              return $post;
-          //});
+            }
+            
+            return $post;
+          });
 
           /*$post = Cache::tags(['Post'])->remember($value, 10080, function() use($value){
             $post =  Post::where('slug', $value)

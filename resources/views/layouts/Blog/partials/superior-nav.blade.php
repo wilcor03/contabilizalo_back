@@ -88,7 +88,7 @@
         </li>
         @if(Auth::check())
         <li>
-          @if($post)
+          @if(isset($post))
           <a href="{{ route('post.edit', $post) }}" target="_blank" class="text-success">
             <i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i></a>
           @endif

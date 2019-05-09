@@ -27,7 +27,7 @@
 					@foreach($posts as $post)
 					<tr>
 						<td>{{ str_limit($post->title, 50) }}</td>
-						<td>{!! $post->description !!}</td>						
+						<td><div class="limit-text">{!! $post->description !!}</div></td>						
 						<td>
 							<a href="{{ route('post.show', $post) }}" target="_blank">V</a> ||
 							<a href="{{ route('post.edit', $post) }}" target="_blank" class="text-success"><i class="fa fa-pencil-square fa-2x" aria-hidden="true"></i></a> !! 
@@ -40,4 +40,17 @@
 		</div><!--end responsive table -->
 		{!! $posts->links() !!}
 	</div>
+@endsection
+@section('scripts')
+<script type="text/javascript">// <![CDATA[
+	$(function(){
+	  $(".limit-text").each(function(i){
+	    len=$(this).text().length;
+	    if(len>80)
+	    {
+	      $(this).text($(this).text().substr(0,80)+'...');
+	    }
+	  });
+	});
+</script>
 @endsection

@@ -39,7 +39,8 @@ class RouteServiceProvider extends ServiceProvider
         parent::boot();
 
         Route::model('category', Category::class);
-        Route::bind('post', function($value){               
+        Route::bind('post', function($value){   
+        echo $value;            
           $minutes = config('custom.cache.time_duration_in_post');     
           //$post = Cache::remember($value, $minutes, function() use($value){            
             $post =  Post::where('slug', $value)

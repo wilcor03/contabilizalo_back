@@ -41,7 +41,10 @@
             <li>
               <a title="Curso de Contabilidad Básica En Internet" href="{{ route('post.show', 'curso-de-contabilidad-gratis') }}"><i class="fa fa-battery-quarter" aria-hidden="true"></i> Contabilidad Básica</a></li>                
             <li>
-              <a title="Curso de Contabilidad Intermedia - Avanzada" href="{{ route('post.show', 'curso-de-contabilidad-gratis-en-colombia') }}"><i class="fa fa-battery-three-quarters" aria-hidden="true"></i> Contabilidad Intermedia</a></li>                  
+              <a title="Curso de Contabilidad Intermedia - Avanzada" href="{{ route('post.show', 'curso-de-contabilidad-gratis-en-colombia') }}"><i class="fa fa-battery-three-quarters" aria-hidden="true"></i> Contabilidad Intermedia</a></li>
+
+              <li>
+              <a title="Publicaciones contabilizalo.com" href="{{ url('publicaciones-contabilizalo') }}"> Publicaciones</a></li>                  
           </ul>
         </li>
         <li class="dropdown">

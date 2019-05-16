@@ -97,7 +97,7 @@ Route::group(['namespace' => 'Blog'], function() {
 	|--------------------------------------
 	*/
 
-	Route::get('promo/descargar-aplicativo-renta-personas-naturales', ['as' => 'promo.apl.renta', 'uses' => 'PostController@promoApl']);
+	Route::get('promo/descargar-aplicativo-renta-personas-naturales', ['as' => 'promo.apl.renta', 'uses' => 'PostController@promoPersNaturales']);
 
 	Route::get('promo/descargar-aplicativo-renta-personas-juridicas', ['as' => 'promo.apl.renta.j', 'uses' => 'PostController@promoApl']);
 

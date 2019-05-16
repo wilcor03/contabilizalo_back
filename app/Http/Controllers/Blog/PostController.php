@@ -263,4 +263,8 @@ class PostController extends Controller
     return response()->json(['new_slug' => $newSlug], 200);
   }
 
+  public function promoPersNaturales(){
+    return view('Blog.promo.renta_p_naturales');
+  }
+
 }

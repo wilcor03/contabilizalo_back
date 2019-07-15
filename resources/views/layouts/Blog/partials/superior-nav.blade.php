@@ -39,7 +39,7 @@
           <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Contabilidad <span class="caret"></span></a>
           <ul class="dropdown-menu" aria-labelledby="themes">
             <li>
-              <a title="Curso de Contabilidad Básica En Internet" href="{{ route('post.show', 'curso-de-contabilidad-gratis') }}"><i class="fa fa-battery-quarter" aria-hidden="true"></i> Contabilidad Básica</a></li>                
+              <a title="Curso de Contabilidad Básica En Internet" href="{{ route('post.show', 'curso-de-contabilidad-gratis') }}"><i class="fa fa-battery-quarter" aria-hidden="true"></i> Contabilidad Básica</a></li>               
             <li>
               <a title="Curso de Contabilidad Intermedia - Avanzada" href="{{ route('post.show', 'curso-de-contabilidad-gratis-en-colombia') }}"><i class="fa fa-battery-three-quarters" aria-hidden="true"></i> Contabilidad Intermedia</a></li>
 

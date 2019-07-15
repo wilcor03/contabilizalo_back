@@ -33,8 +33,7 @@
     @include('layouts.Blog.partials.facebook-box')
     @include('layouts.Blog.partials.superior-nav')
     
-    <div class="container">
-      
+    <div class="container">      
       @yield('content')     
       
       @include('layouts.Blog.partials.footer')

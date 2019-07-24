@@ -50,7 +50,7 @@ class VideoController extends Controller
   {
   	$saved = $this->video->_storeAndAttach($request->all(), $post);  	
   	
-  	if(count($saved))
+  	if($saved)
   	{
   		return response()->json(['success' => true]);	
   	}  	

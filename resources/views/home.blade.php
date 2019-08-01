@@ -127,7 +127,18 @@
       </section>
 
       <div class="col-sm-3">
-
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <!-- 01. right_in_posts -->
+        <ins class="adsbygoogle"
+             style="display:inline-block;width:300px;height:600px"
+             data-ad-client="ca-pub-6749239594655834"
+             data-ad-slot="4339069736"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>       
+        
+        <br>
+        
         <div align="center">
 
           <!--
@@ -160,19 +171,10 @@
           </a> 
         </div>
 
-        <hr>
 
-        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <!-- 01. right_in_posts -->
-        <ins class="adsbygoogle"
-             style="display:inline-block;width:300px;height:600px"
-             data-ad-client="ca-pub-6749239594655834"
-             data-ad-slot="4339069736"></ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>       
-        
       </div>
+
+
     </div>    
 
     <section>

@@ -102,7 +102,7 @@
                 box-shadow: 1px 2px 2px #000;']) !!}
             </picture>
           </a>      
-
+          <br>
             @if(isset($soldCategories[@$post->category_id]))
               <div class="panel panel-primary">
                 <div class="panel-body">

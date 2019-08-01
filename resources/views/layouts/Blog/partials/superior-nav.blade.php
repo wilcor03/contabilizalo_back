@@ -75,7 +75,7 @@
           <a title="Emprendimiento y Marketing" href="{{ route('post.show', 'como-emprender-un-negocio') }}">Emprendimiento</a>
         </li>-->
         <li>
-          <a class="btn btn-danger btn-sm" title="Cotizar Servicios contables" href="https://trabajo.contabilizalo.com/app/auth/pre-register" target="_blank"><i class="fa fa-info-circle"></i> <u>PUBLICAR OFERTAS DE EMPLEO</u></a>
+          <a class="btn btn-danger btn-sm" title="Cotizar Servicios contables" href="https://trabajo.contabilizalo.com/app/auth/pre-register" target="_blank"><i class="fa fa-info-circle"></i> <u>PORTAL DE EMPLEO</u></a>
         </li>
 		<li>
           <a class="btn btn-info btn-sm" title="Cotizar Servicios contables" href="https://elportal.contabilizalo.com" target="_blank"> COTIZAR SERVICIOS CONTABLES</a>

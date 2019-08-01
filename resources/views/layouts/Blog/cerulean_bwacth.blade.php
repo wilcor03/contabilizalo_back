@@ -82,6 +82,13 @@
             </picture>
           </a>
           <br>
+          <a target="_blank" href="https://trabajo.contabilizalo.com/app/auth/pre-register" title="Encontrar ofertas de empleo en Colombia">
+            <picture class="text-center">
+              {!! Html::image('images/empleo-trabajador.png', 'Encontrar trabajo en Colombia', ['width' => '280px','height' => '220px','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
+                box-shadow: 1px 2px 2px #000;']) !!}
+            </picture>
+          </a>      
+          <br>
           @if(Route::currentRouteName() != "promo.apl.renta.j" && Route::currentRouteName() != "promo.apl.renta")
           <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <!-- 01. right_in_posts -->

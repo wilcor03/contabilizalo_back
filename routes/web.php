@@ -69,6 +69,8 @@ Route::group(['middleware' => 'auth.basic'], function(){
 /*----------------------------
 ! PUBLIC ROUTES
 -----------------------------*/
+Route::get('redirecting-to-detrips', 'UserController@clickOnEmail')->name('redir.detrips');
+
 Route::get('/', ['as' => 'home', 'uses' => 'UserController@home']);
 
 Route::group(['namespace' => 'Blog'], function() {

@@ -239,7 +239,7 @@
         </div>
       </article>
     </section>
-  {{-- @include('partials.modal_promo') --}}
+  @include('partials.modal_promo')
 @endsection
 
 @section('scripts')

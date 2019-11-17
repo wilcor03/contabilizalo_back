@@ -14,7 +14,7 @@ class MofifyDescriptionFieldPostsTable extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-            $this->mediumText('description');
+            //$this->mediumText('description');
         });
     }
 

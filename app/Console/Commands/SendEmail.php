@@ -39,22 +39,23 @@ class SendEmail extends Command
      * @return mixed
      */
     public function handle()
-    {
+    {      
       $registers = Suscriber::all();
       
       foreach($registers as $r){       
         $this->info('processing: '.$r->email.' ID: '.$r->id);        
+
         if($this->sendData($r)){
           $newTime = $r->times + 1;
           $r->times = $newTime;
           if($r->save()){
             $this->info('send success!');
+            sleep(10);
             continue;
           } 
           $this->error('failed saving in db!');
-        } 
+        }             
 
-        sleep(10);    
       }
     }
 
@@ -63,7 +64,7 @@ class SendEmail extends Command
         if($suscriber->name == null){
           $suscriber->name = "Usuario ConTabilizalo.com";
         }
-        Mail::to('wilcor03@gmail.com')->queue(new DetripsEmail($suscriber));  
+        Mail::to($suscriber->email)->queue(new DetripsEmail($suscriber));  
         return true;
       } catch (Exception $e) {
         return false;  

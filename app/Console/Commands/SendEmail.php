@@ -40,13 +40,13 @@ class SendEmail extends Command
      */
     public function handle()
     {      
-      $registers = Suscriber::whereNull('times')                            
-                            ->get();
+      $until = $this->ask('how many emails?');
+      
+      $registers = Suscriber::whereNull('times')        
+                            ->take((int)$until)                    
+                            ->get();                            
       
       foreach($registers as $key => $r){       
-        if($key == 199){
-          dd('SE ENVIARION 200');
-        }
         $this->info(($key + 1).' -processing: '.$r->email.' ID: '.$r->id);        
 
         if($this->sendData($r)){

@@ -40,7 +40,7 @@ class SendEmail extends Command
      */
     public function handle()
     {      
-      $registers = Suscriber::all();
+      $registers = Suscriber::whereNull('times')->get();
       
       foreach($registers as $r){       
         $this->info('processing: '.$r->email.' ID: '.$r->id);        

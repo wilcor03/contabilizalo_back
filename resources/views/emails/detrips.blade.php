@@ -1,7 +1,7 @@
 @component('mail::message')
 <img src="https://contabilizalo.com/logocontabilizalo-300x82.png" />
 <br>
-# Hola, {{ $suscriber->name }}
+# Hola, {{ strtoupper($suscriber->name) }}
 
 Mi nombre es <strong>Wilmer Cordoba</strong> de <strong>ConTabilizalo.com</strong>
 y actualmente me encuentro trabajando en un proyecto que busca impulsar las cosas buenas de nuestro país <strong>(Colombia)</strong> y sobretodo el turismo.

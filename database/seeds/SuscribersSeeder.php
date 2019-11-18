@@ -24,6 +24,7 @@ class SuscribersSeeder extends Seeder
         	if($sus->save()){
         		echo $s[0]." Saved!\n";
         	}
+        	
         }
     }
 

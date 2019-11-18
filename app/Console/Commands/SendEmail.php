@@ -43,7 +43,7 @@ class SendEmail extends Command
       $registers = Suscriber::all();
       
       foreach($registers as $r){       
-        $this->info('processing: '.$r->email);        
+        $this->info('processing: '.$r->email.' ID: '.$r->id);        
         if($this->sendData($r)){
           $newTime = $r->times + 1;
           $r->times = $newTime;

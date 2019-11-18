@@ -4,6 +4,8 @@ namespace App\Console\Commands;
 
 use Illuminate\Console\Command;
 use App\Suscriber;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\DetripsEmail;
 
 class SendEmail extends Command
 {
@@ -41,8 +43,7 @@ class SendEmail extends Command
       $registers = Suscriber::all();
       
       foreach($registers as $r){       
-        $this->info('processing: '.$r->email);
-        sleep(2);
+        $this->info('processing: '.$r->email);        
         if($this->sendData($r)){
           $newTime = $r->times + 1;
           $r->times = $newTime;
@@ -51,11 +52,22 @@ class SendEmail extends Command
             continue;
           } 
           $this->error('failed saving in db!');
-        }     
+        } 
+
+        sleep(10);    
       }
     }
 
-    private function sendData($data){
-      return true;
+    private function sendData($suscriber){
+      try {
+        if($suscriber->name == null){
+          $suscriber->name = "Usuario ConTabilizalo.com";
+        }
+        Mail::to('wilcor03@gmail.com')->queue(new DetripsEmail($suscriber));  
+        return true;
+      } catch (Exception $e) {
+        return false;  
+      }
+      
     }
 }

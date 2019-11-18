@@ -180,6 +180,7 @@ return [
 
         Collective\Html\HtmlServiceProvider::class, 
         Intervention\Image\ImageServiceProvider::class,
+        Sichikawa\LaravelSendgridDriver\SendgridTransportServiceProvider::class,
         //Roumen\Sitemap\SitemapServiceProvider::class   
 
     ],

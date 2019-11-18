@@ -40,12 +40,14 @@ class SendEmail extends Command
      */
     public function handle()
     {      
-      $registers = Suscriber::whereNull('times')
-                            ->where('id', '>', 126)
+      $registers = Suscriber::whereNull('times')                            
                             ->get();
       
-      foreach($registers as $r){       
-        $this->info('processing: '.$r->email.' ID: '.$r->id);        
+      foreach($registers as $key => $r){       
+        if($key == 199){
+          dd('SE ENVIARION 200');
+        }
+        $this->info(($key + 1).' -processing: '.$r->email.' ID: '.$r->id);        
 
         if($this->sendData($r)){
           $newTime = $r->times + 1;

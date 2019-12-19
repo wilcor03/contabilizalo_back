@@ -6,22 +6,24 @@
 	      <div class="modal-header">
 	        <button id="closeModal" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 	        <h4 class="modal-title text-center" id="myModalLabel">
-	        	MI INVITACIÓN!!!
+	        	GANA EN NAVIDAD!!!
 	        </h4>
 	      </div>
 	      <div class="modal-body">
 	      	<div class="embed-responsive embed-responsive-16by9">
-					  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/CYRKSpeDMng?autoplay=1"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SSUe1xayFd8?autoplay=1"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 					</div>
 					<br>
 					<div class="row">
 						<div class="col-sm-6">
-							<a href="https://www.youtube.com/channel/UCYDI-2dkFzrmG6oHR7a4r_Q?sub_confirmation=1" 
+							<a href="https://detrips.com/gana-premios" 
 							target="_blank"
-							class="btn btn-danger"><i class="fa fa-youtube-play" aria-hidden="true"></i> Suscribete a mi Canal</a>
+							class="btn btn-info">INSCRIBETE AQUÍ >></a>
 						</div>
 						<div class="col-sm-6">
-							<ul class="list-unstyled">
+
+
+							<!--<ul class="list-unstyled">
 								<li><span style="padding: 6px 10px;
 	    background: blue;
 	    border-radius: 6px;
@@ -43,7 +45,7 @@
     box-shadow: 0px 3px 10px rgba(0,0,0,.25);"><i class="fa fa-instagram" aria-hidden="true"></i></span>
     						Instagram: <a target="_blank" href="https://www.instagram.com/detripsapp/">@DetripsApp</a>
 								</li>
-							</ul>							
+							</ul>-->						
 
 						</div>
 					</div>

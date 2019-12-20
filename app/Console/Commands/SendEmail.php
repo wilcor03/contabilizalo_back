@@ -46,7 +46,7 @@ class SendEmail extends Command
                             ->orderBy('id', 'desc')       
                             ->take((int)$until)                    
                             ->get();                            
-      
+      $this->error('Proccess tot: '.count($registers));
       foreach($registers as $key => $r){       
         $this->info(($key + 1).' -processing: '.$r->email.' ID: '.$r->id);        
 

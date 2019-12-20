@@ -5,7 +5,7 @@ namespace App\Console\Commands;
 use Illuminate\Console\Command;
 use App\Suscriber;
 use Illuminate\Support\Facades\Mail;
-use App\Mail\DetripsEmail;
+use App\Mail\DetripsRaffleEmail;
 
 class SendEmail extends Command
 {
@@ -59,8 +59,7 @@ class SendEmail extends Command
             continue;
           } 
           $this->error('failed saving in db!');
-        }             
-
+        }                     
       }
     }
 
@@ -69,7 +68,7 @@ class SendEmail extends Command
         if($suscriber->name == null){
           $suscriber->name = "Usuario ConTabilizalo.com";
         }
-        Mail::to($suscriber->email)->queue(new DetripsEmail($suscriber));  
+        Mail::to($suscriber->email)->queue(new DetripsRaffleEmail($suscriber));  
         return true;
       } catch (Exception $e) {
         return false;  

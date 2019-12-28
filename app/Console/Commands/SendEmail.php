@@ -42,10 +42,12 @@ class SendEmail extends Command
     {      
       $until = $this->ask('how many emails?');
       
-      $registers = Suscriber::whereNull('times') 
+      $registers = Suscriber:://whereNull('times') 
+                            where('times', 1)
                             ->orderBy('id', 'desc')       
                             ->take((int)$until)                    
-                            ->get();                            
+                            ->get(); 
+                                                       
       $this->error('Proccess tot: '.count($registers));
       foreach($registers as $key => $r){       
         $this->info(($key + 1).' -processing: '.$r->email.' ID: '.$r->id);        

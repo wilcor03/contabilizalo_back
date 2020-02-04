@@ -137,11 +137,11 @@
         (adsbygoogle = window.adsbygoogle || []).push({});
         </script>       
         
-        <br>
+        <!--<br>
         
         <div align="center">
 
-          <!--
+          
           <a href="https://play.google.com/store/apps/details?id=com.wilcor.detrips" title="Descarga guía turistica DeTrips" target="_blank">
           <picture class="text-center">
             {!! Html::image('images/banner_detrips_contabilizalo.png', 'Descarga DeTrips', ['width' => '280px','height' => '220px','class' => 'img-responsive']) !!}
@@ -154,7 +154,7 @@
             <picture class="text-center">
               {!! Html::image('images/renta-personas-juridicas-banner.png', 'renta personas jurídicas en Excel', ['width' => '280px','height' => '220px','class' => 'img-responsive']) !!}
             </picture>
-          </a>-->
+          </a>
 
           <a href="{{ route('promo.apl.renta') }}" title="Descarga Liquidador Renta Personas Naturales">
             <picture class="text-center">
@@ -168,8 +168,8 @@
               {!! Html::image('images/empleo-trabajador.png', 'Encontrar trabajo en Colombia', ['width' => '280px','height' => '220px','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
                 box-shadow: 1px 2px 2px #000;']) !!}
             </picture>
-          </a> 
-        </div>
+          </a>
+        </div>-->
 
 
       </div>

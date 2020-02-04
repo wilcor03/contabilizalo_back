@@ -88,7 +88,7 @@
           <hr>
 
           @endif
-          <br>
+          <!--<br>
           <a href="{{ route('promo.apl.renta') }}" title="Descarga Liquidador Renta Personas Naturales">
             <picture class="text-center">
               {!! Html::image('images/banner-people-tax.png', 'renta personas naturales en Excel', ['width' => '280px','height' => '220px','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
@@ -102,7 +102,7 @@
                 box-shadow: 1px 2px 2px #000;']) !!}
             </picture>
           </a>      
-          <br>
+          <br>-->
             @if(isset($soldCategories[@$post->category_id]))
               <div class="panel panel-primary">
                 <div class="panel-body">

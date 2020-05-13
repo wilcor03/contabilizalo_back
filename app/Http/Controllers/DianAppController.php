@@ -99,18 +99,21 @@ class DianAppController extends Controller
 
     preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:otrosNombres">(.*)</span>)siU', $info, $finded);
 
-    $otherNames = trim(strtoupper($finded[1][0]));
+    $otherNames = $this->decodeAcii(trim(strtoupper($finded[1][0])));
 
     preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:segundoApellido">(.*)</span>)siU', $info, $finded);
 
-    $secondLastName = trim(strtoupper($finded[1][0]));
+    $secondLastName = $this->decodeAcii(trim(strtoupper($finded[1][0])));
+
+    dd($secondLastName);
 
     preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:primerApellido">(.*)</span>)siU', $info, $finded);
 
-    $firstLastName = trim(strtoupper($finded[1][0]));
+    $firstLastName = $this->decodeAcii(trim(strtoupper($finded[1][0])));
+
 
     preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:estado">(.*)</span>)siU', $info, $finded);    
-    $state = trim(strtoupper($finded[1][0]));
+    $state = $this->decodeAcii(trim(strtoupper($finded[1][0])));
 
     return compact('firstName', 'otherNames', 'firstLastName', 'secondLastName', 'state');
   }
@@ -142,5 +145,18 @@ class DianAppController extends Controller
     $error = curl_error($ch);           
 
     return $result;
+  }
+
+  private function decodeAcii($string){
+    $caracteres = [
+      '&NTILDE;'
+    ];  
+
+    $aConvertir = [
+      'Ñ'
+    ];
+
+    $newString = str_replace($caracteres, $aConvertir, $string);
+    return $newString;
   }
 }

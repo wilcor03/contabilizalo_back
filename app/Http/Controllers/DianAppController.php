@@ -95,7 +95,7 @@ class DianAppController extends Controller
     	return view('apps.rut-consult', compact('firstName', 'otherNames', 'secondLastName', 'firstLastName', 'state'));*/
     }
 
-    $firstName = trim(strtoupper($finded[1][0]));
+    $firstName = $this->decodeAcii(trim(strtoupper($finded[1][0])));
 
     preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:otrosNombres">(.*)</span>)siU', $info, $finded);
 

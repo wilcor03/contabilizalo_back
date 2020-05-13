@@ -105,8 +105,6 @@ class DianAppController extends Controller
 
     $secondLastName = $this->decodeAcii(trim(strtoupper($finded[1][0])));
 
-    dd($secondLastName);
-
     preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:primerApellido">(.*)</span>)siU', $info, $finded);
 
     $firstLastName = $this->decodeAcii(trim(strtoupper($finded[1][0])));

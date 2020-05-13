@@ -16,23 +16,51 @@ class DianAppController extends Controller
     $this->cookie_file = "/tmp/".time();
   }
 
-  public function rutConsult($cc){  	
+  public function rutConsult($cc){
+  	for($i = 0; $i <= 4; $i++){
+  		$result = $this->setData($cc);	
+  		if($result){
+  			break;
+  		}
+  		sleep(1);
+  	}  	
+
+  	if(!$result){
+  		$result = [
+  			'firstName' => '',
+  		  'otherNames' => '', 
+	  		'firstLastName' => '', 
+	  		'secondLastName' => '', 
+	  		'state' => ''
+	  	];
+  	}
+
+  	if($result){
+  		return view('apps.rut-consult', $result);
+  	}    
+  }
+
+
+
+  private function setData($cc){
   	$params = [
         'vistaConsultaEstadoRUT:formConsultaEstadoRUT:modoPresentacionSeleccionBO'=> 'pantalla'];
 
       $htmlData = $this->getData('https://muisca.dian.gov.co/WebRutMuisca/DefConsultaEstadoRUT.faces', true, $params);
 
-      sleep(3);
+      sleep(1);
 
       preg_match_all('/value="(.*)"/siU', $htmlData, $matches);
 
       if(!count($matches[1])){
-	    	$firstName 		= "";
+      	return false;
+
+	    	/*$firstName 		= "";
 	    	$otherNames 	= "";
 	    	$firstLastName 		= "";
 	    	$secondLastName 		= ""; 
 	    	$state 		= "";
-	    	return view('apps.rut-consult', compact('firstName', 'otherNames', 'secondLastName', 'firstLastName', 'state'));
+	    	return view('apps.rut-consult', compact('firstName', 'otherNames', 'secondLastName', 'firstLastName', 'state'));*/
 	    }
 
       $token = $matches[1][2];
@@ -58,12 +86,13 @@ class DianAppController extends Controller
     preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:primerNombre">(.*)</span>)siU', $info, $finded);
 
     if(!count($finded[1])){
-    	$firstName 		= "";
+    	return false;
+    	/*$firstName 		= "";
     	$otherNames 	= "";
     	$firstLastName 		= "";
     	$secondLastName 		= ""; 
     	$state 		= "";
-    	return view('apps.rut-consult', compact('firstName', 'otherNames', 'secondLastName', 'firstLastName', 'state'));
+    	return view('apps.rut-consult', compact('firstName', 'otherNames', 'secondLastName', 'firstLastName', 'state'));*/
     }
 
     $firstName = trim(strtoupper($finded[1][0]));
@@ -83,8 +112,11 @@ class DianAppController extends Controller
     preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:estado">(.*)</span>)siU', $info, $finded);    
     $state = trim(strtoupper($finded[1][0]));
 
-    return view('apps.rut-consult', compact('firstName', 'otherNames', 'secondLastName', 'firstLastName', 'state'));
+    return compact('firstName', 'otherNames', 'firstLastName', 'secondLastName', 'state');
   }
+
+
+
 
   private function setConfigCH($ch){
     $this->ch = $ch;

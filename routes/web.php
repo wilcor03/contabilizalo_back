@@ -121,3 +121,6 @@ Route::group(['namespace' => 'Blog'], function() {
 	Route::get('payu/pago-pendiente', ['as' => 'payu.pending', 'uses' => 'PostController@payStates']);
 	
 });
+
+### APP DIAN
+Route::get('apps/dian/rut-consult/{cc}', 'DianAppController@rutConsult');

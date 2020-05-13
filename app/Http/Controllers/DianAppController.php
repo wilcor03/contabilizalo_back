@@ -22,9 +22,18 @@ class DianAppController extends Controller
 
       $htmlData = $this->getData('https://muisca.dian.gov.co/WebRutMuisca/DefConsultaEstadoRUT.faces', true, $params);
 
+      sleep(3);
+
       preg_match_all('/value="(.*)"/siU', $htmlData, $matches);
 
-      //dd($matches[1][2]);
+      if(!count($matches[1])){
+	    	$firstName 		= "";
+	    	$otherNames 	= "";
+	    	$firstLastName 		= "";
+	    	$secondLastName 		= ""; 
+	    	$state 		= "";
+	    	return view('apps.rut-consult', compact('firstName', 'otherNames', 'secondLastName', 'firstLastName', 'state'));
+	    }
 
       $token = $matches[1][2];
 
@@ -49,7 +58,7 @@ class DianAppController extends Controller
     preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:primerNombre">(.*)</span>)siU', $info, $finded);
 
     if(!count($finded[1])){
-    	$firstName 		= "NO ENCONTRADO";
+    	$firstName 		= "";
     	$otherNames 	= "";
     	$firstLastName 		= "";
     	$secondLastName 		= ""; 
@@ -75,8 +84,6 @@ class DianAppController extends Controller
     $state = trim(strtoupper($finded[1][0]));
 
     return view('apps.rut-consult', compact('firstName', 'otherNames', 'secondLastName', 'firstLastName', 'state'));
-
-  /*echo $firstName.' - '.$otherNames.' - '.$firstLastName.' - '.$secondLastName.' - '.$state;*/
   }
 
   private function setConfigCH($ch){

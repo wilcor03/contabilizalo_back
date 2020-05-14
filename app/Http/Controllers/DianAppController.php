@@ -35,7 +35,7 @@ class DianAppController extends Controller
 	  		'socialReason' => ''
 	  	];
   	}
-  	dd($result);
+  	
   	if($result){
   		return view('apps.rut-consult', $result);
   	}    

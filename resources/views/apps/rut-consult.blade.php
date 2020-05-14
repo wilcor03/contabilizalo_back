@@ -11,6 +11,7 @@
 			<td>{{ $firstLastName }}</td>
 			<td>{{ $secondLastName }}</td>
 			<td>{{ $state }}</td>
+			<td>{{ $socialReason }}</td>
 		</tr>
 	</table>
 </body>

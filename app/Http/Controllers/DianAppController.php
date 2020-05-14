@@ -31,10 +31,11 @@ class DianAppController extends Controller
   		  'otherNames' => '', 
 	  		'firstLastName' => '', 
 	  		'secondLastName' => '', 
-	  		'state' => ''
+	  		'state' => '',
+	  		'socialReason' => ''
 	  	];
   	}
-
+  	dd($result);
   	if($result){
   		return view('apps.rut-consult', $result);
   	}    
@@ -85,35 +86,51 @@ class DianAppController extends Controller
 
     preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:primerNombre">(.*)</span>)siU', $info, $finded);
 
-    if(!count($finded[1])){
-    	return false;
-    	/*$firstName 		= "";
-    	$otherNames 	= "";
-    	$firstLastName 		= "";
-    	$secondLastName 		= ""; 
-    	$state 		= "";
-    	return view('apps.rut-consult', compact('firstName', 'otherNames', 'secondLastName', 'firstLastName', 'state'));*/
+    preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:razonSocial">(.*)</span>)siU', $info, $finded2);    
+
+    if(!count($finded[1]) && !count($finded2[1])){
+    	return false;    	
     }
 
-    $firstName = $this->decodeAcii(trim(strtoupper($finded[1][0])));
+    if(count($finded[1])){
+    	$firstName = $this->decodeAcii(trim(strtoupper($finded[1][0])));
 
-    preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:otrosNombres">(.*)</span>)siU', $info, $finded);
+	    preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:otrosNombres">(.*)</span>)siU', $info, $finded);
 
-    $otherNames = $this->decodeAcii(trim(strtoupper($finded[1][0])));
+	    $otherNames = $this->decodeAcii(trim(strtoupper($finded[1][0])));
 
-    preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:segundoApellido">(.*)</span>)siU', $info, $finded);
+	    preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:segundoApellido">(.*)</span>)siU', $info, $finded);
 
-    $secondLastName = $this->decodeAcii(trim(strtoupper($finded[1][0])));
+	    $secondLastName = $this->decodeAcii(trim(strtoupper($finded[1][0])));
 
-    preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:primerApellido">(.*)</span>)siU', $info, $finded);
+	    preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:primerApellido">(.*)</span>)siU', $info, $finded);
 
-    $firstLastName = $this->decodeAcii(trim(strtoupper($finded[1][0])));
+	    $firstLastName = $this->decodeAcii(trim(strtoupper($finded[1][0])));
 
+	    preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:estado">(.*)</span>)siU', $info, $finded);    
+	    $state = $this->decodeAcii(trim(strtoupper($finded[1][0])));
 
-    preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:estado">(.*)</span>)siU', $info, $finded);    
-    $state = $this->decodeAcii(trim(strtoupper($finded[1][0])));
+	    $socialReason = "";
 
-    return compact('firstName', 'otherNames', 'firstLastName', 'secondLastName', 'state');
+	    return compact('firstName', 'otherNames', 'firstLastName', 'secondLastName', 'state', 'socialReason');	
+    }
+
+    if(count($finded2[1])){
+
+    	preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:estado">(.*)</span>)siU', $info, $finded2_2);    
+	    
+	    $state = $this->decodeAcii(trim(strtoupper($finded2_2[1][0])));
+
+    	return [
+  			'firstName' => '',
+  		  'otherNames' => '', 
+	  		'firstLastName' => '', 
+	  		'secondLastName' => '', 
+	  		'state' => $state,
+	  		'socialReason' => $finded2[1][0]
+	  	];
+    }
+    
   }
 
 

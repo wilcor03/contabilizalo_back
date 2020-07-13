@@ -18,14 +18,27 @@ class DianAppController extends Controller
 
   public function rutConsult($cc){
 
-    $ccs = [123456,1019013125, 1019029124, 900355206];
-    $results = [];
+    $ccs = [123456,1019013125, 1019029124, 900355206, 1019013087];
+    $results = "";
     foreach($ccs as $cc){
       $result = $this->setData($cc);
-      $results[] = $result;
+      if($result)
+      {
+        $info = "<firstName>". $result['firstName'] ."</firstName>".
+                "<otherNames>". $result['otherNames'] ."</otherNames>".
+                "<firstLastName>". $result['firstLastName'] ."</firstLastName>".
+              "<secondLastName>". $result['secondLastName'] ."</secondLastName>".
+                "<state>". $result['state'] ."</state>".
+                "<socialReason>". $result['socialReason'] ."</socialReason>";
+
+        $results .= $info;
+      }      
+      //$results[] = $result;
     }
 
-    return response()->json($results);
+    return $results;
+
+    //return response()->json($results);
 
   	/*for($i = 0; $i <= 4; $i++){
   		$result = $this->setData($cc);	

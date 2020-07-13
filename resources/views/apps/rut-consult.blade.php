@@ -5,14 +5,16 @@
 </head>
 <body>
 	<table style="display:none;">
+		@foreach($results as $result)
 		<tr>
-			<td>{{ $firstName }}</td>
-			<td>{{ $otherNames }}</td>
-			<td>{{ $firstLastName }}</td>
-			<td>{{ $secondLastName }}</td>
-			<td>{{ $state }}</td>
-			<td>{{ $socialReason }}</td>
+			<td>{{ $result['firstName'] }}</td>
+			<td>{{ $result['otherNames'] }}</td>
+			<td>{{ $result['firstLastName'] }}</td>
+			<td>{{ $result['secondLastName'] }}</td>
+			<td>{{ $result['state'] }}</td>
+			<td>{{ $result['socialReason'] }}</td>
 		</tr>
+		@endforeach
 	</table>
 </body>
 </html>

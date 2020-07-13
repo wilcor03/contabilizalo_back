@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use XMLWriter;
 
 class DianAppController extends Controller
 {
@@ -17,28 +16,30 @@ class DianAppController extends Controller
     $this->cookie_file = "/tmp/".time();
   }
 
-  public function rutConsult($cc){    
-    $ccs = [123456,1019013125, 1019029124, 900355206, 1019013087];
-    $results = "<diandata>";
+  public function rutConsult($cc){
+
+    $ccs = [123456,1019013125, 1019029124];
+    $results = [];
     foreach($ccs as $cc){
       $result = $this->setData($cc);
-      if($result)
-      {
-        $info = "<firstName>". $result['firstName'] ."</firstName>".
-                "<otherNames>". $result['otherNames'] ."</otherNames>".
-                "<firstLastName>". $result['firstLastName'] ."</firstLastName>".
-              "<secondLastName>". $result['secondLastName'] ."</secondLastName>".
-                "<state>". $result['state'] ."</state>".
-                "<socialReason>". $result['socialReason'] ."</socialReason>";
+      $results[] = $result;
+      /*if(!$result){
+        $result = [
+          'firstName' => '',
+          'otherNames' => '', 
+          'firstLastName' => '', 
+          'secondLastName' => '', 
+          'state' => '',
+          'socialReason' => ''
+        ];
+      } else {
+        $results[] = $result;
+      }*/
 
-        $results .= $info;
-      }      
-      //$results[] = $result;
     }
 
-    return $results."</diandata>";
+    return $results;
 
-    //return response()->json($results);
 
   	/*for($i = 0; $i <= 4; $i++){
   		$result = $this->setData($cc);	
@@ -48,20 +49,11 @@ class DianAppController extends Controller
   		sleep(1);
   	}  	
 
-  	if(!$result){
-  		$result = [
-  			'firstName' => '',
-  		  'otherNames' => '', 
-	  		'firstLastName' => '', 
-	  		'secondLastName' => '', 
-	  		'state' => '',
-	  		'socialReason' => ''
-	  	];
-  	}
+  	*/
   	
-  	if($result){
-  		return view('apps.rut-consult', $result);
-  	}  */  
+  	if($results){
+  		return view('apps.rut-consult', compact('results'));
+  	} 
   }
 
 

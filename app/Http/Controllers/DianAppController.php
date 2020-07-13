@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use XMLWriter;
 
 class DianAppController extends Controller
 {
@@ -16,10 +17,9 @@ class DianAppController extends Controller
     $this->cookie_file = "/tmp/".time();
   }
 
-  public function rutConsult($cc){
-
+  public function rutConsult($cc){    
     $ccs = [123456,1019013125, 1019029124, 900355206, 1019013087];
-    $results = "";
+    $results = "<diandata>";
     foreach($ccs as $cc){
       $result = $this->setData($cc);
       if($result)
@@ -36,7 +36,7 @@ class DianAppController extends Controller
       //$results[] = $result;
     }
 
-    return $results;
+    return $results."</diandata>";
 
     //return response()->json($results);
 

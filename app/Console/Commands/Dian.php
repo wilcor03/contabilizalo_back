@@ -1,60 +1,96 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Console\Commands;
 
-use Illuminate\Http\Request;
+use Illuminate\Console\Command;
 
-class DianAppController extends Controller
+class Dian extends Command
 {
-	private $ch;  
+  /**
+   * The name and signature of the console command.
+   *
+   * @var string
+   */
+  protected $signature = 'dian:consult';
+
+  /**
+   * The console command description.
+   *
+   * @var string
+   */
+  protected $description = 'Command description';
+
+  /**
+   * Create a new command instance.
+   *
+   * @return void
+   */
+  private $ch;  
   private $cookie_file;
 
   public function __construct()
   {      
+    parent::__construct();
     $ch = curl_init();
     Self::setConfigCH($ch);
     $this->cookie_file = "/tmp/".time();
   }
 
-  public function rutConsult($cc){
-
-    $ccs = [123456,1019013125, 1019029124, 900355206];
-    $results = [];
+  /**
+   * Execute the console command.
+   *
+   * @return mixed
+   */
+  public function handle()
+  {
+    $ccs = [123456,1019013125, 1019029124];
     foreach($ccs as $cc){
       $result = $this->setData($cc);
-      $results[] = $result;
+      print_r($result);
+    } 
+
+    exit;      
+
+    if(!$result){
+      $result = [
+        'firstName' => '',
+        'otherNames' => '', 
+        'firstLastName' => '', 
+        'secondLastName' => '', 
+        'state' => '',
+        'socialReason' => ''
+      ];
     }
-
-    return response()->json($results);
-
-  	/*for($i = 0; $i <= 4; $i++){
-  		$result = $this->setData($cc);	
-  		if($result){
-  			break;
-  		}
-  		sleep(1);
-  	}  	
-
-  	if(!$result){
-  		$result = [
-  			'firstName' => '',
-  		  'otherNames' => '', 
-	  		'firstLastName' => '', 
-	  		'secondLastName' => '', 
-	  		'state' => '',
-	  		'socialReason' => ''
-	  	];
-  	}
-  	
-  	if($result){
-  		return view('apps.rut-consult', $result);
-  	}  */  
+    
+    if($result){
+      return view('apps.rut-consult', $result);
+    } 
   }
 
-
-
   private function setData($cc){
-  	$params2 = [              
+    //$params = [
+        //'vistaConsultaEstadoRUT:formConsultaEstadoRUT:modoPresentacionSeleccionBO'=> 'pantalla'];
+
+      //$htmlData = $this->getData('https://muisca.dian.gov.co/WebRutMuisca/DefConsultaEstadoRUT.faces', true, $params);
+
+      //sleep(1);
+
+      //preg_match_all('/value="(.*)"/siU', $htmlData, $matches);
+
+      //if(!count($matches[1])){
+        //return false;
+
+        /*$firstName    = "";
+        $otherNames   = "";
+        $firstLastName    = "";
+        $secondLastName     = ""; 
+        $state    = "";
+        return view('apps.rut-consult', compact('firstName', 'otherNames', 'secondLastName', 'firstLastName', 'state'));*/
+      //}
+
+      //$token = $matches[1][2];
+
+      $params2 = [              
       'vistaConsultaEstadoRUT:formConsultaEstadoRUT:numNit' => trim($cc),
       'vistaConsultaEstadoRUT:formConsultaEstadoRUT:btnBuscar.x' => 0,
       'vistaConsultaEstadoRUT:formConsultaEstadoRUT:btnBuscar.y' => 0,

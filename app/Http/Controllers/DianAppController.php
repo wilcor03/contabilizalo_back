@@ -93,7 +93,9 @@ class DianAppController extends Controller
 
       $socialReason = "";
 
-      return compact('firstName', 'otherNames', 'firstLastName', 'secondLastName', 'state', 'socialReason');  
+      $rowID = $cc[0];
+
+      return compact('rowID', 'firstName', 'otherNames', 'firstLastName', 'secondLastName', 'state', 'socialReason');  
     }
 
     if(count($finded2[1])){

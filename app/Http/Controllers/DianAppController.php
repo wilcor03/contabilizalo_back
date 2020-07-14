@@ -89,20 +89,20 @@ class DianAppController extends Controller
       $firstLastName = $this->decodeAcii(trim(strtoupper($finded[1][0])));
 
       preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:estado">(.*)</span>)siU', $info, $finded);    
-      $state = $this->decodeAcii(trim(strtoupper($finded[1][0])));
+      $dianState = $this->decodeAcii(trim(strtoupper($finded[1][0])));
 
       $socialReason = "";
 
       $rowID = $cc[0];
 
-      return compact('rowID', 'firstName', 'otherNames', 'firstLastName', 'secondLastName', 'state', 'socialReason');  
+      return compact('rowID', 'firstName', 'otherNames', 'firstLastName', 'secondLastName', 'dianState', 'socialReason');  
     }
 
     if(count($finded2[1])){
 
       preg_match_all('(<span id="vistaConsultaEstadoRUT:formConsultaEstadoRUT:estado">(.*)</span>)siU', $info, $finded2_2);    
       
-      $state = $this->decodeAcii(trim(strtoupper($finded2_2[1][0])));
+      $dianState = $this->decodeAcii(trim(strtoupper($finded2_2[1][0])));
 
       return [
         'rowID' => $cc[0],
@@ -110,7 +110,7 @@ class DianAppController extends Controller
         'otherNames' => '', 
         'firstLastName' => '', 
         'secondLastName' => '', 
-        'state' => $state,
+        'dianState' => $dianState,
         'socialReason' => $finded2[1][0]
       ];
     }

@@ -2,54 +2,19 @@
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
 	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button id="closeModal" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h4 class="modal-title text-center" id="myModalLabel">
-	        	GANA EN NAVIDAD!!!
-	        </h4>
+	    <div class="modal-content" style="background: transparent;
+    box-shadow: none;
+    border: none;">
+	      <div class="modal-header" style="border-bottom:none;">
+	        <button style="color:#fff; opacity: 1;" id="closeModal" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>       
 	      </div>
 	      <div class="modal-body">
-	      	<div class="embed-responsive embed-responsive-16by9">
-					  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SSUe1xayFd8?autoplay=1"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-					</div>
-					<br>
-					<div class="row">
-						<div class="col-sm-6">
-							<a href="https://detrips.com/gana-premios" 
-							target="_blank"
-							class="btn btn-info">INSCRIBETE AQUÍ >></a>
-						</div>
-						<div class="col-sm-6">
-
-
-							<!--<ul class="list-unstyled">
-								<li><span style="padding: 6px 10px;
-	    background: blue;
-	    border-radius: 6px;
-	    color: white;"><i class="fa fa-facebook" aria-hidden="true"></i></span>
-									Facebook: <a target="_blank" href="https://www.facebook.com/Detripsapp/">@DetripsApp</a>
-								</li>
-								<li style="margin-top:10px;">
-									<span style="display: inline-block;
-    width: 30px;
-    height: 30px;
-    text-align: center;
-    border-radius: 40px;
-    color: #fff;
-    font-size: 14px;
-    line-height: 30px;
-    vertical-align: middle;
-    background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-    box-shadow: 0px 3px 10px rgba(0,0,0,.25);"><i class="fa fa-instagram" aria-hidden="true"></i></span>
-    						Instagram: <a target="_blank" href="https://www.instagram.com/detripsapp/">@DetripsApp</a>
-								</li>
-							</ul>-->						
-
-						</div>
-					</div>
-	      	
+						
+					<a href="{{ route('promo.apl.renta') }}">
+	        <picture class="text-center">
+					   {!! Html::image('images/banner promo renta naturales seminario.png', 'Renta personas naturales', ['class' => 'img-responsive']) !!}
+					</picture>
+					</a>
 
 	      	<!--<a href="https://elportal.contabilizalo.com" title="Solicita cotizaciones gratis">
 	        <picture class="text-center">
@@ -81,7 +46,7 @@
 						<a class="btn btn-success btn-lg" href="{{ route('promo.apl.renta.j') }}" title="Descarga Liquidador Renta Personas Jurídicas">Saber Más Detalles <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
 					</div>-->
 	      
-	      </div>
+	      </div><!-- modal body-->
 	      
 	    </div>
 	  </div>

@@ -88,7 +88,7 @@
           <hr>
 
           @endif
-          <!--<br>
+          <br>
           <a href="{{ route('promo.apl.renta') }}" title="Descarga Liquidador Renta Personas Naturales">
             <picture class="text-center">
               {!! Html::image('images/banner-people-tax.png', 'renta personas naturales en Excel', ['width' => '280px','height' => '220px','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
@@ -96,7 +96,7 @@
             </picture>
           </a>
           <br>
-          <a target="_blank" href="https://trabajo.contabilizalo.com/app/auth/pre-register" title="Encontrar ofertas de empleo en Colombia">
+          <!--<a target="_blank" href="https://trabajo.contabilizalo.com/app/auth/pre-register" title="Encontrar ofertas de empleo en Colombia">
             <picture class="text-center">
               {!! Html::image('images/empleo-trabajador.png', 'Encontrar trabajo en Colombia', ['width' => '280px','height' => '220px','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
                 box-shadow: 1px 2px 2px #000;']) !!}
@@ -134,7 +134,9 @@
         </div>
       </div>  
 
+
       @include('layouts.Blog.partials.footer')
+      @include('partials.modal_promo')
     </div> <!-- end container -->
 
 

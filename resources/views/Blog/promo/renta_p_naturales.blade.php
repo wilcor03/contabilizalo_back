@@ -32,11 +32,13 @@
 
 	<hr>
 
-	<h1 class="text-center" style="color:#004b80;">Aplicativo Para Elaboración Renta Personas NATURALES 2019 - Colombia</h1>	
+	<h1 class="text-center" style="color:#004b80;">Aplicativo Para Elaboración Renta Personas NATURALES año gravable 2019 - Colombia</h1>
+	<h2 class="text-center">Incluye seminario de actualización Renta Personas Naturales. <span style="font-size: 1.8rem;" class="text-danger">(Fecha seminario: 24 de julio 2020 5pm)</span></h2>
+
 
 	<div class="panel panel-danger text-muted">	  
 	  <div class="panel-body text-justify">
-	  	<p><strong><a href="https://contabilizalo.com" style="color:orange;">CONTABILIZALO.COM</a></strong> en sus mas de 7 años en el mundo online presenta <strong class="text-primary">PEOPLE TAX:</strong> es un aplicativo diseñado bajo Excel  que le ayudará a la elaboración de la declaración de renta de personas naturales residentes no obligadas a llevar contabilidad por el año gravable 2018 actualizado con la última normatividad aplicable.</p>
+	  	<p><strong><a href="https://contabilizalo.com" style="color:orange;">CONTABILIZALO.COM</a></strong> en sus mas de 7 años en el mundo online presenta <strong class="text-primary">PEOPLE TAX:</strong> es un aplicativo diseñado bajo Excel  que le ayudará a la elaboración de la declaración de renta de personas naturales residentes no obligadas a llevar contabilidad por el año gravable 2019 actualizado con la última normatividad aplicable.</p>
  
 			<p>Al aplicativo se deben ingresar una serie de información y al final el aplicativo le arrojará la declaración:  Formato 210.</p>
 
@@ -72,7 +74,7 @@
 
 			<div class="alert alert-info">
 				<h4 class="text-center">¿Cuanto cuesta?</h4>
-				<p>El costo es de $290.000</p>
+				<p>El costo es de $230.000</p>
 				<p>Puede usarse para elaborar declaraciones de renta ilimitadas.
 					<br>
 					<strong>Le garantizamos que no perderá su inversión!</strong>
@@ -147,7 +149,7 @@
 
 		      <hr>
 
-		      <p><strong class="text text-primary">PEOPLE TAX</strong>  incluye el aplicativo para el año gravable 2018, sus respectivos manuales y el soporte de su funcionamiento vía mail o teléfono durante la época de las declaraciones.</p>
+		      <p><strong class="text text-primary">PEOPLE TAX</strong>  incluye el aplicativo para el año gravable 2019, sus respectivos manuales y el soporte de su funcionamiento vía mail o teléfono durante la época de las declaraciones.</p>
 
 		      <p><i class="fa fa-long-arrow-right text-danger" aria-hidden="true"></i> Podrá hacer todas las rentas sin ninguna limitante, y podrá usar el aplicativo en cualquier computador que tenga Excel.</p>
 
@@ -169,7 +171,7 @@
 
 									<div class="alert alert-info">
 										<h4 class="text-center">¿Cuanto cuesta?</h4>
-										<p>El costo es de $290.000</p>
+										<p>El costo es de $230.000</p>
 										<p>Puede usarse para elaborar declaraciones de renta ilimitadas.
 											<br>
 											<strong>Le garantizamos que no perderá su inversión!</strong>
@@ -179,7 +181,7 @@
 
 									<hr>
 										<div class="text text-center">
-											<a href="https://biz.payulatam.com/L07ad0920A592D4"><img src="https://contabilizalo.com/images/btn_comprar_contabilizalo.png"></a>
+											<a href="https://biz.payulatam.com/L07ad0976CD0560"><img src="https://contabilizalo.com/images/btn_comprar_contabilizalo.png"></a>
 										</div>
 									<hr>
 

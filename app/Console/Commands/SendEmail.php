@@ -40,10 +40,10 @@ class SendEmail extends Command
      */
     public function handle()
     {      
-      $until = $this->ask('how many emails?');
-      
-      $registers = Suscriber:://whereNull('times') 
-                            where('times', 1)
+      $until = $this->ask('how many emails?');      
+
+      $registers = Suscriber::whereNull('times') 
+                            //where('times', 1)
                             ->orderBy('id', 'desc')       
                             ->take((int)$until)                    
                             ->get(); 

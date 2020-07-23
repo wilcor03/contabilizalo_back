@@ -1,20 +1,30 @@
 @component('mail::message')
-<img src="https://detrips.com/img/rifa_bici.png" />
+<img src="https://contabilizalo.dev/images/banner_promo_renta_naturales_seminario_email.png" />
 <br>
-# Hola, {{ strtoupper($suscriber->name) }}
+# Hola, {{ strtoupper($suscriber->name) }}. <a href="https://contabilizalo.com" target="_blank">ConTabilizalo.com</a> te trae:
 
-Soy <strong>Wilmer Cordoba</strong> de <strong>ConTabilizalo.com</strong>
-y por ser navidad voy a rifar una <strong>SUPER BICICLETA DTFLY MAX</strong> en Aluminio Rin 27.5" entre los suscriptores de mi nuevo canal. Es totalmente gratis, asi que ve a este enlace y enterate de como inscribirte: <strong><i>(Mira el Video para que obtengas mas oportunidades de ganar).</i></strong><br>
+
+
+<h1 style="text-align: center; color:#009450;">Liquidador de renta personas naturales + Seminario virtual de actualización</h1>
+
+Liquidar la renta para personas naturales nunca fue tan sencillo.<br>
+
+En ConTabilizalo.com te ayudamos, descarga ahora mismo la herramienta <strong style="color:blue;">PEOPLE TAX</strong>
+y ahorra tiempo y dinero.
+
+<strong>El tiempo se acaba!.</strong> El seminario de actualización se llevará a cabo el día 24 de Julio de 2020 a las 5pm.
+
+<strong>Seminarista</strong>: William Dussán Salazar, especialista en Derecho Tributario, Fundador de www.consultorcontable.com.
 
 @component('mail::panel')
-@component('mail::button', ['url' => 'https://detrips.com/gana-premios', 'color' => 'green'])
-INSCRIBIRME EN LA RIFA >>
+@component('mail::button', ['url' => 'https://contabilizalo.com/promo/descargar-aplicativo-renta-personas-naturales', 'color' => 'green'])
+DESCARGAR LIQUIDADOR DE RENTA >>
 @endcomponent
 @endcomponent
 
 
 @component('mail::panel')
-Saludossss,<br>
-# Wilmer C. - <a target="_blank" href="https://contabilizalo.com">{{ config('app.name') }}</a>
+Saludos,<br>
+# Grupo de - <a target="_blank" href="https://contabilizalo.com">{{ config('app.name') }}</a>
 @endcomponent
 @endcomponent

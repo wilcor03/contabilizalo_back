@@ -56,7 +56,7 @@
 @section('content')	
 <br>
 	<picture class="text-center">
-	   {!! Html::image('images/banner-cabecera-renta-personas-naturales.jpg', 'renta personas Naturales en Excel', ['height' => '220px','class' => 'img-responsive']) !!}
+	   {!! Html::image('images/banner-cabecera-renta-personas-naturales-ok.jpg', 'renta personas Naturales en Excel', ['height' => '220px','class' => 'img-responsive']) !!}
 	</picture>
 
 	<hr>

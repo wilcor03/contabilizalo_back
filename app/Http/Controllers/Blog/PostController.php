@@ -267,4 +267,8 @@ class PostController extends Controller
     return view('Blog.promo.renta_p_naturales');
   }
 
+  public function promoExcel(){
+    return view('Blog.promo.excel-vba');
+  }
+
 }

@@ -109,6 +109,8 @@ Route::group(['namespace' => 'Blog'], function() {
 	Route::get('promo/descargar-aplicativo-renta-personas-juridicas', ['as' => 'promo.apl.renta.j', 'uses' => 'PostController@promoApl']);
 
 	Route::get('promo/venta-de-cursos', ['as' => 'promo.courses', 'uses' => 'PostController@promoCourses']);
+
+	Route::get('promo/curso-excel-macros-vba', ['as' => 'promo.excel-vba', 'uses' => 'PostController@promoExcel']);
 	
 	/*
 	|--------------------------------------

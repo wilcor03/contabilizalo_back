@@ -109,8 +109,10 @@
       	<a href="https://api.whatsapp.com/send?phone=573124910627&text=Hola,%20me%20gustaría%20tener%20mas%20información%20acerca%20del%20curso." target="_blank" class="waves-effect waves-light btn-large red"><i class="material-icons left">message</i>¿TIENES PREGUNTAS?</a>
       </div>
 
-      <a href="https://api.whatsapp.com/send?phone=573124910627&text=Hola,%20me%20gustaría%20tener%20mas%20información%20acerca%20del%20curso." target="_blank" style="position: fixed; right: 30px; bottom: 30px;" class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">message</i></a>
+      <a href="https://api.whatsapp.com/send?phone=573124910627&text=Hola,%20me%20gustaría%20tener%20mas%20información%20acerca%20del%20curso." target="_blank" style="position: fixed; right: 30px; bottom: 30px;" class="btn-floating btn-large waves-effect waves-light green"><i class="material-icons">message</i></a>      
 
+      <h3 class="header">¿Que herramientas necesito para acceder al curso?</h3>      
+      <p class="grey-text"><i class="material-icons green-text">check_circle</i> Un computador con acceso a internet<br><i class="material-icons green-text">check_circle</i> Conocimientos Básicos sobre Excel. <br><i class="material-icons green-text">check_circle</i> Un Computador con Windows y Excel, NO IMPORTA LA VERSIÓN. (Paquete Office) instalado.</p>      
       <br><br>
 	  </div>
 

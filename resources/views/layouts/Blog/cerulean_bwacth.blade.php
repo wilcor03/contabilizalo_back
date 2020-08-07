@@ -76,18 +76,25 @@
           <br>-->
           
           @if(Route::currentRouteName() != "promo.apl.renta.j" && Route::currentRouteName() != "promo.apl.renta")
-          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
           <!-- 01. right_in_posts -->
-          <ins class="adsbygoogle"
+          <!--<ins class="adsbygoogle"
                style="display:inline-block;width:300px;height:600px"
                data-ad-client="ca-pub-6749239594655834"
                data-ad-slot="4339069736"></ins>
           <script>
           (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
-          <hr>
+          <hr>-->
 
           @endif
+          <a href="{{ route('promo.excel-vba') }}" target="_blank" title="Video curso Macros y VBA Excel - Programación en Excel">
+            <picture class="text-center">
+              {!! Html::image('images/banner_contabilizalo_promo_vba.png', 'Macros y VBA Excel', ['width' => '280','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
+                box-shadow: 1px 2px 2px #000;']) !!}
+            </picture>
+          </a>
+
           <br>
           <a href="{{ route('promo.apl.renta') }}" title="Descarga Liquidador Renta Personas Naturales">
             <picture class="text-center">

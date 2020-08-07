@@ -127,6 +127,15 @@
       </section>
 
       <div class="col-sm-3">
+
+        <a href="{{ route('promo.excel-vba') }}" target="_blank" title="Video curso Macros y VBA Excel - Programación en Excel">
+          <picture class="text-center">
+            {!! Html::image('images/banner_contabilizalo_promo_vba.png', 'Macros y VBA Excel', ['width' => '280','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
+              box-shadow: 1px 2px 2px #000;']) !!}
+          </picture>
+        </a>
+        <br>
+
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- 01. right_in_posts -->
         <ins class="adsbygoogle"

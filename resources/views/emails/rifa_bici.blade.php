@@ -1,24 +1,22 @@
 @component('mail::message')
-<img src="https://contabilizalo.dev/images/banner_promo_renta_naturales_seminario_email.png" />
+<img src="https://contabilizalo.com/images/macros_y_no_morir_en_el_intento.png" />
 <br>
-# Hola, {{ strtoupper($suscriber->name) }}. <a href="https://contabilizalo.com" target="_blank">ConTabilizalo.com</a> te trae:
+# Hola, {{ strtoupper($suscriber->name) }}. <a href="https://contabilizalo.com" target="_blank">ConTabilizalo.com</a> quiere que te capacites en:
 
 
 
-<h1 style="text-align: center; color:#009450;">Liquidador de renta personas naturales + Seminario virtual de actualización</h1>
+<h1 style="text-align: center; color:orange;">Video Curso de Macros y VBA Excel</h1>
+<h3 style="text-align: center; color:#4bc74b;"><i>Aprende a programar y automatizar procesos en Excel sin morir en el intento.</i></h3>
 
-Liquidar la renta para personas naturales nunca fue tan sencillo.<br>
+Excel es imprescindible en la gestión empresarial, por lo que aprender a manejar de manera óptima esta herramienta te dará muchas mas oportunidades.<br>
 
-En ConTabilizalo.com te ayudamos, descarga ahora mismo la herramienta <strong style="color:blue;">PEOPLE TAX</strong>
-y ahorra tiempo y dinero.
+Gracias a <strong>Excel, las Macros y VBA</strong> es posible automatizar en un alto grado todos esos reportes repetitivos y complejos que debemos elaborar en nuestro diario trasegar.
 
-<strong>El tiempo se acaba!.</strong> El seminario de actualización se llevará a cabo el día 24 de Julio de 2020 a las 5pm.
-
-<strong>Seminarista</strong>: William Dussán Salazar, especialista en Derecho Tributario, Fundador de www.consultorcontable.com.
+<strong>El tiempo se acaba!.</strong> Suscribete ahora mismo!.
 
 @component('mail::panel')
-@component('mail::button', ['url' => 'https://contabilizalo.com/promo/descargar-aplicativo-renta-personas-naturales', 'color' => 'green'])
-DESCARGAR LIQUIDADOR DE RENTA >>
+@component('mail::button', ['url' => 'https://contabilizalo.com/promo/curso-excel-macros-vba', 'color' => 'green'])
+VER DETALLES DEL CURSO >>
 @endcomponent
 @endcomponent
 

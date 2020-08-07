@@ -31,6 +31,6 @@ class DetripsRaffleEmail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Liquidador de renta en Excel P. Naturales + Actualización Virtual')->markdown('emails.rifa_bici');
+        return $this->subject('Video Curso Macros y VBA Excel.')->markdown('emails.rifa_bici');
     }
 }

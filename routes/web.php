@@ -69,10 +69,10 @@ Route::group(['middleware' => 'auth.basic'], function(){
 /*----------------------------
 ! PUBLIC ROUTES
 -----------------------------*/
-Route::get('emails', function(){
+/*Route::get('emails', function(){
 	$suscriber = App\Suscriber::find(1);
 	return (new App\Mail\DetripsRaffleEmail($suscriber))->render();
-});
+});*/
 
 Route::get('redirecting-to-detrips', 'UserController@clickOnEmail')->name('redir.detrips');
 
@@ -111,6 +111,14 @@ Route::group(['namespace' => 'Blog'], function() {
 	Route::get('promo/venta-de-cursos', ['as' => 'promo.courses', 'uses' => 'PostController@promoCourses']);
 
 	Route::get('promo/curso-excel-macros-vba', ['as' => 'promo.excel-vba', 'uses' => 'PostController@promoExcel']);
+
+	/*
+	|-------------------
+	| WHO WE ARE
+	|--------------------	
+	*/
+
+	Route::get('conta/quienes-somos', 'PostController@whoWeAre');
 	
 	/*
 	|--------------------------------------

@@ -56,8 +56,8 @@ class UserController extends Controller
     return;
 
 
-    echo 
-    /*'<div style="margin:0 auto 0; width:400px; font-size:40px; font-family:verdana; color:orange; text-shadow:1px 1px 1px #000;">
+    /*echo 
+    '<div style="margin:0 auto 0; width:400px; font-size:40px; font-family:verdana; color:orange; text-shadow:1px 1px 1px #000;">
       <p>Redireccionando...</p>
     </div>';*/
 

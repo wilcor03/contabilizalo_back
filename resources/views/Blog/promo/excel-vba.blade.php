@@ -35,11 +35,12 @@
 	    	<img src="{{ asset('logocontabilizalo-300x82.png') }}" width="135" class="logo">
 	    </a>
 	      <ul class="right hide-on-med-and-down">
-	        <li><a href="/">Blog</a></li>
+	      	<li><a href="/conta/quienes-somos">Quienes somos</a></li>
+	        <li><a href="/">Blog</a></li>	        
 	      </ul>
 
 	      <ul id="nav-mobile" class="sidenav">
-	        <li><a href="/">Blog</a></li>
+	        <li><a href="/">Blog</a></li>	        
 	      </ul>
 	      <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 	    </div>
@@ -60,6 +61,7 @@
 	    <li><a class="subheader">EXCEL</a></li>
 	    <li><a class="waves-effect" href="/curso-de-excel-gratis">Excel Básico</a></li>
 	    <li><a class="waves-effect" href="/curso-de-excel-avanzado-gratis">Excel Profesional</a></li>
+	    <li><a href="/conta/quienes-somos">Quienes somos</a></li>
 	  </ul>
 
 	  <div class="section no-pad-bot" id="index-banner">

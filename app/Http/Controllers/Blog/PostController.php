@@ -271,4 +271,8 @@ class PostController extends Controller
     return view('Blog.promo.excel-vba');
   }
 
+  public function whoWeAre(){
+    return view('Blog.promo.who-we-are');
+  }
+
 }

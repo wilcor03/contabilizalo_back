@@ -75,7 +75,18 @@
 	  </div>
 
 	  <div class="container">
-	  	<p class="grey-text">Si eres profesional o estudiante, este curso es para ti. Alrededor del mundo, muchas empresas se apoyan en el uso de MS Excel para realizar diversas taréas, sin embargo, la utilización de esta herramienta tiene ciertos limites a la hora de automatizar procesos, es por eso que en este curso aprenderemos a sacar todo el potencial de Excel gracias a VBA. De tal manera que al finalizar podremos aplicar estos conocimientos en nuestro día a día lo que nos permitirá ser mucho mas eficientes en nuestro trabajo, ahorrando mucho tiempo en nuestras taréas. Excel no es solo gráficos o tablas dinámicas. Gracias a Visual Basic es posible desarrollar desde cosas muy simples hasta complejos sistemas que incluso se pueden llegar a comercializarse.</p>	  	
+	  	<div class="row">
+	  		<div class="col m7">
+	  			<p class="grey-text">Si eres profesional o estudiante, este curso es para ti. Alrededor del mundo, muchas empresas se apoyan en el uso de MS Excel para realizar diversas taréas, sin embargo, la utilización de esta herramienta tiene ciertos limites a la hora de automatizar procesos, es por eso que en este curso aprenderemos a sacar todo el potencial de Excel gracias a VBA. De tal manera que al finalizar podremos aplicar estos conocimientos en nuestro día a día lo que nos permitirá ser mucho mas eficientes en nuestro trabajo, ahorrando mucho tiempo en nuestras taréas. Excel no es solo gráficos o tablas dinámicas. Gracias a Visual Basic es posible desarrollar desde cosas muy simples hasta complejos sistemas que incluso se pueden llegar a comercializarse.</p>		
+	  		</div>
+	  		<div class="col m5 mt-5">
+	  			<p>
+		  			<video id="wilvideo" class="responsive-video" controls autoplay>
+	            <source src="/videos/Video_intro_curso_macros_udemy.mp4" type="video/mp4">
+	          </video>
+     			</p>	  			
+	  		</div>
+	  	</div>	  		  		  	
 
 	  	<h3 class="header">Resumen del temario:</h3>
 
@@ -152,6 +163,9 @@
 	    </div>
 	  </footer>
 
+	  @include('partials.modal_promo')
+
+	  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript">

@@ -36,7 +36,17 @@
 	    </a>
 	      <ul class="right hide-on-med-and-down">
 	      	<li><a href="/conta/quienes-somos">Quienes somos</a></li>
-	        <li><a href="/">Blog</a></li>	        
+	        <li><a href="/">Blog</a></li>
+	        <li>
+	        	<a target="_blank" href="https://www.youtube.com/c/Contabilizalo">
+	        		Canal Youtube
+	        	</a>
+	       	</li>
+	        <li>
+	        	<a target="_blank" href="https://www.youtube.com/c/Contabilizalo">
+	        		<i class="material-icons">ondemand_video</i>
+	        	</a>
+	       	</li>
 	      </ul>
 
 	      <ul id="nav-mobile" class="sidenav">
@@ -62,6 +72,11 @@
 	    <li><a class="waves-effect" href="/curso-de-excel-gratis">Excel Básico</a></li>
 	    <li><a class="waves-effect" href="/curso-de-excel-avanzado-gratis">Excel Profesional</a></li>
 	    <li><a href="/conta/quienes-somos">Quienes somos</a></li>
+	    <li>
+      	<a target="_blank" href="https://www.youtube.com/c/Contabilizalo">
+      		Canal Youtube
+      	</a>
+     	</li>
 	  </ul>
 
 	  <div class="section no-pad-bot" id="index-banner">

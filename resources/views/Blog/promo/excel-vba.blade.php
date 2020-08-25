@@ -8,6 +8,20 @@
 
     <title>Video Curso de Macros y VBA Excel - ConTabilizalo.com</title>
 
+    <meta name="description" content="Video Curso Online - Aprende a Programar en Visual Basic para Excel, Domina las Macros de Excel de forma práctica y eficáz"/>
+		<meta name="robots" content="noodp"/>
+		<link rel="canonical" href="{{ request()->url() }}" />
+		<meta property="og:locale" content="es_ES" />
+		<meta property="og:type" content="article" />
+		<meta property="og:title" content="Video Curso Online Macros y VBA Excel ConTabilizalo" />
+		<meta property="og:description" content="Video Curso Online - Aprende a Programar en Visual Basic para Excel, Domina las Macros de Excel de forma práctica y eficáz" />
+		<meta property="og:url" content="{{ request()->url() }}" />
+		<meta property="og:site_name" content="Contabilizalo" />
+		<meta property="article:author" content="https://www.facebook.com/pages/Contabilizalocom/559714470714981" />
+		<meta property="article:section" content="Cursos Online programación en Visual Basic de Excel" />		
+		<meta property="article:tag" content="Curso de programación en Visual basic excel, VBA Excel, Visual Basic Excel, vba udemy, macros en excel, curso de macros, codigo vba, vba excel 2019, programación en vba excel, que es vba de excel, como aprender a programar en excel" />
+		
+
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" href="https://contabilizalo.com/favicon.png" type="image/x-icon" />

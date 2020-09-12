@@ -40,7 +40,7 @@
 			        <div class="input-field col m12">
 			        	<i class="material-icons prefix">format_list_bulleted</i>
 			          <select name="program" id="programs" required class="validate">
-						      <option value="" disabled selected>Elije uno</option>
+						      <option value="" disabled selected>Elije uno...</option>
 						      @foreach($courses as $course)
 						      	<option value="{{ $course->title }}">{{ $course['title'] }}</option>
 						      @endforeach

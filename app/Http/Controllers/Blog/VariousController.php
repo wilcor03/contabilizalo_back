@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Mail\CourseSuscriber;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
 
 use App\Models\Course;
 
@@ -26,11 +27,20 @@ class VariousController extends Controller
 
   	try {
   		$data = $r->all();
+  		$contents = $r->name."|".$r->cel."|".$r->program."|".$r->email;
+  		$this->writeFile($contents);  		
   		Mail::to("wilcor03@gmail.com")->queue(new CourseSuscriber($data));	
   	} catch (Exception $e) {
   		return response()->json(['success' => false], 500);
   	}  	
   	return response()->json(['success' => true]);
+  }
+
+  private function writeFile($content){
+  	$path = storage_path()."/app/COURSE_REGS.txt";  	
+  	$courseReg = fopen($path, "a") or die("Unable to open file!");
+  	fwrite($courseReg, $content.PHP_EOL);
+  	fclose($courseReg);
   }
 
   public function courseDetail($slug){

@@ -17,6 +17,13 @@ class VariousController extends Controller
   }
 
   public function contact(Request $r){
+  	$r->validate([
+  		'name' 		=> 'required',
+  		'cel' 		=> 'required',
+  		'program' => 'required',
+  		'email'   => 'email|nullable'
+  	]);
+
   	try {
   		$data = $r->all();
   		Mail::to("wilcor03@gmail.com")->queue(new CourseSuscriber($data));	

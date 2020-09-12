@@ -93,7 +93,7 @@
 	          <ul>
 	          	<li class="center"><h5>Incluye:</h5></li>
 	          	@foreach($course->short_description['options'] as $opt)
-	          	<li><i class="material-icons green-text text-darken-2">check_circle</i> {{ $opt }}</li>
+	          	<li @if($loop->first) data-position="top" data-tooltip="Reuniones virtuales grupales de soporte" class="tooltipped" @endif><i class="material-icons green-text text-darken-2">check_circle</i> {{ $opt }}</li>
 	          	@endforeach
 	          </ul>	      
 	          <p>
@@ -151,6 +151,7 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 	    $('select').formSelect();
+	    $('.tooltipped').tooltip();
 	    
 	    var elems = document.querySelectorAll('.modal-info');
     	var instances = M.Modal.init(elems);

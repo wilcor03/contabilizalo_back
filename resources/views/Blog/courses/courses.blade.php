@@ -6,7 +6,7 @@
 		<div class="col m6">
 
 			<div style="background: rgba(117, 16, 16, 0.8); border-radius: 14px;box-shadow: 3px 3px 5px #fff;">
-				<h1 style="padding: 10px; text-shadow: 1px 1px 5px #000;" class="center #4db6ac white-text text-lighten-2">Conviertete en técnico laboral.</h1>
+				<h1 style="padding: 10px; text-shadow: 1px 1px 5px #000;" class="center #4db6ac white-text text-lighten-2">Conviertete en técnico laboral. <small style="font-size: 1.4rem;">(Certificado)</small></h1>
 				<hr>
 				<h2 class="center #4db6ac white-text text-lighten-2" style="padding: 20px; font-size: 1.56rem;"><i>Certificate como <strong>Auxiliar administrativo</strong>, Auxiliar contable, Técnico en primera infancia</strong> y múcho más.</i></h2>
 			</div>

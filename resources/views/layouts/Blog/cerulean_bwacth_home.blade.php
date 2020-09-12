@@ -21,7 +21,7 @@
       <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
       <script src="../bower_components/respond/dest/respond.min.js"></script>
     <![endif]-->    
-    {!! Html::script("https://use.fontawesome.com/1d29805766.js") !!}
+    {!! Html::script("https://use.fontawesome.com/050f874abd.js") !!}    
     <style type="text/css">
       .container{
         margin-top:60px;"
@@ -35,9 +35,8 @@
     
     <div class="container">      
       @yield('content')     
-      
-      @include('layouts.Blog.partials.footer')
     </div> <!-- end container -->
+    @include('layouts.Blog.partials.footer')
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
     <script src="{!! asset('bower_components/bootstrap/dist/js/bootstrap.min.js') !!}"></script>

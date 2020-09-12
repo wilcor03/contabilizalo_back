@@ -53,7 +53,7 @@
           </header>
           <section>
             <article>            
-                @yield('content')
+              @yield('content')
             </article>
           </section>
         </div>
@@ -141,10 +141,9 @@
         </div>
       </div>  
 
-
-      @include('layouts.Blog.partials.footer')
-      @include('partials.modal_promo')
+      {{--@include('partials.modal_promo')--}}
     </div> <!-- end container -->
+    @include('layouts.Blog.partials.footer')
 
 
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>    

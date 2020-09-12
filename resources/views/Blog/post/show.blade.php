@@ -50,7 +50,7 @@
 		</script>
 	</div><hr>
 
-	@include('partials.mailchimp_form')
+	{{--@include('partials.mailchimp_form')--}}
 
 	@if($post->principal_image)
 	<picture class="text-center">

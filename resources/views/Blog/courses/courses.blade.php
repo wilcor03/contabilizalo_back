@@ -190,7 +190,7 @@
 	    		var instance = M.Modal.init(modal);	    		
 	    		setTimeout(function(){
   					instance.close();		
-  				}, 2000);
+  				}, 5000);
     			
     			instance.open();
 

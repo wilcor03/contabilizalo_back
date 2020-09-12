@@ -136,7 +136,7 @@ Route::group(['namespace' => 'Blog'], function() {
 	|---------------------------------------
 	*/
 	
-	Route::get('cursos/listado', 'VariousController@cursos');
+	Route::get('cursos/tecnicos', 'VariousController@cursos');
 	Route::post('cursos/contact', 'VariousController@contact');
 	/*Route::get('cursos/detalle/{slug}', 'VariousController@courseDetail')->name('course.detail');*/
 });

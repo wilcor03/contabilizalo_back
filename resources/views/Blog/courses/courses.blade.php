@@ -80,7 +80,7 @@
 
   <div>
   	<h3 class="center #4db6ac teal-text text-lighten-2">
-  		TÉCNICOS LABORALES
+  		PROGRAMAS TÉCNICO - LABORALES
   	</h3>
 
   	<div class="row">
@@ -194,6 +194,7 @@
     			
     			instance.open();
 
+    			_form.trigger("reset");
 	    	});
 	    });
 

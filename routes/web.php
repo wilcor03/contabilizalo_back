@@ -74,7 +74,7 @@ Route::group(['middleware' => 'auth.basic'], function(){
 	return (new App\Mail\DetripsRaffleEmail($suscriber))->render();
 });*/
 
-Route::get('redirecting-to-detrips', 'UserController@clickOnEmail')->name('redir.detrips');
+/*Route::get('redirecting-to-detrips', 'UserController@clickOnEmail')->name('redir.detrips');*/
 
 Route::get('/', ['as' => 'home', 'uses' => 'UserController@home']);
 
@@ -129,7 +129,20 @@ Route::group(['namespace' => 'Blog'], function() {
 	Route::get('payu/pago-exitoso', ['as' => 'payu.success', 'uses' => 'PostController@payStates']);
 	Route::get('payu/pago-no-exitoso', ['as' => 'payu.no.success', 'uses' => 'PostController@payStates']);
 	Route::get('payu/pago-pendiente', ['as' => 'payu.pending', 'uses' => 'PostController@payStates']);
+
+	/*
+	|---------------------------------------
+	| COURSES
+	|---------------------------------------
+	*/
 	
+	Route::get('cursos/listado', 'VariousController@cursos');
+	Route::post('cursos/contact', 'VariousController@contact');
+	/*Route::get('cursos/detalle/{slug}', 'VariousController@courseDetail')->name('course.detail');*/
+});
+
+Route::get('courses/test', function(){
+  return (new App\Mail\CourseSuscriber(request()))->render(); 
 });
 
 ### APP DIAN

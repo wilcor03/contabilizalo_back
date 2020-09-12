@@ -21,8 +21,7 @@ class CourseSuscriber extends Mailable
 
     public function __construct($data)
     {
-        $this->data = $data;
-        dd($data->name);        
+        $this->data = $data;            
     }
 
     /**

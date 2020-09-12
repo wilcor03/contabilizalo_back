@@ -135,7 +135,7 @@
   </div>
 
   <!-- Modal Structure -->
-  <div id="modalalert" class="modal modal-alert modal-fixed-footer center" style="max-width: 450px; max-height: 300px;">
+  <div id="modalalert" class="modal modal-alert modal-fixed-footer center" style="max-width: 450px; max-height: 350px;">
     <div class="modal-content">
       <h4>Gracias por contactarnos!</h4>
       <i class="large material-icons green-text">check_circle</i>
@@ -188,7 +188,10 @@
 	    		$('#btn-submit').attr('disabled', false);
 	    		$('#btn-submit').html('Solicitar Información');
 	    		var modal = document.getElementById('modalalert');	    			    		
-	    		var instance = M.Modal.init(modal);	    		
+	    		var options = {
+	    			preventScrolling: false
+	    		};
+	    		var instance = M.Modal.init(modal, options);	    		
 	    		setTimeout(function(){
   					instance.close();		
   				}, 5000);

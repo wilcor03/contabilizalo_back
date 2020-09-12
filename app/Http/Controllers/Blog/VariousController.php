@@ -18,7 +18,8 @@ class VariousController extends Controller
 
   public function contact(Request $r){
   	try {
-  		Mail::to("wilcor03@gmail.com")->queue(new CourseSuscriber($r));	
+  		$data = $r->all();
+  		Mail::to("wilcor03@gmail.com")->queue(new CourseSuscriber($data));	
   	} catch (Exception $e) {
   		return response()->json(['success' => false], 500);
   	}  	

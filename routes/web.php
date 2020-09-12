@@ -142,7 +142,8 @@ Route::group(['namespace' => 'Blog'], function() {
 });
 
 Route::get('courses/test', function(){
-  return (new App\Mail\CourseSuscriber(request()))->render(); 
+	$data = request()->all();
+  return (new App\Mail\CourseSuscriber($data))->render(); 
 });
 
 ### APP DIAN

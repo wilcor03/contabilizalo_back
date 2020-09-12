@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Blog;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Email\CourseSuscriber;
+use App\Mail\CourseSuscriber;
 use Illuminate\Support\Facades\Mail;
 
 use App\Models\Course;

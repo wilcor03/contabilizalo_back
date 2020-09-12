@@ -134,11 +134,6 @@
     </div>
   </div>
 
-
-
-  <!-- Modal Trigger -->
-  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
-
   <!-- Modal Structure -->
   <div id="modalalert" class="modal modal-alert modal-fixed-footer center" style="max-width: 450px;">
     <div class="modal-content">

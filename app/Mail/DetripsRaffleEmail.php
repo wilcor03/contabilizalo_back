@@ -31,6 +31,6 @@ class DetripsRaffleEmail extends Mailable
      */
     public function build()
     {
-        return $this->subject('Video Curso Macros y VBA Excel.')->markdown('emails.rifa_bici');
+        return $this->subject('Formate como Técnico Laboral - Ingles')->markdown('emails.rifa_bici');
     }
 }

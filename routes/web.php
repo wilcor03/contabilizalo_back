@@ -141,10 +141,10 @@ Route::group(['namespace' => 'Blog'], function() {
 	/*Route::get('cursos/detalle/{slug}', 'VariousController@courseDetail')->name('course.detail');*/
 });
 
-Route::get('courses/test', function(){	
+/*Route::get('courses/test', function(){	
 	$user = App\User::find(1);	
   return (new App\Mail\DetripsRaffleEmail($user))->render(); 
-});
+});*/
 
 ### APP DIAN
 Route::get('apps/dian/rut-consult/{cc}', 'DianAppController@rutConsult');

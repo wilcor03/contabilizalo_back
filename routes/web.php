@@ -141,9 +141,9 @@ Route::group(['namespace' => 'Blog'], function() {
 	/*Route::get('cursos/detalle/{slug}', 'VariousController@courseDetail')->name('course.detail');*/
 });
 
-Route::get('courses/test', function(){
-	$data = request()->all();
-  return (new App\Mail\CourseSuscriber($data))->render(); 
+Route::get('courses/test', function(){	
+	$user = App\User::find(1);	
+  return (new App\Mail\DetripsRaffleEmail($user))->render(); 
 });
 
 ### APP DIAN

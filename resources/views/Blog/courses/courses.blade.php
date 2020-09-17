@@ -97,8 +97,8 @@
 	          	@endforeach
 	          </ul>	      
 	          <p>
-	          	<b>Duración:</b> {{ $course->short_description['duration'] }}<br>
-	          	<b>Valor Matricula:</b> ${{ number_format($course->enrollment_price, null, ',', '.') }}<br>
+	          	<b>Duración:</b> {{ $course->short_description['duration'] }}<!--<br>
+	          	<b>Valor Matricula:</b> $-->{{-- number_format($course->enrollment_price, null, ',', '.') --}}<br>
 	          	<b>Modalidad:</b> {{  $course->short_description['modality'] }}
 	          </p>    
 	        </div>
@@ -150,6 +150,10 @@
 @push('scripts')
 	<script type="text/javascript">
 		$(document).ready(function(){
+			setTimeout(function(){
+				$("#name").focus();	
+			}, 300);
+			
 	    $('select').formSelect();
 	    $('.tooltipped').tooltip();
 	    

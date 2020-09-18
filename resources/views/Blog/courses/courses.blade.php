@@ -10,7 +10,7 @@
 				<hr>
 				<h2 class="center #4db6ac white-text text-lighten-2" style="padding: 20px; font-size: 1.56rem;"><i>Certificate como <strong>Auxiliar administrativo</strong>, Auxiliar contable, Técnico en primera infancia</strong> y múcho más.</i></h2>
 				<picture class="text-center">
-              {!! Html::image('images/min_edu.png', 'Macros y VBA Excel', ['width' => '280','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
+              {!! Html::image('images/min_edu.png', 'Min educación Contabilizalo - Hemisferio sur', ['width' => '280','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
                 box-shadow: 1px 2px 2px #000;']) !!}
             </picture>
 			</div>

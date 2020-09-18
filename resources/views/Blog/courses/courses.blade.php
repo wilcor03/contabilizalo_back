@@ -5,10 +5,14 @@
 		
 		<div class="col m6">
 
-			<div style="background: rgba(117, 16, 16, 0.8); border-radius: 14px;box-shadow: 3px 3px 5px #fff;">
+			<div style="background: rgba(117, 16, 16, 0.8); border-radius: 14px;box-shadow: 3px 3px 5px #fff; text-align: center;">
 				<h1 style="padding: 10px; text-shadow: 1px 1px 5px #000;" class="center #4db6ac white-text text-lighten-2">Conviertete en técnico laboral. <small style="font-size: 1.4rem;">(Certificado)</small></h1>
 				<hr>
 				<h2 class="center #4db6ac white-text text-lighten-2" style="padding: 20px; font-size: 1.56rem;"><i>Certificate como <strong>Auxiliar administrativo</strong>, Auxiliar contable, Técnico en primera infancia</strong> y múcho más.</i></h2>
+				<picture class="text-center">
+              {!! Html::image('images/min_edu.png', 'Macros y VBA Excel', ['width' => '280','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
+                box-shadow: 1px 2px 2px #000;']) !!}
+            </picture>
 			</div>
 
 		</div>

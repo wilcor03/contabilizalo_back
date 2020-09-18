@@ -73,21 +73,15 @@
             box-shadow: 1px 2px 2px #000;']) !!}
         </picture>
         </a>
-          <br>-->
+          <br>-->          
           
-          @if(Route::currentRouteName() != "promo.apl.renta.j" && Route::currentRouteName() != "promo.apl.renta")
-          <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
-          <!-- 01. right_in_posts -->
-          <!--<ins class="adsbygoogle"
-               style="display:inline-block;width:300px;height:600px"
-               data-ad-client="ca-pub-6749239594655834"
-               data-ad-slot="4339069736"></ins>
-          <script>
-          (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
-          <hr>-->
-
-          @endif
+          <a href="{{ url('cursos/tecnicos') }}" title="Cursos Técnicos laborales Colombia">
+          <picture class="text-center">
+            {!! Html::image('images/banner_hemisferio_cursos.jpg', 'Formación técnico laboral Colombia', ['width' => '280px','height' => '220px','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
+              box-shadow: 1px 2px 2px #000;']) !!}
+          </picture>
+          </a>
+          <br>
           <a href="{{ route('promo.excel-vba') }}" target="_blank" title="Video curso Macros y VBA Excel - Programación en Excel">
             <picture class="text-center">
               {!! Html::image('images/banner_contabilizalo_promo_vba.png', 'Macros y VBA Excel', ['width' => '280','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
@@ -103,6 +97,18 @@
             </picture>
           </a>
           <br>
+
+          @if(Route::currentRouteName() != "promo.apl.renta.j" && Route::currentRouteName() != "promo.apl.renta")
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- 01. right_in_posts -->
+            <ins class="adsbygoogle"
+                 style="display:inline-block;width:300px;height:600px"
+                 data-ad-client="ca-pub-6749239594655834"
+                 data-ad-slot="4339069736"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          @endif
           <!--<a target="_blank" href="https://trabajo.contabilizalo.com/app/auth/pre-register" title="Encontrar ofertas de empleo en Colombia">
             <picture class="text-center">
               {!! Html::image('images/empleo-trabajador.png', 'Encontrar trabajo en Colombia', ['width' => '280px','height' => '220px','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;

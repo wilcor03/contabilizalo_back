@@ -67,4 +67,32 @@
       </ul>
     </div>
   </div>
+  <div class="row footer navbar-fixed-bottom" style="background: #3db53d; box-shadow: 0px -2px 5px #000;">
+		<div class="col-md-7 text-center">						
+			<!--<p style="padding:2%; font-size: 2.3rem; text-shadow: 1px 1px 1px #000;">			
+	  		Curso Macros + VBA Excel
+	  		<br><small style="color:yellow;">Videos + Formatos + Asesoría</small>
+  		</p>  --> 	
+
+  		<div class="media" style="padding:2%; font-size: 2.3rem; text-shadow: 1px 1px 1px #000;">
+			  <div class="media-left">
+			    <a href="{{ route('promo.excel-vba') }}">
+			      <img class="media-object" src="{{ asset('images/logoexcel.png') }}" alt="curso macros y vba excel ConTabilizalo.com">
+			    </a>
+			  </div>
+			  <div class="media-body">
+			    <p class="media-heading">
+			    	<a href="{{ route('promo.excel-vba') }}" style="color:#fff; text-decoration: underline;">Curso Macros + VBA Excel</a>
+	  				<br><small style="color:yellow;">Videos + Formatos + Asesoría</small>
+			    </p>			    
+			  </div>
+			</div>
+
+		</div>  
+		<div class="col-md-3 text-center">			
+			<p style="margin-top: 20px;">
+				<a href="{{ route('promo.excel-vba') }}" class="btn btn-danger">Mas información>></a> 
+			</p>
+		</div>	
+  </div>
 </footer>

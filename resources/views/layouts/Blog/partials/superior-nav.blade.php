@@ -44,7 +44,8 @@
               <a title="Curso de Contabilidad Intermedia - Avanzada" href="{{ route('post.show', 'curso-de-contabilidad-gratis-en-colombia') }}"><i class="fa fa-battery-three-quarters" aria-hidden="true"></i> Contabilidad Intermedia</a></li>
 
               <li>
-              <a title="Publicaciones contabilizalo.com" href="{{ url('publicaciones-contabilizalo') }}"> Publicaciones</a></li>                  
+              <a title="Publicaciones contabilizalo.com" href="{{ url('publicaciones-contabilizalo') }}"><i class="fa fa-align-justify text-success"></i> Publicaciones</a></li><li>
+              <a title="Curso Wordpress desde Cero" href="{{ url('sitio-web-desde-cero-con-wordpress') }}"> <i class="fa fa-wordpress text-info" aria-hidden="true"></i> Curso Wordpress</a></li>                  
           </ul>
         </li>
         <li class="dropdown">

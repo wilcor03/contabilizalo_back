@@ -57,7 +57,7 @@
           <script>
           (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
-          <br>
+          <hr>
 
           <a href="{{ route('promo.excel-vba') }}" target="_blank" title="Video curso Macros y VBA Excel - Programación en Excel">
             <picture class="text-center">
@@ -104,7 +104,7 @@
             <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
-            <br>
+            <hr>
           @endif       
           
           <a href="{{ url('cursos/tecnicos') }}" title="Cursos Técnicos laborales Colombia">

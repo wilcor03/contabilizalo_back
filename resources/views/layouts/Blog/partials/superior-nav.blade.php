@@ -1,9 +1,9 @@
 @if(Route::currentRouteName() != "home" && Route::currentRouteName() != "post.promo.apl")
-<div class="row header_ads hidden-xs hidden-sm">
+<!--<div class="row header_ads hidden-xs hidden-sm">
   <div class="col-sm-12">
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
     <!-- 06. Header -->
-    <ins class="adsbygoogle"
+    <!--<ins class="adsbygoogle"
          style="display:block"
          data-ad-client="ca-pub-6749239594655834"
          data-ad-slot="1029636531"
@@ -13,7 +13,7 @@
     </script>
   </div>
 </div>
-<div data-spy="affix" data-offset-top="60" data-offset-bottom="200">
+<div data-spy="affix" data-offset-top="60" data-offset-bottom="200">-->
 @endif
 
 <nav class="navbar navbar-default navbar-fixed-top">

@@ -48,6 +48,7 @@
     <div class="container">
       <div class="row">
         <div class="hidden-xs hidden-md hidden-sm col-lg-3">
+          @if(@$post->category_id != 10)
           <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
           <!-- 01. right_in_posts -->
           <ins class="adsbygoogle"
@@ -57,8 +58,12 @@
           <script>
           (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
-          <hr>
 
+          <hr>
+          @else 
+            <a href="https://www.hostgator.la/3244-6-1-1552.html" target="_blank" rel="nofollow"><img style="border:0px" src="https://latam-files.hostgator.com/es/afiliados/webhosting/160x600.png" width="160" height="600" alt=""></a>
+            <hr>
+          @endif
           <a href="{{ route('promo.excel-vba') }}" target="_blank" title="Video curso Macros y VBA Excel - Programación en Excel">
             <picture class="text-center">
               {!! Html::image('images/banner_contabilizalo_promo_vba.png', 'Macros y VBA Excel', ['width' => '280','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
@@ -95,6 +100,7 @@
         </a>
           <br>-->   
           @if(Route::currentRouteName() != "promo.apl.renta.j" && Route::currentRouteName() != "promo.apl.renta")
+            @if(@$post->category_id != 10)
             <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
             <!-- 01. right_in_posts -->
             <ins class="adsbygoogle"
@@ -105,7 +111,11 @@
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
             <hr>
-          @endif       
+            @else 
+            <a href="https://www.hostgator.la/3244-6-1-1552.html" target="_blank" rel="nofollow"><img style="border:0px" src="https://latam-files.hostgator.com/es/afiliados/webhosting/160x600.png" width="160" height="600" alt=""></a>
+            <hr>
+            @endif
+          @endif
           
           <a href="{{ url('cursos/tecnicos') }}" title="Cursos Técnicos laborales Colombia">
           <picture class="text-center">

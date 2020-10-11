@@ -201,7 +201,7 @@
 		</div>
 	@endif	
 
-	@if(!isset($collectionOfPosts))
+	@if(isset($collectionOfPosts))
 	<div class="panel panel-danger">
 	  <div class="panel-heading">
 	    <h3 class="panel-title">
@@ -213,17 +213,17 @@
 	  <ul class="list-inline text-center">
 	  	@if($prevPost)
 	  		@if($prevPost->id !== $principalPost->id)
-	  		<li><a title="{{ $prevPost->title }}" class="text-capitalize" href="{{ route('post.show', $prevPost) }}"><small class="hidden-xs hidden-sm hidden-md">({{ str_limit($prevPost->title, 30) }})</small> <span class="btn btn-warning btn-sm"> <i class="fa fa-long-arrow-left" aria-hidden="true"></i> Anterior</span></a></li>
+	  		<li><a title="{{ $prevPost->title }}" class="text-capitalize" href="{{ route('post.show', $prevPost) }}"><!--<small class="hidden-xs hidden-sm hidden-md">({{ str_limit($prevPost->title, 30) }})</small>--> <span class="btn btn-warning btn-sm"> <i class="fa fa-long-arrow-left" aria-hidden="true"></i> Anterior</span></a></li>
 	  		@endif
 	  	@endif
 
 	  	<li>	  		
-	  		<a class="btn btn-info" title="{{ $post->category->post->title }}" href="{{ route('post.show', $post->category->post) }}">VER INDICE <i class="fa fa-list-alt" aria-hidden="true"></i></a>
+	  		<a class="btn btn-info" title="{{ $post->category->post->title }}" href="{{ route('post.show', $post->category->post) }}">INDICE DEL CURSO <i class="fa fa-list-alt" aria-hidden="true"></i></a>
 	  	</li>
 
 	  	@if($nextPost)
 	  		@if($nextPost->id !== $principalPost->id)
-	  		<li><a class="text-capitalize" title="{{ $nextPost->title }}" href="{{ route('post.show', $nextPost) }}"><span class="btn btn-warning btn-sm">Siguiente <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span> <small class="hidden-xs hidden-sm hidden-md">({{ str_limit($nextPost->title, 30) }})</small></a></li>
+	  		<li><a class="text-capitalize" title="{{ $nextPost->title }}" href="{{ route('post.show', $nextPost) }}"><span class="btn btn-warning btn-sm">Siguiente <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span> <!--<small class="hidden-xs hidden-sm hidden-md">({{ str_limit($nextPost->title, 30) }})</small></a></li>-->
 	  		@endif
 	  	@endif
 	  </ul>

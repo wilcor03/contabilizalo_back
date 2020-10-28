@@ -268,7 +268,8 @@ class PostController extends Controller
   }
 
   public function promoExcel(){
-    return view('Blog.promo.excel-vba');
+    return redirect()->to('https://go.hotmart.com/H42856436B');
+    //return view('Blog.promo.excel-vba');
   }
 
   public function whoWeAre(){

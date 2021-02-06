@@ -104,6 +104,8 @@ class DianAppController extends Controller
       
       $dianState = $this->decodeAcii(trim(strtoupper($finded2_2[1][0])));
 
+      $socialReason = $this->decodeAcii(trim(strtoupper($finded2[1][0])));
+
       return [
         'rowID' => $cc[0],
         'firstName' => '',
@@ -111,14 +113,11 @@ class DianAppController extends Controller
         'firstLastName' => '', 
         'secondLastName' => '', 
         'dianState' => $dianState,
-        'socialReason' => $finded2[1][0]
+        'socialReason' => $socialReason
       ];
     }
     
   }
-
-
-
 
   private function setConfigCH($ch){
     $this->ch = $ch;

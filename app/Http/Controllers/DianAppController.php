@@ -148,11 +148,11 @@ class DianAppController extends Controller
   private function decodeAcii($string){
     $caracteres = [
       '&Ntilde;', '&Uacute;', '&Iacute;', '&Oacute;', '&Eacute;', '&Aacute;', 
-      '&ntilde;', '&amp;', '&AMP;'
+      '&ntilde;', '&amp;', '&AMP;', '&uacute;', '&UACUTE;'
     ];  
 
     $aConvertir = [
-      'Ñ', 'Ú', 'Í', 'Ó', 'É', 'Á', 'ñ', '&', '&'
+      'Ñ', 'Ú', 'Í', 'Ó', 'É', 'Á', 'ñ', '&', '&', 'ú', 'Ú'
     ];
 
     $newString = str_replace($caracteres, $aConvertir, $string);

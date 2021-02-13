@@ -137,7 +137,7 @@ class DianAppController extends Controller
     curl_setopt($ch, CURLOPT_POST, $is_POST);
     if($is_POST){
       curl_setopt($ch, CURLOPT_POSTFIELDS, $params);  
-    }      
+    }
 
     $result = curl_exec($ch);
     $error = curl_error($ch);           
@@ -148,11 +148,11 @@ class DianAppController extends Controller
   private function decodeAcii($string){
     $caracteres = [
       '&Ntilde;', '&Uacute;', '&Iacute;', '&Oacute;', '&Eacute;', '&Aacute;', 
-      '&ntilde;', '&amp;', '&AMP;', '&uacute;', '&UACUTE;'
-    ];  
+      '&ntilde;', '&amp;', '&AMP;', '&uacute;', '&UACUTE;', '&aacute;', '&eacute;', '&iacute;', '&oacute;'
+    ];
 
     $aConvertir = [
-      'Ñ', 'Ú', 'Í', 'Ó', 'É', 'Á', 'ñ', '&', '&', 'ú', 'Ú'
+      'Ñ', 'Ú', 'Í', 'Ó', 'É', 'Á', 'ñ', '&', '&', 'ú', 'Ú', 'á', 'é', 'í', 'ó'
     ];
 
     $newString = str_replace($caracteres, $aConvertir, $string);

@@ -267,7 +267,12 @@ class PostController extends Controller
     return view('Blog.promo.renta_p_naturales');
   }
 
-  public function promoExcel(){
+  public function promoExcel(Request $r){
+    if($r->c){
+      \Log::info('-----Excel práctico-----');
+      return redirect()->to('https://go.hotmart.com/I48417126L?ap=20a7');
+    }
+    \Log::info('-----VBA DE EXCEL-----');
     return redirect()->to('https://go.hotmart.com/H42856436B');
     //return view('Blog.promo.excel-vba');
   }

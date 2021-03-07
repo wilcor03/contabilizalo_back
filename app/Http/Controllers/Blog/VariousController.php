@@ -12,7 +12,8 @@ use App\Models\Course;
 
 class VariousController extends Controller
 {
-  public function cursos(){  	
+  public function cursos(){  
+    return redirect()->to('/');	
   	$courses = Course::all();
   	return view("Blog.courses.courses", compact('courses'));
   }

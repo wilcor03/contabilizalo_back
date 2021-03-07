@@ -22,10 +22,10 @@
 				</li>
 			</ul>
 			<div>
-				<h5 style="color:white;">Asociados:</h5>
+				<!--<h5 style="color:white;">Asociados:</h5>
 				<a href="https://hemisferiosur.com.co" target="_blank">
 					<img class="img-responsive" src="{{ asset('/images/logo-hemisferio.jpg') }}">	
-				</a>				
+				</a>-->				
 			</div>
 		</div>
 		<div class="col-md-3">
@@ -35,6 +35,9 @@
 			    >
 				<li>
 					<a href="/promo/curso-excel-macros-vba" title="curso macros y vba Excel">Curso de Macros y VBA Excel</a>
+				</li>
+				<li>
+					<a href="/promo/curso-excel-macros-vba?c=excel" title="curso macros y vba Excel">Curso Excel práctico</a>
 				</li>
 				<li>
 					<a href="/cursos/tecnicos" title="Como ser tecnico laboral con contabilizalo">Programas Técnicos laborales</a>

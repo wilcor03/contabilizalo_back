@@ -72,6 +72,20 @@ footer a {
       <div class="row">
         <div class="col-md-4">      
           <div class="thumbnail custom-cards">
+            <img src="{{ asset('images/home_excel_practico.jpg') }}" alt="...">
+            <div class="caption text-center">
+              <h3>Excel Práctico</h3>
+              <p class="text-muted">Certificate como experto en Excel, funciones, tablas y macros.</p>
+              <p><a target="_blank" href="{{ route('promo.excel-vba', ['c' => 'excel']) }}" class="btn btn-info" role="button">
+                Mas información <i class="fa fa-angle-double-right"></i>
+              </a>
+              
+              <p style="border-top:1px solid; color:red;">CONTABILIZALO</p>
+            </div>
+          </div>      
+        </div>        
+        <!--<div class="col-md-4">      
+          <div class="thumbnail custom-cards">
             <img src="{{ asset('images/cont_tec_laboral.jpg') }}" alt="...">
             <div class="caption text-center">
               <h3>Técnicos laborales</h3>
@@ -83,14 +97,14 @@ footer a {
               <p style="border-top:1px solid; color:red;">HEMISFERIO</p>
             </div>
           </div>      
-        </div><!--end col-->  
+        </div>--><!--end col-->  
         <div class="col-md-4">  
           <div class="thumbnail custom-cards">
             <img src="{{ asset('images/cont_vba-excel.jpg') }}" alt="...">
             <div class="caption text-center">
               <h3>VBA Excel</h3>
               <p class="text-muted">Crea Aplicaciones avanzadas con <strong>Excel</strong> y <strong>Visual Basic.</strong></p>
-              <p><a href="{{ route('promo.excel-vba') }}" class="btn btn-info" role="button">
+              <p><a target="_blank" href="{{ route('promo.excel-vba') }}" class="btn btn-info" role="button">
                 Mas información <i class="fa fa-angle-double-right"></i>
               </a>
               
@@ -219,14 +233,14 @@ footer a {
       </a>
       <br>
 
-      <a href="{{ route('promo.apl.renta') }}" title="Descarga Liquidador Renta Personas Naturales">
+      <!--<a href="{{ route('promo.apl.renta') }}" title="Descarga Liquidador Renta Personas Naturales">
         <picture class="text-center">
           {!! Html::image('images/banner-people-tax.png', 'renta personas naturales en Excel', ['width' => '280px','height' => '220px','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
             box-shadow: 1px 2px 2px #000;']) !!}
         </picture>
       </a>
       
-      <br>
+      <br>-->
 
       <div class="fb-page" data-href="https://www.facebook.com/Contabilizalocom-559714470714981/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">          
       </div>

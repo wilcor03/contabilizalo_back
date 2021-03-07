@@ -49,15 +49,15 @@
       <div class="row">
         <div class="hidden-xs hidden-md hidden-sm col-lg-3">
           @if(@$post->category_id != 10)
-          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
           <!-- 01. right_in_posts -->
-          <ins class="adsbygoogle"
+          <!--<ins class="adsbygoogle"
                style="display:inline-block;width:300px;height:600px"
                data-ad-client="ca-pub-6749239594655834"
                data-ad-slot="4339069736"></ins>
           <script>
           (adsbygoogle = window.adsbygoogle || []).push({});
-          </script>
+          </script>-->
 
           <hr>
           @else 
@@ -117,21 +117,21 @@
             @endif
           @endif
           
-          <a href="{{ url('cursos/tecnicos') }}" title="Cursos Técnicos laborales Colombia">
+          <!--<a href="{{ url('cursos/tecnicos') }}" title="Cursos Técnicos laborales Colombia">
           <picture class="text-center">
             {!! Html::image('images/banner_hemisferio_cursos.jpg', 'Formación técnico laboral Colombia', ['width' => '280px','height' => '220px','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
               box-shadow: 1px 2px 2px #000;']) !!}
           </picture>
-          </a>                   
+          </a>-->
 
-          <br>
+          <!--<br>
           <a href="{{ route('promo.apl.renta') }}" title="Descarga Liquidador Renta Personas Naturales">
             <picture class="text-center">
               {!! Html::image('images/banner-people-tax.png', 'renta personas naturales en Excel', ['width' => '280px','height' => '220px','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
                 box-shadow: 1px 2px 2px #000;']) !!}
             </picture>
           </a>
-          <br>          
+          <br>-->          
           <!--<a target="_blank" href="https://trabajo.contabilizalo.com/app/auth/pre-register" title="Encontrar ofertas de empleo en Colombia">
             <picture class="text-center">
               {!! Html::image('images/empleo-trabajador.png', 'Encontrar trabajo en Colombia', ['width' => '280px','height' => '220px','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
@@ -139,8 +139,8 @@
             </picture>
           </a>      
           <br>-->
-            @if(isset($soldCategories[@$post->category_id]))
-              <div class="panel panel-primary">
+            {{-- @if(isset($soldCategories[@$post->category_id]))  --}}
+              <!--<div class="panel panel-primary">
                 <div class="panel-body">
 
                   <H4 class="text-danger" style="text-shadow: 1px 1px 2px #ccc">DESCARGA TODOS LOS VIDEOS Y FORMATOS DE ESTE CURSO</H4>
@@ -156,8 +156,8 @@
 
                 </div>
               </div>
-              <hr>
-            @endif
+              <hr>-->
+            {{-- @endif --}}
           @if(Route::currentRouteName() != "promo.apl.renta.j")
           <div class="fb-page"
           data-href="https://www.facebook.com/Contabilizalocom-559714470714981/" 

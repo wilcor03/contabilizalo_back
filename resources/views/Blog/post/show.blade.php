@@ -68,20 +68,20 @@
 	</div>
 
 	@if(count($post->videos))
+	@foreach($post->videos as $video)
 	<div class="panel panel-danger">
 	  <div class="panel-heading">
 	    <h2 class="panel-title">
 	    	<i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
-	    	Video: <small class="text-uppercase">{{ $post->videos[0]->title }}</small> </h2>
+	    	Video: <small class="text-uppercase">{{ $video->title }}</small> </h2>
 	  </div>
-	  <div class="panel-body">  
-	  @foreach($post->videos as $video)			
+	  <div class="panel-body">
 			<div class="embed-responsive embed-responsive-16by9">
 			  <iframe class="embed-responsive-item" src="{{ $video->url }}"  allowfullscreen></iframe>
-			</div>
-		@endforeach
+			</div>		
 		</div>
-	</div>
+	</div>	
+	@endforeach
 	@endif
 
 	@if(count($collectionOfPosts))

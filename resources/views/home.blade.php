@@ -100,7 +100,7 @@ footer a {
         </div>--><!--end col-->  
         <div class="col-md-4">  
           <div class="thumbnail custom-cards">
-            <img src="{{ asset('images/cont_vba-excel.jpg') }}" alt="...">
+            <img src="{{ asset('images/cont_vba-excel_ok.jpg') }}" alt="...">
             <div class="caption text-center">
               <h3>VBA Excel</h3>
               <p class="text-muted">Crea Aplicaciones avanzadas con <strong>Excel</strong> y <strong>Visual Basic.</strong></p>

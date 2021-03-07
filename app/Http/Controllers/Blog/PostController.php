@@ -270,7 +270,7 @@ class PostController extends Controller
   public function promoExcel(Request $r){
     if($r->c){
       \Log::info('-----Excel práctico-----');
-      return redirect()->to('https://go.hotmart.com/I48417126L?ap=20a7');
+      return redirect()->to('https://go.hotmart.com/I48417126L');
     }
     \Log::info('-----VBA DE EXCEL-----');
     return redirect()->to('https://go.hotmart.com/H42856436B');

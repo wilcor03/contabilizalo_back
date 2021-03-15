@@ -46,7 +46,7 @@ footer a {
 </style>
 
 <!-- Put the following javascript before the closing </head> tag. -->
-<script>
+<!--<script>
   (function() {
     var cx = 'partner-pub-6749239594655834:6581185738';
     var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
@@ -54,7 +54,8 @@ footer a {
         '//www.google.com/cse/cse.js?cx=' + cx;
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
   })();
-</script>
+</script>-->
+<script data-ad-client="ca-pub-6749239594655834" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 @endsection
 
 @section('content')
@@ -130,12 +131,6 @@ footer a {
       </div><!-- end internal row-->
 
       <div class="row">
-        <div class="col">
-          <script data-ad-client="ca-pub-6749239594655834" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        </div>
-      </div>
-
-      <div class="row">
         <div class="col-md-4">   
 
           <div class="thumbnail custom-cards">
@@ -185,12 +180,6 @@ footer a {
       </div><!-- end internal row2-->
 
       <div class="row">
-        <div class="col">
-          <script data-ad-client="ca-pub-6749239594655834" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        </div>
-      </div>
-
-      <div class="row">
         <div class="col-md-4">      
           <div class="thumbnail custom-cards">
             <img src="{{ asset('images/cont_niif.jpg') }}" alt="...">
@@ -227,15 +216,15 @@ footer a {
     </div>
 
     <div class="col-md-3">
-      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
       <!-- 01. right_in_posts -->
-      <ins class="adsbygoogle"
+      <!--<ins class="adsbygoogle"
            style="display:inline-block;width:300px;height:600px"
            data-ad-client="ca-pub-6749239594655834"
            data-ad-slot="4339069736"></ins>
       <script>
       (adsbygoogle = window.adsbygoogle || []).push({});
-      </script><br>
+      </script><br>-->
       
       <a href="{{ route('promo.excel-vba') }}" target="_blank" title="Video curso Macros y VBA Excel - Programación en Excel">
         <picture class="text-center">

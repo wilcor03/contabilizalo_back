@@ -20,7 +20,7 @@
 <meta property="article:tag" content="{{ trim($keyword) }}" />
 @endforeach
 {!! Html::style('css/custom.css') !!}
-<script>
+<!--<script>
   (function() {
     var cx = 'partner-pub-6749239594655834:6581185738';
     var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
@@ -28,7 +28,8 @@
         '//www.google.com/cse/cse.js?cx=' + cx;
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
   })();
-</script>
+</script>-->
+<script data-ad-client="ca-pub-6749239594655834" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 @endsection
 
@@ -39,16 +40,16 @@
 @section('content')
 	<gcse:searchresults-only></gcse:searchresults-only>
 	<div class="text-center">
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
 		<!-- 02. cont_inside_post -->
-		<ins class="adsbygoogle"
+		<!--<ins class="adsbygoogle"
 		     style="display:inline-block;width:336px;height:280px"
 		     data-ad-client="ca-pub-6749239594655834"
 		     data-ad-slot="2465383732"></ins>
 		<script>
 		(adsbygoogle = window.adsbygoogle || []).push({});
 		</script>
-	</div><hr>
+	</div><hr>-->
 
 	{{--@include('partials.mailchimp_form')--}}
 
@@ -82,7 +83,7 @@
 		</div>
 	</div>
 		
-		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<ins class="adsbygoogle"
 	     style="display:block"
 	     data-ad-format="autorelaxed"
@@ -91,7 +92,7 @@
 	<script>
 	     (adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
-	<br>
+	<br>-->
 	@endforeach
 	@endif
 
@@ -155,16 +156,16 @@
 	    	Material de descarga</h3>
 	  </div>
 	  <div class="panel-body">  	
-	  	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	  	<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
 			<!-- 03. down_inside_post -->
-			<ins class="adsbygoogle"
+			<!--<ins class="adsbygoogle"
 			     style="display:block"
 			     data-ad-client="ca-pub-6749239594655834"
 			     data-ad-slot="8232715735"
 			     data-ad-format="auto"></ins>
 			<script>
 			(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>
+			</script>-->
 			
 			<div class="table-responsive">
 				<table class="table">
@@ -199,16 +200,16 @@
 	</div>
 	@else
 		<div class="text-center>">
-		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+		<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
 		<!-- 03. down_inside_post -->
-		<ins class="adsbygoogle"
+		<!--<ins class="adsbygoogle"
 		     style="display:block"
 		     data-ad-client="ca-pub-6749239594655834"
 		     data-ad-slot="8232715735"
 		     data-ad-format="auto"></ins>
 		<script>
 		(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>
+		</script>-->
 		</div>
 	@endif	
 

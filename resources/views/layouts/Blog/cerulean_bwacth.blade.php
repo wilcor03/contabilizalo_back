@@ -39,7 +39,7 @@
         width: 100%;
       }
     </style>
-    @include('layouts.Blog.partials.adsense-level-page')
+    {{--@include('layouts.Blog.partials.adsense-level-page')--}}
   </head>
   <body>
     @include('layouts.Blog.partials.facebook-box')
@@ -101,16 +101,16 @@
           <br>-->   
           @if(Route::currentRouteName() != "promo.apl.renta.j" && Route::currentRouteName() != "promo.apl.renta")
             @if(@$post->category_id != 10)
-            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
             <!-- 01. right_in_posts -->
-            <ins class="adsbygoogle"
+            <!--<ins class="adsbygoogle"
                  style="display:inline-block;width:300px;height:600px"
                  data-ad-client="ca-pub-6749239594655834"
                  data-ad-slot="4339069736"></ins>
             <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
-            <hr>
+            <hr>-->
             @else 
             <a href="https://www.hostgator.la/3244-6-1-1552.html" target="_blank" rel="nofollow"><img style="border:0px" src="https://latam-files.hostgator.com/es/afiliados/webhosting/160x600.png" width="160" height="600" alt=""></a>
             <hr>

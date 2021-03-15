@@ -130,6 +130,12 @@ footer a {
       </div><!-- end internal row-->
 
       <div class="row">
+        <div class="col">
+          <script data-ad-client="ca-pub-6749239594655834" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        </div>
+      </div>
+
+      <div class="row">
         <div class="col-md-4">   
 
           <div class="thumbnail custom-cards">
@@ -177,6 +183,12 @@ footer a {
           </div>                
         </div><!--end col--> 
       </div><!-- end internal row2-->
+
+      <div class="row">
+        <div class="col">
+          <script data-ad-client="ca-pub-6749239594655834" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        </div>
+      </div>
 
       <div class="row">
         <div class="col-md-4">      

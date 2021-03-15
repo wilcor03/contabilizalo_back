@@ -80,7 +80,17 @@
 			  <iframe class="embed-responsive-item" src="{{ $video->url }}"  allowfullscreen></iframe>
 			</div>		
 		</div>
-	</div>	
+	</div>
+	<br>	
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-format="autorelaxed"
+	     data-ad-client="ca-pub-6749239594655834"
+	     data-ad-slot="3556479704"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
 	@endforeach
 	@endif
 

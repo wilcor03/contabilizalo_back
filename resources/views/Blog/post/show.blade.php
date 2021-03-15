@@ -34,13 +34,13 @@
 @endsection
 
 @section('h1')
-	<h1 class="text-primary text-center">{{ $post->title }}</h1>	
+	<h1 class="text-primary text-center">{{ $post->title }}</h1>
 @endsection
 
 @section('content')
 	<gcse:searchresults-only></gcse:searchresults-only>
-	<div class="text-center">
-		<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+	<!--<div class="text-center">
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
 		<!-- 02. cont_inside_post -->
 		<!--<ins class="adsbygoogle"
 		     style="display:inline-block;width:336px;height:280px"

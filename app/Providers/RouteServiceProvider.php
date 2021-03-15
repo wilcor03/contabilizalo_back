@@ -9,6 +9,7 @@ use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvi
 //FACADES
 ///////////
 use Cache;
+use Illuminate\Support\Facades\View;
 //////////////
 //MODELS
 //////////////
@@ -39,7 +40,8 @@ class RouteServiceProvider extends ServiceProvider
         parent::boot();
 
         Route::model('category', Category::class);
-        Route::bind('post', function($value){               
+        Route::bind('post', function($value){  
+
           $minutes = config('custom.cache.time_duration_in_post');     
           $post = Cache::remember($value, $minutes, function() use($value){ 
 
@@ -53,9 +55,18 @@ class RouteServiceProvider extends ServiceProvider
                         ->with('videos', 'comments', 'images', 'files', 'posts', 'postsBelongs', 'hasCategory', 'comments.parentComment', 'category.post')                       
                         ->first();
             }
-            
+
             return $post;
           });
+
+          $posts = $post->category->posts()->get(['title', 'slug']);//All posts of category
+
+          //pass category post like menu
+          View::composer('layouts.Blog.cerulean_bwacth', function ($view) use($posts, $post) {
+            $view->with(['menus' => $posts, 'cat_name' => $post->category->title]);      
+          });
+            
+
 
           /*$post = Cache::tags(['Post'])->remember($value, 10080, function() use($value){
             $post =  Post::where('slug', $value)

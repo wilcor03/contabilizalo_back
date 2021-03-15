@@ -38,6 +38,22 @@
         z-index: 999;
         width: 100%;
       }
+      .custom-menu a{
+        line-height: 2;
+      }
+      .custom-menu .active{
+        background: #7b0606;
+        padding: 3px 3px 3px 6px;
+        color: white;
+        border-radius: 0 20px 20px 0;
+      }     
+
+      .custom-menu .active a{
+        color:#fff !important;
+      } 
+      .custom-menu a:visited{
+        color:#f98585;
+      }
     </style>
     {{--@include('layouts.Blog.partials.adsense-level-page')--}}
   </head>
@@ -70,6 +86,27 @@
                 box-shadow: 1px 2px 2px #000;']) !!}
             </picture>
           </a>
+
+          @if(isset($menus))
+          <br>
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h2 class="panel-title">
+                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                <small class="text-uppercase">MENÚ ({{ $cat_name }})</small> </h2>
+            </div>
+            <div class="panel-body">
+              <ul class="list-unstyled custom-menu">
+              @foreach($menus as $m)
+              <li @if(request()->path() === $m->slug) class="active" @endif>
+                <a class="text-capitalize text-overflow" href="{{ route('post.show', $m) }}" title="{{ $m->title }}">{{ Str::limit($m->title, 26) }}
+                </a>
+              </li>
+              @endforeach
+              </ul>
+            </div>
+          </div>
+          @endif
 
         </div><!-- end col -->
         <div class="col-sm-9 col-lg-6">

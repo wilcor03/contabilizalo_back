@@ -122,7 +122,7 @@ class PostRepository
 
 	public function _principalPost($post)
 	{
-		return $post->category->post;
+		return $post->category->post()->first(['id']);
 	}
 
 	public function setSellingCourses()

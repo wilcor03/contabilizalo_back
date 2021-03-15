@@ -112,20 +112,21 @@ class PostController extends Controller
       $collectionOfPosts = $this->post->_getCollectionCategory($post);
     }
 
-    $principalPost = $this->post->_principalPost($post);     
+    $principalPost = $this->post->_principalPost($post);
 
     $prevPost = $this->post->_previousPost($post);
     $nextPost = $this->post->_nextPost($post);
 
-    $soldCategories = $this->post->setSellingCourses();
-    
+    //$soldCategories = $this->post->setSellingCourses();
+    //dd($soldCategories);
+
     return view('Blog.post.show', compact(
                                   'post', 
                                   'prevPost', 
                                   'nextPost', 
                                   'collectionOfPosts', 
                                   'principalPost',
-                                  'soldCategories'
+                                  //'soldCategories'
                                 ));
   }
 

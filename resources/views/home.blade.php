@@ -61,191 +61,207 @@ footer a {
 @section('content')
   <div class="row">
     <div class="col-md-9">
-
-      <div class="jumbotron">
-        <div class="container">
-          <div class="page-header text-center sub-title">
-          <h1 class="custom_title">ConTabilizalo, Aprendizaje Fácil. ConTabilidad, Excel y Más.</h1>
-        </div>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-md-4">      
-          <div class="thumbnail custom-cards">
-            <img src="{{ asset('images/home_excel_practico.jpg') }}" alt="...">
-            <div class="caption text-center">
-              <h3>Excel Práctico</h3>
-              <p class="text-muted">Certificate como experto en Excel, funciones, tablas y macros.</p>
-              <p><a target="_blank" href="{{ route('promo.excel-vba', ['c' => 'excel']) }}" class="btn btn-info" role="button">
-                Mas información <i class="fa fa-angle-double-right"></i>
-              </a>
-              
-              <p style="border-top:1px solid; color:red;">CONTABILIZALO</p>
+      <section>
+        <article>
+          <div class="jumbotron">
+            <div class="container">
+              <div class="page-header text-center sub-title">
+              <h1 class="custom_title">ConTabilizalo, Aprendizaje Fácil. ConTabilidad, Excel y Más.</h1>
             </div>
-          </div>      
-        </div>        
-        <!--<div class="col-md-4">      
-          <div class="thumbnail custom-cards">
-            <img src="{{ asset('images/cont_tec_laboral.jpg') }}" alt="...">
-            <div class="caption text-center">
-              <h3>Técnicos laborales</h3>
-              <p class="text-muted">Convierte en técnico laboral <strong>CERTIFICADO</strong> en 1 año.</p>
-              <p><a href="/cursos/tecnicos" class="btn btn-info" role="button">
-                Ver Programas <i class="fa fa-angle-double-right"></i>
-              </a>
-              
-              <p style="border-top:1px solid; color:red;">HEMISFERIO</p>
-            </div>
-          </div>      
-        </div>--><!--end col-->  
-        <div class="col-md-4">  
-          <div class="thumbnail custom-cards">
-            <img src="{{ asset('images/cont_vba-excel_ok.jpg') }}" alt="...">
-            <div class="caption text-center">
-              <h3>VBA Excel</h3>
-              <p class="text-muted">Crea Aplicaciones avanzadas con <strong>Excel</strong> y <strong>Visual Basic.</strong></p>
-              <p><a target="_blank" href="{{ route('promo.excel-vba') }}" class="btn btn-info" role="button">
-                Mas información <i class="fa fa-angle-double-right"></i>
-              </a>
-              
-              <p style="border-top:1px solid; color:red;">CONTABILIZALO</p>
             </div>
           </div>
+        </article>
+      </section>
 
-        </div><!--end col--> 
-        <div class="col-md-4">      
-          <div class="thumbnail custom-cards">
-            <img src="{{ asset('images/cont_contabilidad_intermedia.jpg') }}" alt="...">
-            <div class="caption text-center">
-              <h3 style="font-size: 1.9rem;">Contabilidad Práctica</h3>
-              <p class="text-muted">Aprende con ejercicios prácticos contables en Video</p>
-              <p><a href="/curso-de-contabilidad-gratis-en-colombia" class="btn btn-info" role="button">
-                Ver Videos <i class="fa fa-angle-double-right"></i>
-              </a>
-              
-              <p style="border-top:1px solid; color:red;">CONTABILIZALO</p>
-            </div>
-          </div>      
-        </div><!--end col--> 
-      </div><!-- end internal row-->
+      <section>
+        <article>
+          <div class="row">
+            <div class="col-md-4">      
+              <div class="thumbnail custom-cards">
+                <img src="{{ asset('images/home_excel_practico.jpg') }}" alt="...">
+                <div class="caption text-center">
+                  <h3>Excel Práctico</h3>
+                  <p class="text-muted">Certificate como experto en Excel, funciones, tablas y macros.</p>
+                  <p><a target="_blank" href="{{ route('promo.excel-vba', ['c' => 'excel']) }}" class="btn btn-info" role="button">
+                    Mas información <i class="fa fa-angle-double-right"></i>
+                  </a>
+                  
+                  <p style="border-top:1px solid; color:red;">CONTABILIZALO</p>
+                </div>
+              </div>      
+            </div>        
+            <!--<div class="col-md-4">      
+              <div class="thumbnail custom-cards">
+                <img src="{{ asset('images/cont_tec_laboral.jpg') }}" alt="...">
+                <div class="caption text-center">
+                  <h3>Técnicos laborales</h3>
+                  <p class="text-muted">Convierte en técnico laboral <strong>CERTIFICADO</strong> en 1 año.</p>
+                  <p><a href="/cursos/tecnicos" class="btn btn-info" role="button">
+                    Ver Programas <i class="fa fa-angle-double-right"></i>
+                  </a>
+                  
+                  <p style="border-top:1px solid; color:red;">HEMISFERIO</p>
+                </div>
+              </div>      
+            </div>--><!--end col-->  
+            <div class="col-md-4">  
+              <div class="thumbnail custom-cards">
+                <img src="{{ asset('images/cont_vba-excel_ok.jpg') }}" alt="...">
+                <div class="caption text-center">
+                  <h3>VBA Excel</h3>
+                  <p class="text-muted">Crea Aplicaciones avanzadas con <strong>Excel</strong> y <strong>Visual Basic.</strong></p>
+                  <p><a target="_blank" href="{{ route('promo.excel-vba') }}" class="btn btn-info" role="button">
+                    Mas información <i class="fa fa-angle-double-right"></i>
+                  </a>
+                  
+                  <p style="border-top:1px solid; color:red;">CONTABILIZALO</p>
+                </div>
+              </div>
 
-      <div class="row">
-        <div class="col-md-4">   
+            </div><!--end col--> 
+            <div class="col-md-4">      
+              <div class="thumbnail custom-cards">
+                <img src="{{ asset('images/cont_contabilidad_intermedia.jpg') }}" alt="...">
+                <div class="caption text-center">
+                  <h3 style="font-size: 1.9rem;">Contabilidad Práctica</h3>
+                  <p class="text-muted">Aprende con ejercicios prácticos contables en Video</p>
+                  <p><a href="/curso-de-contabilidad-gratis-en-colombia" class="btn btn-info" role="button">
+                    Ver Videos <i class="fa fa-angle-double-right"></i>
+                  </a>
+                  
+                  <p style="border-top:1px solid; color:red;">CONTABILIZALO</p>
+                </div>
+              </div>      
+            </div><!--end col--> 
+          </div><!-- end internal row-->
+        </article>
+      </section>
 
-          <div class="thumbnail custom-cards">
-            <img src="{{ asset('images/cont_contabilidad_basica.jpg') }}" alt="...">
-            <div class="caption text-center">
-              <h3>Contabilidad Básica</h3>
-              <p class="text-muted">Aprende las bases de la <strong>Contabilidad</strong> Global en Video</p>
-              <p><a href="/curso-de-contabilidad-gratis" class="btn btn-info" role="button">
-                Ver Videos <i class="fa fa-angle-double-right"></i>
-              </a>
-              
-              <p style="border-top:1px solid; color:red;">CONTABILIZALO</p>
-            </div>
-          </div>                
-        </div><!--end col-->  
-        <div class="col-md-4">   
+      <section>
+        <article>
+          <div class="row">
+            <div class="col-md-4">   
 
-          <div class="thumbnail custom-cards">
-            <img src="{{ asset('images/cont_excel_basicol.jpg') }}" alt="...">
-            <div class="caption text-center">
-              <h3>Excel Básico</h3>
-              <p class="text-muted">Entiende la estructura, funcionalidad y aplicación de Excel</p>
-              <p><a href="/curso-de-excel-gratis" class="btn btn-info" role="button">
-                Ver Programas <i class="fa fa-angle-double-right"></i>
-              </a>
-              
-              <p style="border-top:1px solid; color:red;">CONTABILIZALO</p>
-            </div>
-          </div>
-               
-        </div><!--end col--> 
-        <div class="col-md-4"> 
+              <div class="thumbnail custom-cards">
+                <img src="{{ asset('images/cont_contabilidad_basica.jpg') }}" alt="...">
+                <div class="caption text-center">
+                  <h3>Contabilidad Básica</h3>
+                  <p class="text-muted">Aprende las bases de la <strong>Contabilidad</strong> Global en Video</p>
+                  <p><a href="/curso-de-contabilidad-gratis" class="btn btn-info" role="button">
+                    Ver Videos <i class="fa fa-angle-double-right"></i>
+                  </a>
+                  
+                  <p style="border-top:1px solid; color:red;">CONTABILIZALO</p>
+                </div>
+              </div>                
+            </div><!--end col-->  
+            <div class="col-md-4">   
 
-          <div class="thumbnail custom-cards">
-            <img src="{{ asset('images/cont_excel_inermedio.jpg') }}" alt="...">
-            <div class="caption text-center">
-              <h3>Excel Intermedio</h3>
-              <p class="text-muted">Funciones, tablas dinámicas y muchas utilidades más en MS Excel.</p>
-              <p><a href="/curso-de-excel-avanzado-gratis" class="btn btn-info" role="button">
-                Ver Videos <i class="fa fa-angle-double-right"></i>
-              </a>
-              
-              <p style="border-top:1px solid; color:red;">CONTABILIZALO</p>
-            </div>
-          </div>                
-        </div><!--end col--> 
-      </div><!-- end internal row2-->
+              <div class="thumbnail custom-cards">
+                <img src="{{ asset('images/cont_excel_basicol.jpg') }}" alt="...">
+                <div class="caption text-center">
+                  <h3>Excel Básico</h3>
+                  <p class="text-muted">Entiende la estructura, funcionalidad y aplicación de Excel</p>
+                  <p><a href="/curso-de-excel-gratis" class="btn btn-info" role="button">
+                    Ver Programas <i class="fa fa-angle-double-right"></i>
+                  </a>
+                  
+                  <p style="border-top:1px solid; color:red;">CONTABILIZALO</p>
+                </div>
+              </div>
+                   
+            </div><!--end col--> 
+            <div class="col-md-4"> 
 
-      <div class="row">
-        <div class="col-md-4">      
-          <div class="thumbnail custom-cards">
-            <img src="{{ asset('images/cont_niif.jpg') }}" alt="...">
-            <div class="caption text-center">
-              <h3>NIIF</h3>
-              <p class="text-muted">Normas internacionales de información Financiera.</p>
-              <p><a href="/niif" class="btn btn-info" role="button">
-                Ver Publicaciones <i class="fa fa-angle-double-right"></i>
-              </a>
-              
-              <p style="border-top:1px solid; color:red;">CONTABILIZALO</p>
-            </div>
-          </div>      
-        </div><!--end col-->  
-        <div class="col-md-4">      
-          <div class="thumbnail custom-cards">
-            <img src="{{ asset('images/cont_videos_laboral.jpg') }}" alt="...">
-            <div class="caption text-center">
-              <h3>Laboral - Nómina</h3>
-              <p class="text-muted">Videos en donde liquidaremos paso a paso una <strong>Nómina.</strong></p>
-              <p><a href="/curso-nomina-y-laboral-gratis-en-video-online" class="btn btn-info" role="button">
-                Ver Videos <i class="fa fa-angle-double-right"></i>
-              </a>
-              
-              <p style="border-top:1px solid; color:red;">CONTABILIZALO</p>
-            </div>
-          </div>
-        </div><!--end col--> 
-        <div class="col-md-4">      
-                
-        </div><!--end col--> 
-      </div><!-- end internal row2-->
+              <div class="thumbnail custom-cards">
+                <img src="{{ asset('images/cont_excel_inermedio.jpg') }}" alt="...">
+                <div class="caption text-center">
+                  <h3>Excel Intermedio</h3>
+                  <p class="text-muted">Funciones, tablas dinámicas y muchas utilidades más en MS Excel.</p>
+                  <p><a href="/curso-de-excel-avanzado-gratis" class="btn btn-info" role="button">
+                    Ver Videos <i class="fa fa-angle-double-right"></i>
+                  </a>
+                  
+                  <p style="border-top:1px solid; color:red;">CONTABILIZALO</p>
+                </div>
+              </div>                
+            </div><!--end col--> 
+          </div><!-- end internal row2-->
+        </article>
+      </section>
 
+      <section>
+        <article>
+          <div class="row">
+            <div class="col-md-4">      
+              <div class="thumbnail custom-cards">
+                <img src="{{ asset('images/cont_niif.jpg') }}" alt="...">
+                <div class="caption text-center">
+                  <h3>NIIF</h3>
+                  <p class="text-muted">Normas internacionales de información Financiera.</p>
+                  <p><a href="/niif" class="btn btn-info" role="button">
+                    Ver Publicaciones <i class="fa fa-angle-double-right"></i>
+                  </a>
+                  
+                  <p style="border-top:1px solid; color:red;">CONTABILIZALO</p>
+                </div>
+              </div>      
+            </div><!--end col-->  
+            <div class="col-md-4">      
+              <div class="thumbnail custom-cards">
+                <img src="{{ asset('images/cont_videos_laboral.jpg') }}" alt="...">
+                <div class="caption text-center">
+                  <h3>Laboral - Nómina</h3>
+                  <p class="text-muted">Videos en donde liquidaremos paso a paso una <strong>Nómina.</strong></p>
+                  <p><a href="/curso-nomina-y-laboral-gratis-en-video-online" class="btn btn-info" role="button">
+                    Ver Videos <i class="fa fa-angle-double-right"></i>
+                  </a>
+                  
+                  <p style="border-top:1px solid; color:red;">CONTABILIZALO</p>
+                </div>
+              </div>
+            </div><!--end col--> 
+            <div class="col-md-4">      
+                    
+            </div><!--end col--> 
+          </div><!-- end internal row2-->
+        </article>
+      </section>
     </div>
 
-    <div class="col-md-3">
-      <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
-      <!-- 01. right_in_posts -->
-      <!--<ins class="adsbygoogle"
-           style="display:inline-block;width:300px;height:600px"
-           data-ad-client="ca-pub-6749239594655834"
-           data-ad-slot="4339069736"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script><br>-->
-      
-      <a href="{{ route('promo.excel-vba') }}" target="_blank" title="Video curso Macros y VBA Excel - Programación en Excel">
-        <picture class="text-center">
-          {!! Html::image('images/banner_contabilizalo_promo_vba.png', 'Macros y VBA Excel', ['width' => '280','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
-            box-shadow: 1px 2px 2px #000;']) !!}
-        </picture>
-      </a>
-      <br>
+    <div class="col-md-3"> 
+    <section>
+        <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+        <!-- 01. right_in_posts -->
+        <!--<ins class="adsbygoogle"
+             style="display:inline-block;width:300px;height:600px"
+             data-ad-client="ca-pub-6749239594655834"
+             data-ad-slot="4339069736"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script><br>-->
+        
+        <a href="{{ route('promo.excel-vba') }}" target="_blank" title="Video curso Macros y VBA Excel - Programación en Excel">
+          <picture class="text-center">
+            {!! Html::image('images/banner_contabilizalo_promo_vba.png', 'Macros y VBA Excel', ['width' => '280','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
+              box-shadow: 1px 2px 2px #000;']) !!}
+          </picture>
+        </a>
+        <br>
 
-      <!--<a href="{{ route('promo.apl.renta') }}" title="Descarga Liquidador Renta Personas Naturales">
-        <picture class="text-center">
-          {!! Html::image('images/banner-people-tax.png', 'renta personas naturales en Excel', ['width' => '280px','height' => '220px','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
-            box-shadow: 1px 2px 2px #000;']) !!}
-        </picture>
-      </a>
-      
-      <br>-->
+        <!--<a href="{{ route('promo.apl.renta') }}" title="Descarga Liquidador Renta Personas Naturales">
+          <picture class="text-center">
+            {!! Html::image('images/banner-people-tax.png', 'renta personas naturales en Excel', ['width' => '280px','height' => '220px','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
+              box-shadow: 1px 2px 2px #000;']) !!}
+          </picture>
+        </a>
+        
+        <br>-->
 
-      <div class="fb-page" data-href="https://www.facebook.com/Contabilizalocom-559714470714981/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">          
+        <div class="fb-page" data-href="https://www.facebook.com/Contabilizalocom-559714470714981/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">          
+        </div>
       </div>
-    </div>
+    </section>     
   </div>
 
 

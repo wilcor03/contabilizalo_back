@@ -27,7 +27,7 @@
         margin-top:60px;"
       }      
     </style>
-    @include('layouts.Blog.partials.adsense-level-page')
+    {{--@include('layouts.Blog.partials.adsense-level-page')--}}
   </head>
   <body>
     @include('layouts.Blog.partials.facebook-box')

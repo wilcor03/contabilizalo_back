@@ -31,7 +31,7 @@ class Dian extends Command
   public function __construct()
   {      
     parent::__construct();
-    $ch = curl_init();
+    //$ch = curl_init();
     Self::setConfigCH($ch);
     $this->cookie_file = "/tmp/".time();
   }
@@ -151,8 +151,6 @@ class Dian extends Command
     }
     
   }
-
-
 
 
   private function setConfigCH($ch){

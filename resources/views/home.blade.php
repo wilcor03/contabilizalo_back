@@ -72,7 +72,7 @@ footer a {
           </div>
         </article>
       </section>
-
+      <br>
       <section>
         <article>
           <div class="row">
@@ -136,7 +136,7 @@ footer a {
           </div><!-- end internal row-->
         </article>
       </section>
-
+      <br>
       <section>
         <article>
           <div class="row">
@@ -189,7 +189,7 @@ footer a {
           </div><!-- end internal row2-->
         </article>
       </section>
-
+      <br>
       <section>
         <article>
           <div class="row">

@@ -57,14 +57,15 @@ class RouteServiceProvider extends ServiceProvider
             }
 
             return $post;
-          });
+          });          
 
-          $posts = $post->category->posts()->get(['title', 'slug']);//All posts of category
-
-          //pass category post like menu
-          View::composer('layouts.Blog.cerulean_bwacth', function ($view) use($posts, $post) {
-            $view->with(['menus' => $posts, 'cat_name' => $post->category->title]);      
-          });
+          if(\Route::currentRouteName() == 'post.show'){
+            //pass category post like menu
+            View::composer('layouts.Blog.cerulean_bwacth', function ($view) use($post) {
+              $posts = $post->category->posts()->get(['title', 'slug']);//All posts of category
+              $view->with(['menus' => $posts, 'cat_name' => $post->category->title]);
+            });
+          }
             
 
 

@@ -59,30 +59,39 @@
 	</picture>
 	@endif
 	<hr>
-	<div class="panel panel-danger">	  
-	  <div class="panel-body text-justify">	  	
-	  	@if(!$post->hasCategory && $post->category->id == 9)
-	  		<p class="text-right"><small>publicado el: {{ Carbon\Carbon::parse($post->updated_at)->format('d-m-Y') }}</small></p>
-	  	@endif
-			{!! $post->description !!}
-		</div>
-	</div>
-
+	<section>
+		<article>
+			<div class="panel panel-danger">	  
+			  <div class="panel-body text-justify">	  	
+			  	@if(!$post->hasCategory && $post->category->id == 9)
+			  		<p class="text-right"><small>publicado el: {{ Carbon\Carbon::parse($post->updated_at)->format('d-m-Y') }}</small></p>
+			  	@endif
+			  	
+					{!! $post->description !!}
+					
+				</div>
+			</div>
+		</article>
+	</section>
+	
 	@if(count($post->videos))
+	<section>
 	@foreach($post->videos as $video)
-	<div class="panel panel-danger">
-	  <div class="panel-heading">
-	    <h2 class="panel-title">
-	    	<i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
-	    	Video: <small class="text-uppercase">{{ $video->title }}</small> </h2>
-	  </div>
-	  <div class="panel-body">
-			<div class="embed-responsive embed-responsive-16by9">
-			  <iframe class="embed-responsive-item" src="{{ $video->url }}"  allowfullscreen></iframe>
-			</div>		
+	<article>
+		<div class="panel panel-danger">
+		  <div class="panel-heading">
+		    <h2 class="panel-title">
+		    	<i class="fa fa-youtube-play fa-2x" aria-hidden="true"></i>
+		    	Video: <small class="text-uppercase">{{ $video->title }}</small> </h2>
+		  </div>
+		  <div class="panel-body">
+				<div class="embed-responsive embed-responsive-16by9">
+				  <iframe class="embed-responsive-item" src="{{ $video->url }}"  allowfullscreen></iframe>
+				</div>		
+			</div>
 		</div>
-	</div>
-		
+	</article>
+	
 		<!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<ins class="adsbygoogle"
 	     style="display:block"
@@ -94,9 +103,11 @@
 	</script>
 	<br>-->
 	@endforeach
+	</section>
 	@endif
 
 	@if(count($collectionOfPosts))
+	<section>
 		<div class="panel panel-danger">
 		  <div class="panel-heading">
 		    <h3 class="panel-title">
@@ -122,9 +133,11 @@
 				</div>
 			</div>
 		</div>
+	</section>
 	@endif
 
 	@if(count($post->postsBelongs))
+	<section>
 	<div class="panel panel-danger">
 	  <div class="panel-heading">
 	    <h3 class="panel-title">
@@ -146,9 +159,11 @@
 			</div>
 		</div>
 	</div>
+	</section>
 	@endif
 
 	@if(count($post->files))
+	<section>
 	<div class="panel panel-danger">
 	  <div class="panel-heading">
 	    <h3 class="panel-title">
@@ -198,6 +213,7 @@
 
 		</div>
 	</div>
+	</section>
 	@else
 		<div class="text-center>">
 		<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
@@ -214,6 +230,7 @@
 	@endif	
 
 	@if(isset($collectionOfPosts))
+	<section>
 	<div class="panel panel-danger">
 	  <div class="panel-heading">
 	    <h3 class="panel-title">
@@ -241,8 +258,10 @@
 	  </ul>
 		</div>
 	</div>
+	</section>
 	@endif
 
+	<section>
 	<div class="panel panel-danger">
 	  <div class="panel-heading">
 	    <h3 class="panel-title">
@@ -293,7 +312,7 @@
 			</ul>
 		</div>
 	</div>
-
+	</section>
 	{{-- @include('partials.modal_promo') --}}
 @endsection
 

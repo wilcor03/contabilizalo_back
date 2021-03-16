@@ -51,6 +51,18 @@
 		</script>
 	</div><hr>-->
 
+		<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<!-- contabilizalo_top_article -->
+	<ins class="adsbygoogle"
+	     style="display:block"
+	     data-ad-client="ca-pub-6749239594655834"
+	     data-ad-slot="5985942744"
+	     data-ad-format="auto"
+	     data-full-width-responsive="true"></ins>
+	<script>
+	     (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+
 	{{--@include('partials.mailchimp_form')--}}
 
 	@if($post->principal_image)
@@ -92,7 +104,7 @@
 		</div>
 	</article>
 	
-		<!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<ins class="adsbygoogle"
 	     style="display:block"
 	     data-ad-format="autorelaxed"
@@ -101,7 +113,7 @@
 	<script>
 	     (adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
-	<br>-->
+	<br>
 	@endforeach
 	</section>
 	@endif
@@ -171,16 +183,16 @@
 	    	Material de descarga</h3>
 	  </div>
 	  <div class="panel-body">  	
-	  	<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+	  	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 			<!-- 03. down_inside_post -->
-			<!--<ins class="adsbygoogle"
+			<ins class="adsbygoogle"
 			     style="display:block"
 			     data-ad-client="ca-pub-6749239594655834"
 			     data-ad-slot="8232715735"
 			     data-ad-format="auto"></ins>
 			<script>
 			(adsbygoogle = window.adsbygoogle || []).push({});
-			</script>-->
+			</script>
 			
 			<div class="table-responsive">
 				<table class="table">
@@ -216,16 +228,16 @@
 	</section>
 	@else
 		<div class="text-center>">
-		<!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+		<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 		<!-- 03. down_inside_post -->
-		<!--<ins class="adsbygoogle"
+		<ins class="adsbygoogle"
 		     style="display:block"
 		     data-ad-client="ca-pub-6749239594655834"
 		     data-ad-slot="8232715735"
 		     data-ad-format="auto"></ins>
 		<script>
 		(adsbygoogle = window.adsbygoogle || []).push({});
-		</script>-->
+		</script>
 		</div>
 	@endif	
 

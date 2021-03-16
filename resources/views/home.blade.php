@@ -73,6 +73,18 @@ footer a {
         </article>
       </section>
       <br>
+
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+           style="display:block; text-align:center;"
+           data-ad-layout="in-article"
+           data-ad-format="fluid"
+           data-ad-client="ca-pub-6749239594655834"
+           data-ad-slot="8908168290"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+      <br>
       <section>
         <article>
           <div class="row">
@@ -136,6 +148,17 @@ footer a {
           </div><!-- end internal row-->
         </article>
       </section>
+      <br>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <ins class="adsbygoogle"
+           style="display:block; text-align:center;"
+           data-ad-layout="in-article"
+           data-ad-format="fluid"
+           data-ad-client="ca-pub-6749239594655834"
+           data-ad-slot="8908168290"></ins>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
       <br>
       <section>
         <article>
@@ -231,15 +254,15 @@ footer a {
 
     <div class="col-md-3"> 
     <section>
-        <!--<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>-->
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <!-- 01. right_in_posts -->
-        <!--<ins class="adsbygoogle"
+        <ins class="adsbygoogle"
              style="display:inline-block;width:300px;height:600px"
              data-ad-client="ca-pub-6749239594655834"
              data-ad-slot="4339069736"></ins>
         <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
-        </script><br>-->
+        </script><br>
         
         <a href="{{ route('promo.excel-vba') }}" target="_blank" title="Video curso Macros y VBA Excel - Programación en Excel">
           <picture class="text-center">

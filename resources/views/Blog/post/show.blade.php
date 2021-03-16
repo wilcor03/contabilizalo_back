@@ -96,7 +96,7 @@
 	<script>
 	     (adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
-	
+	<br>
 	@if(count($post->videos))
 	<section>
 	@foreach($post->videos as $video)

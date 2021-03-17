@@ -8,6 +8,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Cache;
 use Illuminate\Support\Str;
+use Carbon\Carbon;
 
 /////////////////
 //MODELS
@@ -270,16 +271,44 @@ class PostController extends Controller
 
   public function promoExcel(Request $r){
     if($r->c){
-      \Log::info('-----Excel práctico-----');
+      $this->saveRegisters("EXCEL PÁCTICO: ");
       return redirect()->to('https://go.hotmart.com/I48417126L');
-    }
-    \Log::info('-----VBA DE EXCEL-----');
+    } elseif ($r->h) {//consultor de ruts
+      $this->saveRegisters("CONSULTOR RUT: ");
+      return redirect()->to('https://www.consultorcontable.com/verificador-de-rut');
+    }    
+    
+    $this->saveRegisters("CURSO VBA: ");
     return redirect()->to('https://go.hotmart.com/H42856436B');
     //return view('Blog.promo.excel-vba');
   }
 
   public function whoWeAre(){
     return view('Blog.promo.who-we-are');
+  }
+
+  private function saveRegisters($reg){
+    
+    try {      
+      $contents = $reg."|".Carbon::now();      
+      $this->writeFile($contents);      
+      //Mail::to("wilcor03@gmail.com")->queue(new CourseSuscriber($data));  
+    } catch (Exception $e) {
+      return response()->json(['success' => false], 500);
+    }   
+    return response()->json(['success' => true]);
+  }
+
+  private function writeFile($content){
+    $path = storage_path()."/app/COURSE_REGS.txt";    
+    $courseReg = fopen($path, "a") or die("Unable to open file!");
+    fwrite($courseReg, $content.PHP_EOL);
+    fclose($courseReg);
+  }
+
+  public function courseDetail($slug){
+    $collection = collect(Self::DATA);
+    return $collection->firstWhere('slug', $slug);
   }
 
 }

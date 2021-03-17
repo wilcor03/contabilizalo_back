@@ -300,7 +300,7 @@ class PostController extends Controller
   }
 
   private function writeFile($content){
-    $path = storage_path()."/app/COURSE_REGS.txt";    
+    $path = storage_path()."/app/VENTAS_REGS.txt";    
     $courseReg = fopen($path, "a") or die("Unable to open file!");
     fwrite($courseReg, $content.PHP_EOL);
     fclose($courseReg);

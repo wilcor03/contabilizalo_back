@@ -276,6 +276,9 @@ class PostController extends Controller
     } elseif ($r->h) {//consultor de ruts
       $this->saveRegisters("CONSULTOR RUT: ");
       return redirect()->to('https://www.consultorcontable.com/verificador-de-rut');
+    } elseif ($r->v) {//en vivos ?v=1
+      $this->saveRegisters("ENVIVO SEMANA 27-4: ");
+      return redirect()->to('https://contabilizalo.lpages.co/lanzamiento-1/');
     }    
     
     $this->saveRegisters("CURSO VBA: ");

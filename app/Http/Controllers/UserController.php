@@ -21,8 +21,7 @@ class UserController extends Controller
   }
 
   public function home()
-  {
-    return "testing...";
+  {    
   	$slug = 'bienvenidos-a-contabilizalo-com';
   	$post = Cache::remember($slug, 1440, function() use($slug){
       return Post::where('slug', $slug)->with('comments', 'comments.parentComment')->first();

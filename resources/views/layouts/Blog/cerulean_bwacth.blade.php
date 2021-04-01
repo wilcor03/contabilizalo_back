@@ -61,7 +61,7 @@
     @include('layouts.Blog.partials.facebook-box')
     @include('layouts.Blog.partials.superior-nav')
 
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="hidden-xs hidden-md hidden-sm col-lg-3">
           @if(@$post->category_id != 10)

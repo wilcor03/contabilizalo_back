@@ -1,7 +1,7 @@
 <footer style="background: #1254a5; color:white; padding: 10px;">
 	<div class="row">
 		<div class="col-sm-6">
-			@include('partials.mailchimp_form')
+			{{-- @include('partials.mailchimp_form') --}}
 		</div>
 		<div class="col-sm-2">
 			<ul class="list-inline" 

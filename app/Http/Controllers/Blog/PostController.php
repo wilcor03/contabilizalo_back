@@ -279,7 +279,10 @@ class PostController extends Controller
     } elseif ($r->v) {//en vivos ?v=1
       $this->saveRegisters("ENVIVO SEMANA 27-4: ");
       return redirect()->to('https://contabilizalo.lpages.co/lanzamiento-1/');
-    }    
+    } elseif($r->m){
+      $this->saveRegisters("MASTER: ");
+      return redirect()->to('https://go.hotmart.com/W50538853D?ap=ee7c');
+    }   
     
     $this->saveRegisters("CURSO VBA: ");
     return redirect()->to('https://go.hotmart.com/H42856436B');

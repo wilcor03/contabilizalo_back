@@ -37,11 +37,10 @@ class VariousController extends Controller
     return view('examenes.result', compact('correctAnswers', 'results', 'exam'));*/
     //dd(request()->all());
 
-
-    if(request()->step == "f1"){
+    if(request()->step == "f1"){      
       $exam = Exam::where('email', request()->email)
                   ->whereNull('temp_token')
-                  ->first();
+                  ->first();                  
       //dd($exam);
       if(!$exam){
         $err = "este usuario no existe en la base de datos o ya realizo su examen!";
@@ -101,7 +100,7 @@ class VariousController extends Controller
     $dompdf->render();
 
     // Output the generated PDF to Browser
-    $dompdf->stream('certificado_bla_bla');
+    $dompdf->stream('CONTABILIZALO_CERTIFICADO_'.str_replace("", '_', $student->name));
   }
 
   private function QrCodeGenerator($url){
@@ -223,9 +222,6 @@ class VariousController extends Controller
     }
     return false;
   }
-
-
-
 
 
 

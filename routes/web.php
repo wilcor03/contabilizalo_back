@@ -140,6 +140,11 @@ Route::group(['namespace' => 'Blog'], function() {
 	Route::post('cursos/contact', 'VariousController@contact');
 	/*Route::get('cursos/detalle/{slug}', 'VariousController@courseDetail')->name('course.detail');*/
 });
+#### WEBINARS
+Route::get('/examen/soy-contabilizer', 'Blog\VariousController@certification')->name('exam.show');
+
+Route::post('/examen/soy-contabilizer', 'Blog\VariousController@certifPost')->name('exam.store');
+Route::get('examen/certificacion', 'Blog\VariousController@verifyCertification')->name('exam.verify-certif');
 
 /*Route::get('courses/test', function(){	
 	$user = App\User::find(1);	

@@ -17,6 +17,8 @@ use App\Exam;
 use Dompdf\Dompdf;
 use Dompdf\Options;
 
+use App\Preinscrito;
+
 
 use Endroid\QrCode\Color\Color;
 use Endroid\QrCode\Encoding\Encoding;
@@ -29,6 +31,31 @@ use Endroid\QrCode\Writer\PngWriter;
 
 class VariousController extends Controller
 {
+
+  public function preinscritos(Request $r){
+    if($r->isMethod('post')){      
+
+      $r->validate([
+        'nombre' => 'required|',
+        'email'  => 'required|email|unique:preinscritos'
+      ]);
+
+      $pre = new Preinscrito;
+      $pre->nombre = $r->nombre;
+      $pre->email = $r->email;
+      $pre->pais = $r->pais;
+      $pre->telefono = $r->telefono;
+      $pre->token = Str::random(7);
+      $pre->referente = $r->r ?? null; 
+      if($pre->save()){
+        return redirect()->route('preins.go', ['uri' => route('preins.go', ['r' =>$pre->id])])
+                        ->with(['global' => true]);
+      }
+
+    }
+    return view('various.preinscritos');
+  }
+
 
   public function certification(){
     /*$exam = Exam::first();  

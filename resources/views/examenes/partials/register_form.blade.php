@@ -22,9 +22,7 @@
   </div>
 @endif
 	
-<div class="row justify-content-md-center">  		
-
-  
+<div class="row justify-content-md-center">  		  
 
 @if(count(request()->all())==0 || isset($err))
 	<form method="GET" action="{{route('exam.show')}}"class="form-inline">

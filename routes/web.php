@@ -146,6 +146,9 @@ Route::get('/examen/soy-contabilizer', 'Blog\VariousController@certification')->
 Route::post('/examen/soy-contabilizer', 'Blog\VariousController@certifPost')->name('exam.store');
 Route::get('examen/certificacion', 'Blog\VariousController@verifyCertification')->name('exam.verify-certif');
 
+###### PREINSCRITOS
+Route::any('cursos/preinscritos', 'Blog\VariousController@preinscritos')->name('preins.go');
+
 /*Route::get('courses/test', function(){	
 	$user = App\User::find(1);	
   return (new App\Mail\DetripsRaffleEmail($user))->render(); 

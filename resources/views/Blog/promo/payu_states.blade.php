@@ -15,7 +15,7 @@
 		    <h3 class="panel-title"><i class="fa fa-info-circle fa-2x" aria-hidden="true"></i> PAGO EXIOSO</h3>
 		  </div>
 		  <div class="panel-body">
-		    <p><i class="fa fa-thumbs-up fa-2x text-success" aria-hidden="true"></i> 
+		    <p><i class="fa fa-thumbs-up fa-2x text-success" aria-hidden="true"></i>
 		    	Su pago fue realizado satisfactoriamente. Dentro de las siguientes 24 horas haremos llegar un enlace a su correo eléctronico para que pueda descargar y disfrutar del producto adquirido.		    	
 		    </p>
 		  </div>

@@ -14,13 +14,22 @@
       <h1 class="jumbotron-heading">Examen para certificación</h1>
       <p class="lead text-muted">Examen para certificación #soyContabilizer - Curso Gratuito introductorio a Nómina - Excel y Macros Básicos</p>    
      	
-      @include('examenes.partials.register_form')
+     	<div class="alert alert-danger">
+     		<h2>Exte examen ya fue desactivado!</h2>	
+     	</div>      
+
+     	<p>Puedes preinscribirte a nuestras proximas clases gratuitas aquí:</p>
+     	<div class="text-center">
+     		<a class="btn btn-lg btn-primary" href="{{ route('preins.go') }}">Inscribirme >></a>
+     	</div>			     	
+
+      {{--@include('examenes.partials.register_form')--}}
       
     </div><!-- end container -->     
   </section>
   <section>
   	@if(isset($exam) && isset($show_exam))
-    	@include('examenes.partials.exam_form')
+    	{{--@include('examenes.partials.exam_form')--}}
    @endif
   </section>
 </main>

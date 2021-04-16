@@ -1,4 +1,4 @@
-<footer style="background: #1254a5; color:white; padding: 10px;">
+<footer style="background: #1254a5; color:white; padding: 10px; margin-bottom:0;">
 	<div class="row">
 		<div class="col-sm-6">
 			{{-- @include('partials.mailchimp_form') --}}
@@ -70,12 +70,12 @@
       </ul>
     </div>
   </div>
-  <div class="row footer navbar-fixed-bottom" style="background: #3db53d; box-shadow: 0px -2px 5px #000;">
+  <!--<div class="row footer navbar-fixed-bottom" style="background: #3db53d; box-shadow: 0px -2px 5px #000;">
 		<div class="col-md-7 text-center">						
-			<!--<p style="padding:2%; font-size: 2.3rem; text-shadow: 1px 1px 1px #000;">			
+			<p style="padding:2%; font-size: 2.3rem; text-shadow: 1px 1px 1px #000;">			
 	  		Curso Macros + VBA Excel
 	  		<br><small style="color:yellow;">Videos + Formatos + Asesoría</small>
-  		</p>  --> 	
+  		</p>
 
   		<div class="media" style="padding:2%; font-size: 2.3rem; text-shadow: 1px 1px 1px #000;">
 			  <div class="media-left">
@@ -97,5 +97,5 @@
 				<a href="{{ route('promo.excel-vba') }}" class="btn btn-danger">Mas información>></a> 
 			</p>
 		</div>	
-  </div>
+  </div>-->
 </footer>

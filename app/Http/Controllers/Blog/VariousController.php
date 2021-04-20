@@ -251,11 +251,10 @@ class VariousController extends Controller
   }
 
 
-
-
   public function cursos(){  
-    return redirect()->to('/');	
-  	$courses = Course::all();
+    //return redirect()->to('/');	
+  	$courses = Course::whereIn('id',[9, 10, 11])->get();
+    //dd($courses[0]->description['description']);
   	return view("Blog.courses.courses", compact('courses'));
   }
 

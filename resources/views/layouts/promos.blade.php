@@ -6,21 +6,23 @@
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <title>Video Curso de Macros y VBA Excel - ConTabilizalo.com</title>
+    <title>Video Cursos Online - ConTabilizalo.com</title>
 
-    <meta name="description" content="Video Curso Online - Aprende a Programar en Visual Basic para Excel, Domina las Macros de Excel de forma práctica y eficáz"/>
+    <meta name="description" content="Video cursos certificados ConTabilizalo, aprende Excel, programación en Visual Basic, Macros y mucho más acerca del mundo técnológico"/>
 		<meta name="robots" content="noodp"/>
 		<link rel="canonical" href="{{ request()->url() }}" />
 		<meta property="og:locale" content="es_ES" />
 		<meta property="og:type" content="article" />
-		<meta property="og:title" content="Video Curso Online Macros y VBA Excel ConTabilizalo" />
-		<meta property="og:description" content="Video Curso Online - Aprende a Programar en Visual Basic para Excel, Domina las Macros de Excel de forma práctica y eficáz" />
+		<meta property="og:title" content="Video cursos certificados ConTabilizalo" />
+		<meta property="og:description" content="Video cursos certificados ConTabilizalo, aprende Excel, programación en Visual Basic, Macros y mucho más acerca del mundo técnológico" />
 		<meta property="og:url" content="{{ request()->url() }}" />
 		<meta property="og:site_name" content="Contabilizalo" />
 		<meta property="article:author" content="https://www.facebook.com/pages/Contabilizalocom/559714470714981" />
-		<meta property="article:section" content="Cursos Online programación en Visual Basic de Excel" />		
-		<meta property="article:tag" content="Curso de programación en Visual basic excel, VBA Excel, Visual Basic Excel, vba udemy, macros en excel, curso de macros, codigo vba, vba excel 2019, programación en vba excel, que es vba de excel, como aprender a programar en excel" />
+		<meta property="article:section" content="Cursos Online certificados ConTabilizal" />		
+		<meta property="article:tag" content="Curso de programación en Visual basic excel, VBA Excel, Visual Basic Excel, vba udemy, macros en excel, curso de macros, codigo vba, vba excel 2019, programación en vba excel, que es vba de excel, como aprender a programar en excel, Curso de Excel Online, curso de programación, aprender a programar, como aprender Visual Basic de Excel" />
 		
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
 
     <!--Let browser know website is optimized for mobile-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -35,10 +37,11 @@
 	  	}
 	  	body{
 	  		background: #f1f1f1;
+	  		font-family: 'PT Sans Narrow', sans-serif;
 	  	}	 
 	  	.logo{
 	  		background:white; padding:10px; margin-top: 7px; border-radius: 6px; box-shadow: 1px 3px 9px #000;
-	  	} 	
+	  	} 		  	
     </style>    
   </head>
 
@@ -132,10 +135,10 @@
 							</li>
 						</ul>
 						<div>
-							<h5 style="color:white;">Asociados:</h5>
+							<!--<h5 style="color:white;">Asociados:</h5>
 							<a href="https://hemisferiosur.com.co" target="_blank">
 								<img class="img-responsive" src="{{ asset('/images/logo-hemisferio.jpg') }}">	
-							</a>				
+							</a>-->				
 						</div>
 
 	        </div>

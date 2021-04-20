@@ -1,18 +1,20 @@
 @extends('layouts.promos')
 
 @section('content')
-	<div id="startpage" class="row"  style="background: url('{{ asset('images/student-849822_1920.jpg') }}'); background-position: right; box-shadow: 1px 1px 5px #000;">
+	<div id="startpage" class="row"  style="background: url('{{ asset('images/student-849822_1920.jpg') }}'); background-position: left; box-shadow: 1px 1px 5px #000;">
 		
 		<div class="col m6">
 
-			<div style="background: rgba(117, 16, 16, 0.8); border-radius: 14px;box-shadow: 3px 3px 5px #fff; text-align: center;">
-				<h1 style="padding: 10px; text-shadow: 1px 1px 5px #000;" class="center #4db6ac white-text text-lighten-2">Conviertete en técnico laboral. <small style="font-size: 1.4rem;">(Certificado)</small></h1>
+			<div style="background: rgba(117, 16, 16, 0.6); border-radius: 14px;box-shadow: 3px 3px 5px #fff; text-align: center;">
+				<h1 style="font-size: 3.5rem; padding: 20px; text-shadow: 1px 1px 5px #000;" class="center #4db6ac white-text text-lighten-2">Certificate Online con nuestros cursos virtuales.</h1>
 				<hr>
-				<h2 class="center #4db6ac white-text text-lighten-2" style="padding: 20px; font-size: 1.56rem;"><i>Certificate como <strong>Auxiliar administrativo</strong>, Auxiliar contable, Técnico en primera infancia</strong> y múcho más.</i></h2>
-				<picture class="text-center">
+				<h2 class="center #4db6ac white-text text-lighten-2" style="padding: 20px; font-size: 1.56rem;"><i>Conviértete en un experto en <strong>Excel, Programación, herramientas tecnológicas</strong> y mucho más.</i></h2>
+				<p class="center #4db6ac yellow-text text-lighten-2" style="font-size: 1.56rem; margin-top: 0px;">Online y a tu ritmo!</p>
+
+				<!--<picture class="text-center">
               {!! Html::image('images/min_edu.png', 'Min educación Contabilizalo - Hemisferio sur', ['width' => '280','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
                 box-shadow: 1px 2px 2px #000;']) !!}
-            </picture>
+            </picture>-->
 			</div>
 
 		</div>
@@ -20,7 +22,7 @@
 			
 			<div class="container">
 				
-				<div class="row" id="contact-form">
+				<!--<div class="row" id="contact-form">
 					<h5 class="center">¿Quieres mas información?</h5>
 					<br>
 			    <form method="post" class="col s12" id="question-form">
@@ -73,7 +75,7 @@
 
 			      </div>			      
 			    </form>
-			  </div>
+			  </div>-->
 
 
 	    </div><!-- div container -->
@@ -82,33 +84,45 @@
 		
 	</div><!--end row-->
 
-  <div>
-  	<h3 class="center #4db6ac teal-text text-lighten-2">
-  		PROGRAMAS TÉCNICO - LABORALES
+  <div>  	
+  	<h3 class="center #4db6ac dark-text text-lighten-2 mt-5">
+  		INSCRIBETE AHORA
   	</h3>
-
-  	<div class="row">
+  	<div class="container">
+  		<p class="center-align">Adquiere las herramientas que pide el mundo laboral actual y el mundo del emprendimiento. Ve un paso adelante y capacitate en las áreas del presente y que prevalecerán en el futuro.</p>	
+  	</div>  	
+  	<br>
+  	<div class="row mt-5">
 
   		@foreach($courses as $course)
 	    <div class="col s12 m4">
-	      <div style="border-radius: 10px;" class="card #f8bbd0 @if(in_array($course->id, [2,5,8])) pink lighten-4 @endif">
+	      <div style="border-radius: 10px;" class="card hoverable #f8bbd0 @if(in_array($course->id, [2,5,8])) pink lighten-4 @endif">
+	      	<div class="card-image">
+	          <img src="{{ $course->short_description['img_url'] }}">
+	          <span class="card-title">Certificado!</span>
+	          <!--<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>-->
+	        </div>
+
 	        <div class="card-content dark-text">
 	          <span class="card-title center @if(in_array($course->id, [2,5,8])) dark-text @else pink-text text-darken-3 @endif"><strong>{{ $course->title }}</strong></span>
-	          <ul>
-	          	<li class="center"><h5>Incluye:</h5></li>
+
+	          <p class="center-align">
+	          	<!--<b>Duración:</b>--> {{-- $course->short_description['duration'] --}}<!--<br>
+	          	<b>Valor Matricula:</b> $-->{{-- number_format($course->enrollment_price, null, ',', '.') --}}<br>
+	          	{{  $course->description['description'] }}
+	          </p>    
+
+	          <ul>	          	
 	          	@foreach($course->short_description['options'] as $opt)
 	          	<li @if($loop->first) data-position="top" data-tooltip="Reuniones virtuales grupales de soporte" class="tooltipped" @endif><i class="material-icons green-text text-darken-2">check_circle</i> {{ $opt }}</li>
 	          	@endforeach
-	          </ul>	      
-	          <p>
-	          	<b>Duración:</b> {{ $course->short_description['duration'] }}<!--<br>
-	          	<b>Valor Matricula:</b> $-->{{-- number_format($course->enrollment_price, null, ',', '.') --}}<br>
-	          	<b>Modalidad:</b> {{  $course->short_description['modality'] }}
-	          </p>    
+	          </ul>
 	        </div>
 	        <div class="card-action center">
-	          <a data-pdf="{{ $course->short_description['pdf'] }}" data-title="{{ $course->title }}"  data-description="{!! nl2br($course->description['description']) !!}" class="btn white-text #e91e63 pink modal-trigger dispacher" href="#modaldetails" target="_blank">Mas detalles</a>
-	          <a data-title="{{ $course->title }}" class="btn white-text info-btn" href="#startpage">Solicitar información</a>
+	          <!--<a data-pdf="{{ $course->short_description['pdf'] }}" data-title="{{ $course->title }}"  data-description="{!! nl2br($course->description['description']) !!}" class="btn white-text #e91e63 pink modal-trigger dispacher" href="#modaldetails" target="_blank">Mas detalles</a>-->
+	          <a data-title="{{ $course->title }}" class="btn white-text info-btn" 		href="{{ $course->short_description['url'] }}"
+	          	target="_blank" 
+	          	>@if($course->short_description['url']) Ver programa @else Próximamente @endif</a>
 	        </div>
 	      </div>
 	    </div>

@@ -32,7 +32,8 @@ class SitemapController extends Controller
        							->orderBy('created_at', 'desc')->get();
 
       $sitemap->add(route('post.show', 'bienvenidos-a-contabilizalo-com'), \Carbon\Carbon::now(), 1.0, 'daily');	
-		$sitemap->add("https://operaciones-entre-regimenes.contabilizalo.com/", \Carbon\Carbon::now(), 1.0, 'daily');	
+		$sitemap->add("https://operaciones-entre-regimenes.contabilizalo.com/", \Carbon\Carbon::now(), 1.0, 'daily');
+    $sitemap->add("https://contabilizalo.com/cursos/certificados", \Carbon\Carbon::now(), 1.0, 'daily');	
        // add every post to the sitemap
       foreach ($posts as $post)
       {

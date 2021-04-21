@@ -80,9 +80,9 @@
             <a href="https://www.hostgator.la/3244-6-1-1552.html" target="_blank" rel="nofollow"><img style="border:0px" src="https://latam-files.hostgator.com/es/afiliados/webhosting/160x600.png" width="160" height="600" alt=""></a>
             <hr>
           @endif
-          <a href="{{ route('promo.excel-vba') }}" target="_blank" title="Video curso Macros y VBA Excel - Programación en Excel">
+          <a href="/cursos/certificados" target="_blank" title="Video curso Macros y VBA Excel - Programación en Excel">
             <picture class="text-center">
-              {!! Html::image('images/banner_contabilizalo_promo_vba.png', 'Macros y VBA Excel', ['width' => '280','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
+              {!! Html::image('images/BANNER VERTICAL2-min.jpg', 'Cursos de Excel y programación Online', ['width' => '280','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
                 box-shadow: 1px 2px 2px #000;']) !!}
             </picture>
           </a>

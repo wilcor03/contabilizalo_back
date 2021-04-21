@@ -66,7 +66,7 @@ footer a {
           <div class="jumbotron">
             <div class="container">
               <div class="page-header text-center sub-title">
-              <h1 class="custom_title">ConTabilizalo, Aprendizaje Fácil. ConTabilidad, Excel y Más.</h1>
+              <h1 class="custom_title">ConTabilizalo, Aprendizaje Fácil. ConTabilidad, Excel, Programación y Más.</h1>
             </div>
             </div>
           </div>
@@ -287,9 +287,9 @@ footer a {
         (adsbygoogle = window.adsbygoogle || []).push({});
         </script><br>
         
-        <a href="{{ route('promo.excel-vba') }}" target="_blank" title="Video curso Macros y VBA Excel - Programación en Excel">
+        <a href="/cursos/certificados" target="_blank" title="Video curso Macros y VBA Excel - Programación en Excel">
           <picture class="text-center">
-            {!! Html::image('images/banner_contabilizalo_promo_vba.png', 'Macros y VBA Excel', ['width' => '280','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
+            {!! Html::image('images/BANNER VERTICAL2-min.jpg', 'Cursos de Excel y programación Online', ['width' => '280','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
               box-shadow: 1px 2px 2px #000;']) !!}
           </picture>
         </a>

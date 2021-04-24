@@ -289,7 +289,7 @@ footer a {
         
         <a href="/cursos/certificados" target="_blank" title="Video curso Macros y VBA Excel - Programación en Excel">
           <picture class="text-center">
-            {!! Html::image('images/BANNER VERTICAL2-min.jpg', 'Cursos de Excel y programación Online', ['width' => '280','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
+            {!! Html::image('images/banner_contabilizalo_promo_vba.png', 'Cursos de Excel y programación Online', ['width' => '280','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
               box-shadow: 1px 2px 2px #000;']) !!}
           </picture>
         </a>

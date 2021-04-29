@@ -90,7 +90,14 @@
   	</h3>
   	<div class="container">
   		<p class="center-align">Adquiere las herramientas que pide el mundo laboral actual y el mundo del emprendimiento. Ve un paso adelante y capacitate en las áreas del presente y que prevalecerán en el futuro.</p>	
-  	</div>  	
+  	</div>
+  	<div class="center">
+    	<a href="https://api.whatsapp.com/send?phone=573124910627&text=Hola,%20me%20gustaría%20tener%20mas%20información%20acerca%20del%20curso." target="_blank" class="waves-effect waves-light btn-large green pulse"><i class="material-icons left">message</i>¿TIENES PREGUNTAS?</a>
+
+    	<a href="https://api.whatsapp.com/send?phone=573124910627&text=Hola,%20me%20gustaría%20tener%20mas%20información%20acerca%20del%20curso." target="_blank" style="position: fixed; right: 30px; bottom: 30px;" class="btn-floating btn-large waves-effect waves-light green pulse"><i class="material-icons">message</i></a>  
+    </div>  	
+
+
   	<br>
   	<div class="row mt-5">
 
@@ -132,7 +139,7 @@
   </div>
 
   <!-- Modal Structure -->
-  <div id="modaldetails" class="modal modal-info modal-fixed-footer">
+  <!--<div id="modaldetails" class="modal modal-info modal-fixed-footer">
     <div class="modal-content">
       <h4 class="teal-text text-lighten-2 center" id="modatitle"></h4>
       <div class="row">
@@ -150,10 +157,10 @@
     <div class="modal-footer">
       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Aceptar</a>
     </div>
-  </div>
+  </div>-->
 
   <!-- Modal Structure -->
-  <div id="modalalert" class="modal modal-alert modal-fixed-footer center" style="max-width: 450px; max-height: 350px;">
+  <!--<div id="modalalert" class="modal modal-alert modal-fixed-footer center" style="max-width: 450px; max-height: 350px;">
     <div class="modal-content">
       <h4>Gracias por contactarnos!</h4>
       <i class="large material-icons green-text">check_circle</i>
@@ -162,7 +169,7 @@
     <div class="modal-footer">
       <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cerrar</a>
     </div>
-  </div>
+  </div>-->
 @endsection
 
 @push('scripts')

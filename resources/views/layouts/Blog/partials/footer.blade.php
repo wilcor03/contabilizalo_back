@@ -70,12 +70,12 @@
       </ul>
     </div>
   </div>
-  <!--<div class="row footer navbar-fixed-bottom" style="background: #3db53d; box-shadow: 0px -2px 5px #000;">
+  <div class="row footer navbar-fixed-bottom" style="background: #3db53d; box-shadow: 0px -2px 5px #000;">
 		<div class="col-md-7 text-center">						
-			<p style="padding:2%; font-size: 2.3rem; text-shadow: 1px 1px 1px #000;">			
+			<!--<p style="padding:2%; font-size: 2.3rem; text-shadow: 1px 1px 1px #000;">			
 	  		Curso Macros + VBA Excel
 	  		<br><small style="color:yellow;">Videos + Formatos + Asesoría</small>
-  		</p>
+  		</p>-->
 
   		<div class="media" style="padding:2%; font-size: 2.3rem; text-shadow: 1px 1px 1px #000;">
 			  <div class="media-left">
@@ -85,7 +85,7 @@
 			  </div>
 			  <div class="media-body">
 			    <p class="media-heading">
-			    	<a href="{{ route('promo.excel-vba') }}" style="color:#fff; text-decoration: underline;">Curso Macros + VBA Excel</a>
+			    	<a href="{{ route('promo.excel-vba') }}" style="color:#fff; text-decoration: underline;">EXCEL VBA PRO | CURSO DIGITAL</a>
 	  				<br><small style="color:yellow;">Videos + Formatos + Asesoría</small>
 			    </p>			    
 			  </div>
@@ -97,5 +97,5 @@
 				<a href="{{ route('promo.excel-vba') }}" class="btn btn-danger">Mas información>></a> 
 			</p>
 		</div>	
-  </div>-->
+  </div>
 </footer>

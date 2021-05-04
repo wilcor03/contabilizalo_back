@@ -360,10 +360,9 @@
   </script>
 
   <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'>    
-  </script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text'; /*
- * Translated default messages for the $ validation plugin.
- * Locale: ES
- */
+  </script>
+  <script type='text/javascript'>  	/*(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text'; /*
+ 
 $.extend($.validator.messages, {
   required: "Este campo es obligatorio.",
   remote: "Por favor, rellena este campo.",
@@ -382,6 +381,6 @@ $.extend($.validator.messages, {
   range: $.validator.format("Por favor, escribe un valor entre {0} y {1}."),
   max: $.validator.format("Por favor, escribe un valor menor o igual a {0}."),
   min: $.validator.format("Por favor, escribe un valor mayor o igual a {0}.")
-});}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+});}(jQuery));var $mcj = jQuery.noConflict(true);*/</script>
 <!--End mc_embed_signup-->
 @endsection

@@ -285,7 +285,7 @@ class PostController extends Controller
     }   
     
     $this->saveRegisters("CURSO VBA: ");
-    dd('arrived');
+    //dd('arrived');
     return view('Blog.promo.excel-vba');
 
     return redirect()->to('https://go.hotmart.com/H42856436B');

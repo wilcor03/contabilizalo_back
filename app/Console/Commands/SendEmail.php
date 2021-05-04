@@ -21,7 +21,7 @@ class SendEmail extends Command
    *
    * @var string
    */
-  protected $description = 'to Detrips susc';
+  protected $description = 'to contabilizer susc';
 
   /**
    * Create a new command instance.
@@ -44,10 +44,10 @@ class SendEmail extends Command
 
     $registers = Suscriber::whereNull('times') 
                           //where('times', 1)
-                          ->where('email', 'felipetriana98@gmail.com')
+                          ->where('email', 'wilcor03@gmail.com')
                           /*->orderBy('id', 'desc')       
                           ->take((int)$until)                    */
-                          ->get(); 
+                          ->get();
                                                      
     $this->error('Proccess tot: '.count($registers));
     foreach($registers as $key => $r){       

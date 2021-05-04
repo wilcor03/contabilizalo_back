@@ -69,10 +69,11 @@ Route::group(['middleware' => 'auth.basic'], function(){
 /*----------------------------
 ! PUBLIC ROUTES
 -----------------------------*/
-/*Route::get('emails', function(){
+Route::get('emails', function(){
 	$suscriber = App\Suscriber::find(1);
+	//dd($suscriber);
 	return (new App\Mail\DetripsRaffleEmail($suscriber))->render();
-});*/
+});
 
 /*Route::get('redirecting-to-detrips', 'UserController@clickOnEmail')->name('redir.detrips');*/
 

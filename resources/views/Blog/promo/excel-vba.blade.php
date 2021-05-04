@@ -94,17 +94,17 @@
      	</li>
 	  </ul>
 
-	  <div class="parallax-container">
+	  <!--<div class="parallax-container">
       <div class="parallax"><img src="{{asset('images/macros_y_no_morir_en_el_intento.png')}}"></div>
-    </div>
+    </div>-->
 
-	  <div class="section no-pad-bot" id="index-banner">
+	  <div style="margin-top:-14px;" class="section no-pad-bot" id="index-banner">
 	    <div>
 
-	    	<!--<img src="{{asset('images/macros_y_no_morir_en_el_intento.png')}}" style="width:100%; box-shadow: 2px 3px 9px #000; border-radius: 10px;">-->
+	    	<img src="{{asset('images/macros_y_no_morir_en_el_intento_yo.png')}}" class="responsive-img">
 	      
 	      <br><br>
-      	<h1 class="center #4db6ac teal-text text-lighten-2">EXCEL VBA PRO | CURSO DIGITAL</h1>
+      	<h1 style="text-shadow: 1px 1px 2px #555" class="center #4db6ac teal-text text-lighten-2">EXCEL VBA PRO | CURSO DIGITAL</h1>
       	<p style="font-size: 2rem;" class="center pink-text text-darken-2">Construye aplicaciones avanzadas con Excel y Visual Basic</p>
 	    </div>
 	  </div>
@@ -251,13 +251,13 @@
 	</div>	
 
 	<div class="parallax-container">
-    <div class="parallax"><img src="https://contabilizalo.com/images/CURSO_DE_0_A_MASTER_MACROS_DE_EXCE_Y_VBA.jpg"></div>
+    <div class="parallax"><img src="/images/CURSO_DE_0_A_MASTER_MACROS_DE_EXCE_Y_VBA.jpg"></div>
   </div>
 
 
 
   <div class="row"> <!-- open row-->
-		  	<div class="col s6">		  		
+		  	<div class="col s12 m6">		  		
 		  		<h3 class="header center-align">Contenido del curso EXCEL VBA PRO:</h3>
 
 		  		<ul class="collapsible">
@@ -276,7 +276,7 @@
 				  </ul>				
 		  	</div><!-- end col 1-->
 
-		  	<div class="col s6">
+		  	<div class="col s12 m6">
 					<h3 class="header center-align">Ventajas y beneficios de tomar este curso:</h3>
 
 					<div class="row"><!--end card-->
@@ -342,14 +342,14 @@
   <div class="section white">
 	  <div class="row container">	  	
 
-  		<div class="col m6">
+  		<div class="col m6 s12">
 	      <div class="card-panel red white-text center-align">
 	      	<h4>ANTES</h4>
         	<span style="font-size: 3rem;"><s>$100,00</s></span><br>
         	<span>Dólares</span>		        
 	      </div>
   		</div>
-  		<div class="col m6">
+  		<div class="col m6 s12">
 	      <div class="card-panel green white-text center-align">
 	      	<h4>SOLO POR HOY</h4>
         	<span style="font-size: 3rem; color:yellow;">$49,99</span><br>

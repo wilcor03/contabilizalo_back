@@ -105,7 +105,9 @@
 	    <div class="col s12 m4">
 	      <div style="border-radius: 10px;" class="card hoverable #f8bbd0 @if(in_array($course->id, [2,5,8])) pink lighten-4 @endif">
 	      	<div class="card-image">
-	          <img src="{{ $course->short_description['img_url'] }}">
+	      		<a href="{{ $course->short_description['url'] }}" target="_blank">
+		          <img src="{{ $course->short_description['img_url'] }}">
+		        </a>
 	          <span class="card-title">Certificado!</span>
 	          <!--<a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>-->
 	        </div>

@@ -112,7 +112,7 @@
 	 <div class="row">
 	 	<div class="col s12">
 		 	<div class="center">
-				<a href="https://go.hotmart.com/H42856436B?ap=37a8" target="_blank">
+				<a href="{{ $payUrl }}" target="_blank">
 					<img src="/images/boton_pago_hotmart.png" class="responsive-img">	
 				</a>
 			</div>		 	
@@ -201,7 +201,7 @@
 		  				El precio se encuentra en dólares americanos, pero al realizar el pago, el sistema lo calculará a tu moneda local.
 		  			</p>
 		  			<div>
-			  			<a href="https://go.hotmart.com/H42856436B?ap=37a8" target="_blank">
+			  			<a href="{{ $payUrl }}" target="_blank">
 			  				<img src="/images/boton_pago_hotmart.png" class="responsive-img">	
 			  			</a>
 		  			</div>		  			
@@ -373,7 +373,7 @@
 	  	</div>
 
 	  	<div class="row center">
-		  	<a href="https://go.hotmart.com/H42856436B?ap=37a8" target="_blank">
+		  	<a href="{{ $payUrl }}" target="_blank">
 					<img src="/images/boton_pago_hotmart.png" class="responsive-img">	
 				</a>
 		  </div>

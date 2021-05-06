@@ -50,6 +50,9 @@ class SendEmail extends Command
                           ->get();
                                                      
     $this->error('Proccess tot: '.count($registers));
+
+    $sendEm = 0;
+
     foreach($registers as $key => $r){       
       $this->info(($key + 1).' -processing: '.$r->email.' ID: '.$r->id);        
 
@@ -57,8 +60,12 @@ class SendEmail extends Command
         $newTime = $r->times + 1;
         $r->times = $newTime;
         if($r->save()){
+          $sendEm += 1;
           $this->info('send success!');
-          sleep(1);
+          if($sendEm == 10){
+            sleep(1);
+            $sendEm = 0;  
+          }          
           continue;
         } 
         $this->error('failed saving in db!');

@@ -9,9 +9,13 @@ Te invito para que revices el último video de nuestro canal de YouTube <i><stro
 @endcomponent
 <br>
 <div>
-	<div style="float:left; width: 50%; padding: 4px; border-right: 1px solid #ccc;">
+	<div style="float:left; width: 50%; padding: 4px; border-right: 1px solid #ccc; background:#fffbea;">
 		<img alt="funcion unir cadenas de Excel" style="width: 100%;" src="https://contabilizalo.com/images/email/email_varios.jpg" />
-		<h3 style="text-align: center; margin-top: 5px; color:green;">Nueva función UNIRCADENAS de Excel</h3>
+		<h3 style="text-align: center; margin-top: 5px; color:green;">
+			<a style="text-decoration: none;" href="https://youtu.be/p3cVcbR2N_M">
+				Nueva función UNIRCADENAS de Excel
+			</a>
+		</h3>
 		<p>
 			Video que puedes visualizar desde nuestro canal de <strong>YouTube (ConTabilizaloCom).</strong> Aprenderemos una nueva forma que habilitó Excel a la hora de concatenar las celdas.
 		</p>
@@ -23,7 +27,10 @@ Te invito para que revices el último video de nuestro canal de YouTube <i><stro
 	<div style="float:left; width: 50%; padding: 4px;">
 		<img alt="Excel VBA PRO contabilizalo" style="width: 100%;" src="https://contabilizalo.com/images/email/emai_mi_foto_y_texto_descriptivo_vba.jpg" />
 
-		<h3 style="text-align: center; margin-top: 5px; color:green;">Curso Excel PRO VBA
+		<h3 style="text-align: center; margin-top: 5px; color:green;">
+			<a style="text-decoration: none;" href="https://contabilizalo.com/promo/curso-excel-macros-vba">
+			Curso Excel PRO VBA
+			</a>
 		</h3>
 		<p>
 			Lleva tu conocimiento de Excel a otro nivel y construye no solo gráficos o fórmulas, sino complejos sistemas que podrán incluso ser comercializados si pones en práctica el contenido de este super curso.
@@ -40,7 +47,10 @@ Te invito para que revices el último video de nuestro canal de YouTube <i><stro
 <div>
 	<div style="float:left; width: 50%; padding: 4px; border-right: 1px solid #ccc;">
 		<img alt="Web Scraping contabilizalo" style="width: 100%;" src="https://contabilizalo.com/images/email/email_web_scraping_1.png" />
-		<h3 style="text-align: center; margin-top: 5px; color:green;">Curso Web Scraping con Excel y VBA
+		<h3 style="text-align: center; margin-top: 5px; color:green;">
+			<a style="text-decoration: none;" href="https://www.udemy.com/course/draft/4010578/?referralCode=F72640190BBF1E5B7006">
+			Curso Web Scraping con Excel y VBA
+			</a>
 		</h3>
 		<p>
 			¿Sabías que es posible conectar Excel con los sitios web y traer información desde ellos hacia las hojas de cálculo?. A esto se le llama web Scraping y es lo que aprenderemos a hacer en este curso. 
@@ -53,7 +63,10 @@ Te invito para que revices el último video de nuestro canal de YouTube <i><stro
 	<div style="float:left; width: 50%; padding: 4px;">
 		<img alt="excel práctico contabilizalo" style="width: 100%;" src="https://contabilizalo.com/images/email/email_excel_practico.jpg" />
 
-		<h3 style="text-align: center; margin-top: 5px; color:green;">Curso Excel Práctico de 0 a Profesional
+		<h3 style="text-align: center; margin-top: 5px; color:green;">
+			<a style="text-decoration: none;" href="https://contabilizalo.com/promo/curso-excel-macros-vba?c=1">
+				Curso Excel Práctico de 0 a Profesional
+			</a>
 		</h3>
 		<p>
 			Una gran cantidad de empresas a lo largo del mundo utilizan Excel como su herramienta inicial de análisis de datos. Aprende de manera práctica lo que debes saber para dominar tan poderoso y global paquete.

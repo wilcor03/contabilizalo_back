@@ -6,7 +6,7 @@
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-    <title>Video Cursos Online - ConTabilizalo.com</title>
+    <title>Video Cursos Online De Excel VBA y Programación - ConTabilizalo.com</title>
 
     <meta name="description" content="Video cursos certificados ConTabilizalo, aprende Excel, programación en Visual Basic, Macros y mucho más acerca del mundo técnológico"/>
 		<meta name="robots" content="noodp"/>

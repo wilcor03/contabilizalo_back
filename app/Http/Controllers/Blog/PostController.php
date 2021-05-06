@@ -18,6 +18,7 @@ use App\Models\Blog\Post;
 use App\Models\Blog\TypeFile;
 use App\Models\Blog\Recommendedable;
 use App\Models\Blog\Category;
+use App\Suscriber;
 
 ///////////////////
 //REPOSITORIES
@@ -296,6 +297,38 @@ class PostController extends Controller
     
 
     
+  }
+
+  public function deleteSuscriber(Request $r){    
+    $suscribers = Suscriber::where('email', $r->e)
+                ->where('id', $r->id)
+                ->get();
+
+    foreach($suscribers as $sus){
+      $sus->delete();
+    }
+
+    echo '<br>
+      <h1 style="color:green; text-align:center;">
+        Has sido removido con Exito de la base de datos!
+      </h1>
+      <br>
+      ...
+      <script>
+        setTimeout(() => {
+          window.location.href="https://contabilizalo.com/cursos/certificados"
+        }, 2000)
+      </script>
+      ';
+    //return redirect()->to('/');
+
+    /*$suscribers = Suscriber::where('email', $r->e)
+                ->where('id', $r->id)
+                ->get();
+
+    foreach($suscribers as $sus){
+      $sus->delete();
+    }*/
   }
 
   public function whoWeAre(){

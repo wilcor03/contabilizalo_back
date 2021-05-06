@@ -56,7 +56,7 @@ Te invito para que revices el último video de nuestro canal de YouTube <i><stro
 		<h3 style="text-align: center; margin-top: 5px; color:green;">Curso Excel Práctico de 0 a Profesional
 		</h3>
 		<p>
-			Una gran cantidad de empresas a lo largo del mungo utilizan Excel como su herramienta inicial de anlisis de datos. Aprende de manera práctica lo que debes saber para dominar tan poderoso y global paquete.
+			Una gran cantidad de empresas a lo largo del mundo utilizan Excel como su herramienta inicial de análisis de datos. Aprende de manera práctica lo que debes saber para dominar tan poderoso y global paquete.
 		</p>
 
 		@component('mail::button', ['url' => 'https://contabilizalo.com/promo/curso-excel-macros-vba?c=1', 'color' => 'green'])

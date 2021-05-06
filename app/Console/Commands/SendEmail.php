@@ -58,7 +58,7 @@ class SendEmail extends Command
         $r->times = $newTime;
         if($r->save()){
           $this->info('send success!');
-          sleep(10);
+          sleep(1);
           continue;
         } 
         $this->error('failed saving in db!');

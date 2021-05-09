@@ -286,11 +286,14 @@ class PostController extends Controller
     }   
     
     $this->saveRegisters("CURSO VBA: ");
-    //dd('arrived');
-    $payUrl = 'https://go.hotmart.com/H42856436B?ap=5769'; 
-    return view('Blog.promo.excel-vba', compact('payUrl'));
 
-    return redirect()->to('https://go.hotmart.com/H42856436B');
+    return redirect()->to('https://certificate.contabilizalo.com');
+
+    //dd('arrived');
+    //$payUrl = 'https://go.hotmart.com/H42856436B?ap=5769'; 
+    //return view('Blog.promo.excel-vba', compact('payUrl'));
+
+    //return redirect()->to('https://go.hotmart.com/H42856436B');
     //
     //udemy
     //https://www.udemy.com/course/de-0-a-experto-en-macros-y-vba-excel-facil-para-humanos/?referralCode=E7FC50E0FB91493D69A3

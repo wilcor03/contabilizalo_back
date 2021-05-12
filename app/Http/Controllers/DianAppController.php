@@ -22,13 +22,20 @@ class DianAppController extends Controller
     
     $ccs = $ids;//[123456,1019013125, 1019029124];
     
+    $count = 0;
+
     $results = [];
-    foreach($ccs as $cc){      
+    foreach($ccs as $cc){ 
+      $count += 1;     
       $result = $this->setData(explode(',', $cc));
       if($result){
         $results[] = $result;
       }
-      
+
+      if($count == 15){
+        sleep(1);
+        $count = 0;
+      }      
     }
 
     return $results;

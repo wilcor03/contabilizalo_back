@@ -6,6 +6,8 @@ use Illuminate\Console\Command;
 use App\Suscriber;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\DetripsRaffleEmail;
+use App\Exam;
+use App\Preinscrito;
 
 class SendEmail extends Command
 {
@@ -41,6 +43,25 @@ class SendEmail extends Command
   public function handle()
   {      
     $until = $this->ask('how many emails?');      
+
+    $sus = Preinscrito::all();
+    foreach($sus as $s){
+      $exists = Suscriber::where('email', $s->email)->exists();
+      if($exists){
+        $this->error('exists '.$s->email);
+        continue;
+      }
+
+      $u = new Suscriber;
+      $u->email = $s->email;
+      $u->name  = $s->name;
+      $u->save();
+      $this->line('saved: '.$u->email);
+    }
+
+
+    exit;
+
 
     $registers = Suscriber::whereNull('times') 
                           //where('times', 1)

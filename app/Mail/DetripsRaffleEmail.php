@@ -31,6 +31,6 @@ class DetripsRaffleEmail extends Mailable
      */
     public function build()
     {
-        return $this->subject('💥Nueva Función UnirCadenas - Excel - ConTabilizalo')->markdown('emails.rifa_bici');
+        return $this->subject('✅Tu propio Sistema Contable con VBA!')->markdown('emails.promo');
     }
 }

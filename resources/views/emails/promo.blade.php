@@ -10,7 +10,7 @@ En ConTabilizalo.com, hemos puesto todo nuestro esfuerzo en crear un curso digit
 <br>
 <div>
 	<p>
-		Complementa tus conocimientos con las herramientas tenológicas que nos ofrece Microsoft Excel y VBA.
+		Complementa tus conocimientos con las herramientas tecnológicas que nos ofrece Microsoft Excel y VBA.
 	</p>
 </div>
 

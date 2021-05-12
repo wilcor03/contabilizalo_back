@@ -44,25 +44,6 @@ class SendEmail extends Command
   {      
     $until = $this->ask('how many emails?');      
 
-    $sus = Exam::all();
-    foreach($sus as $s){
-      $exists = Suscriber::where('email', $s->email)->exists();
-      if($exists){
-        $this->error('exists '.$s->email);
-        continue;
-      }
-
-      $u = new Suscriber;
-      $u->email = $s->email;
-      $u->name  = $s->name;
-      $u->save();
-      $this->line('saved: '.$u->email);
-    }
-
-
-    exit;
-
-
     $registers = Suscriber::whereNull('times') 
                           //where('times', 1)
                           //->where('email', 'wilcor03@gmail.com')
@@ -107,3 +88,22 @@ class SendEmail extends Command
     
   }
 }
+
+
+/*$sus = Exam::all();
+    foreach($sus as $s){
+      $exists = Suscriber::where('email', $s->email)->exists();
+      if($exists){
+        $this->error('exists '.$s->email);
+        continue;
+      }
+
+      $u = new Suscriber;
+      $u->email = $s->email;
+      $u->name  = $s->name;
+      $u->save();
+      $this->line('saved: '.$u->email);
+    }
+
+
+    exit;*/

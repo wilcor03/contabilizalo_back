@@ -17,9 +17,6 @@ En ConTabilizalo.com, hemos puesto todo nuestro esfuerzo en crear un curso digit
 @component('mail::button', ['url' => 'https://certificate.contabilizalo.com', 'color' => 'green'])
 Quiero mas Información
 @endcomponent
-	
-
-
 
 @component('mail::panel')
 Saludos,<br>

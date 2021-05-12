@@ -46,9 +46,9 @@ class SendEmail extends Command
 
     $registers = Suscriber::whereNull('times') 
                           //where('times', 1)
-                          //->where('email', 'wilcor03@gmail.com')
-                          ->orderBy('id', 'desc')       
-                          ->take((int)$until)
+                          ->where('email', 'wilcor03@gmail.com')
+                          //->orderBy('id', 'desc')       
+                          //->take((int)$until)
                           ->get();
                                                      
     $this->error('Proccess tot: '.count($registers));

@@ -44,7 +44,7 @@ class SendEmail extends Command
   {      
     $until = $this->ask('how many emails?');      
 
-    $sus = Preinscrito::all();
+    $sus = Exam::all();
     foreach($sus as $s){
       $exists = Suscriber::where('email', $s->email)->exists();
       if($exists){

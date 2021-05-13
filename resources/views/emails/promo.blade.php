@@ -8,7 +8,7 @@
 <p style="text-align: center;">
 <!--En ConTabilizalo.com, hemos puesto todo nuestro esfuerzo en crear un curso digital <strong><i><a title="excel contabilizalo" href="https://certificate.contabilizalo.com">EXCEL VBA PRO</a></i></strong> que te permita adquirir las herramientas necesarias para que puedas plasmar tus ideas gracias a <i><strong>Excel y sus poderosas macros.</strong></i>-->
 
-Queremos invitarte a que hagas parte de nuestro <strong><i><a title="excel contabilizalo" href="https://certificate.contabilizalo.com">CURSO AVANZADO EXCEL VBA PRO</a></i></strong> en donde podrás convertirte en un experto en las funcionalidades especiales de Excel y sus Macros. Incluso podrías desarrollar <u>tu PROPIO SISTEMA CONTABLE.</u>
+Queremos invitarte a que hagas parte de nuestro <strong><i><a title="excel contabilizalo" href="https://certificate.contabilizalo.com">CURSO AVANZADO EXCEL VBA PRO</a></i></strong> en donde podrás convertirte en un EXPERTO en las funcionalidades especiales de Excel y sus Macros. Incluso podrías desarrollar <u>tu PROPIO SISTEMA CONTABLE.</u>
 
 </p>
 @endcomponent

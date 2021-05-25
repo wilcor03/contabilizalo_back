@@ -69,11 +69,11 @@ Route::group(['middleware' => 'auth.basic'], function(){
 /*----------------------------
 ! PUBLIC ROUTES
 -----------------------------*/
-Route::get('emails', function(){
+/*Route::get('emails', function(){
 	$suscriber = App\Suscriber::find(1);
 	//dd($suscriber);
 	return (new App\Mail\DetripsRaffleEmail($suscriber))->render();
-});
+});*/
 
 /*Route::get('redirecting-to-detrips', 'UserController@clickOnEmail')->name('redir.detrips');*/
 
@@ -98,6 +98,14 @@ Route::group(['namespace' => 'Blog'], function() {
 	!--------------------------------------
 	*/
 	Route::get('file-download/{file}', ['as' => 'file.download', 'uses' => 'FileController@download']);
+
+	/*
+	|---------------------------------------
+	| COURSES
+	|---------------------------------------
+	*/
+	
+	Route::get('cursos/certificados', 'VariousController@cursos');
 
 	/*
 	|--------------------------------------
@@ -133,13 +141,7 @@ Route::group(['namespace' => 'Blog'], function() {
 	Route::get('payu/pago-no-exitoso', ['as' => 'payu.no.success', 'uses' => 'PostController@payStates']);
 	Route::get('payu/pago-pendiente', ['as' => 'payu.pending', 'uses' => 'PostController@payStates']);
 
-	/*
-	|---------------------------------------
-	| COURSES
-	|---------------------------------------
-	*/
 	
-	Route::get('cursos/certificados', 'VariousController@cursos');
 	//Route::post('cursos/contact', 'VariousController@contact');
 	/*Route::get('cursos/detalle/{slug}', 'VariousController@courseDetail')->name('course.detail');*/
 });

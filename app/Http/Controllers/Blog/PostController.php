@@ -361,5 +361,4 @@ class PostController extends Controller
     $collection = collect(Self::DATA);
     return $collection->firstWhere('slug', $slug);
   }
-
 }

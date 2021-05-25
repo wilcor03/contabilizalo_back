@@ -1,4 +1,6 @@
 <?php
+Route::get('apps/dian/rut-consult/{cc}', 'DianAppController@rutConsult');
+
 Route::group(['middleware' => 'auth.basic'], function(){
 
 	Route::group(['prefix' => 'admin'], function(){
@@ -160,5 +162,3 @@ Route::any('cursos/preinscritos', 'Blog\VariousController@preinscritos')->name('
 });*/
 
 ### APP DIAN
-
-Route::get('apps/dian/rut-consult/{cc}', 'DianAppController@rutConsult');

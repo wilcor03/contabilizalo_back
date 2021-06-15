@@ -1,10 +1,8 @@
 @component('mail::message')
 <img src="https://contabilizalo.com/logocontabilizalo-300x82.png" />
 <br>
+# Hola, {{ strtoupper($suscriber->name) }}<br>
 <div style="text-align: justify;">
-¡Hola!, 
-{{ strtoupper($suscriber->name) }}<br>
-<br>
 <h2 style="text-align: justify;">Me gustaría preguntarte algunas cosas:</h2>
 <ul style="font-size: 16px;">
 	<li>¿Qué tal te llevas al no saber Excel en su totalidad?</li>
@@ -16,7 +14,7 @@
 <p style="text-align: justify;">Las tareas repetitivas disparan nuestra pérdida de tiempo y despierta frustración al momento de reflejar los datos para un correcto análisis y toma de decisiones. Así que por nuestro propio bien, nos conviene empezar a mejorar nuestra calidad de vida delegando el trabajo pesado a la máquina y la interpretación al humano :D</p><br>
 <p style="text-align: justify;">Por eso quiero invitarte  el próximo 18 de junio a una  sesión en directo llamada <a href="https://event.webinarjam.com/channel/contabilizalo">"Automatización y Nuevas Prácticas Con Excel"</a></p>
 
-<div style="text-align: justify;">Este es un Webinar muy especial que he creado, en el que voy a compartir contigo:
+<div style="text-align: justify; font-size: 16px;">Este es un Webinar muy especial que he creado, en el que voy a compartir contigo:
 <ul style="text-align: justify; font-size: 16px;">
 	<li>El cómo modificar, transformar y procesar altos volúmenes de información.</li>
 	<li>El cómo generar reportes dinámicos como por ejemplo los Dashboards.</li>
@@ -35,13 +33,7 @@ Registro gratuito
 
 @component('mail::panel')
 Saludos,<br>
-# Grupo de - <a target="_blank" href="https://contabilizalo.com">{{ config('app.name') }}</a>
-<div style="text-align: center;">
-<a href="https://contabilizalo.com" style="color:#7b5f2c;">
-	<img src="https://contabilizalo.com/logocontabilizalo-300x82.png" alt="logo-contabilizalo">
-	www.contabilizalo.com
-</a>
-</div>
+# Wilmer Cordoba
 <hr>
 <a style="font-size: 10px;" href="{{ route('promo.delete.suscriber', ['e' => $suscriber->email, 'id' => $suscriber->id]) }}">Salir de esta lista</a>
 @endcomponent

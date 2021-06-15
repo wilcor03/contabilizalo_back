@@ -31,6 +31,6 @@ class DetripsRaffleEmail extends Mailable
      */
     public function build()
     {
-        return $this->subject('✅Crea Tu propio Sistema Contable con VBA!')->markdown('emails.promo');
+        return $this->subject('[Evento En Vivo] Automatización y Nuevas Prácticas Con Excel + Certificado.')->markdown('emails.promo');
     }
 }

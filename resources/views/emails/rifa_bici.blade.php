@@ -1,5 +1,5 @@
 @component('mail::message')
-<img src="https://contabilizalo.com/images/email/email_yo_cabecera.png" />
+<img src="https://contabilizalo.com/logocontabilizalo-300x82.png" />
 <br>
 @component('mail::panel')
 # Hola, {{ strtoupper($suscriber->name) }}

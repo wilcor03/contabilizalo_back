@@ -6,3 +6,8 @@
   ga('create', 'UA-39013458-1', 'auto');
   ga('send', 'pageview');
 </script>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFNTZ4M"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->

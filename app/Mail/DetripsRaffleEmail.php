@@ -31,6 +31,6 @@ class DetripsRaffleEmail extends Mailable
      */
     public function build()
     {
-        return $this->subject('[Evento En Vivo] Automatización y Nuevas Prácticas Con Excel + Certificado.')->markdown('emails.promo');
+        return $this->subject('[Evento Gratuito] - Nuevas prácticas con Excel')->markdown('emails.promo');
     }
 }

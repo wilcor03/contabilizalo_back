@@ -141,9 +141,6 @@ class VariousController extends Controller
 
     // Output the generated PDF to Browser
     $dompdf->stream('CONTABILIZALO_CERTIFICADO_'.str_replace("", '_', $student->name));
-
-    sleep(2);
-    return redirect()->to("/");
   }
 
   private function QrCodeGenerator($url){

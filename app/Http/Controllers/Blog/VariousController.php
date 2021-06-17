@@ -165,7 +165,7 @@ class VariousController extends Controller
 
     // Create generic label
     $label = Label::create('contabilizalo.com')
-        ->setTextColor(new Color(255, 255, 255));
+        ->setTextColor(new Color(255, 255, 255))
         ->setBackgroundColor(new Color(0, 0, 230));
 
     $result = $writer->write($qrCode, $logo, $label);

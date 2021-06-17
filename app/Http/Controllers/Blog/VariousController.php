@@ -174,7 +174,7 @@ class VariousController extends Controller
   }
 
   public function certifPost(Request $r){
-
+    dd($r->all());
     $r->validate([
       'name'          => 'required',
       'email'         => 'required|email'      

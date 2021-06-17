@@ -198,7 +198,7 @@ class VariousController extends Controller
       $exam->temp_token = Str::random(20);
       $exam->save();
     }
-    dd($exam);
+    
     return $this->certGener($exam);
 
     exit;

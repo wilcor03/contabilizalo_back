@@ -173,15 +173,14 @@ class VariousController extends Controller
     return $result->getDataUri();
   }
 
-  public function certifPost(Request $r){
-    dd($r->all());
+  public function certifPost(Request $r){    
     $r->validate([
       'name'          => 'required',
       'email'         => 'required|email'      
     ]);
 
     $sus = Suscriber::where('email', $r->email)->exists();
-
+    dd($sus);
     if(!$sus){
       $sus = new Suscriber;
       $sus->email = $r->email;

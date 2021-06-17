@@ -18,6 +18,7 @@ use Dompdf\Dompdf;
 use Dompdf\Options;
 
 use App\Preinscrito;
+use App\Suscriber;
 
 
 use Endroid\QrCode\Color\Color;
@@ -91,12 +92,24 @@ class VariousController extends Controller
 
   public function verifyCertification(Request $r){
     if($r->has('tt')){
-      $student = Exam::where('temp_token', request()->tt)->first();  
-      return view('examenes.verify-certificate', compact('student'));
+      $student = Exam::where('temp_token', request()->tt)
+                      ->whereNotNull('temp_token')
+                      ->first();       
     }
+
+    if($r->has('wb')){
+      $student = Exam::where('temp_token', request()->wb)
+                      ->whereNotNull('temp_token')
+                      ->first(); 
+    }
+
+    if(!$student){
+      abort(404);
+    }
+    return view('examenes.verify-certificate', compact('student'));
   }
 
-  private function certGener(){//generate Certificates
+  private function certGener($student = null){//generate Certificates
     
     $options = new Options();
     $options->set('isRemoteEnabled', TRUE);
@@ -111,8 +124,8 @@ class VariousController extends Controller
     ]);
     $dompdf->setHttpContext($context);
 
-    $student = Exam::where('temp_token', request()->tt)->first();  
-    $url = 'https://contabilizalo.com/examen/certificacion?tt='.$student->temp_token;
+    //$student = Exam::where('temp_token', request()->tt)->first();  
+    $url = 'https://contabilizalo.com/examen/certificacion?wb='.$student->temp_token;
     $qrUri = $this->QrCodeGenerator($url);      
     $htmlView = view('examenes.certificade', compact('qrUri', 'student'));
 
@@ -128,6 +141,9 @@ class VariousController extends Controller
 
     // Output the generated PDF to Browser
     $dompdf->stream('CONTABILIZALO_CERTIFICADO_'.str_replace("", '_', $student->name));
+
+    sleep(2);
+    return redirect()->to("/");
   }
 
   private function QrCodeGenerator($url){
@@ -158,6 +174,37 @@ class VariousController extends Controller
   }
 
   public function certifPost(Request $r){
+
+    $r->validate([
+      'name'          => 'required',
+      'email'         => 'required|email'      
+    ]);
+
+    $sus = Suscriber::where('email', $r->email)->exists();
+
+    if(!$sus){
+      $sus = new Suscriber;
+      $sus->email = $r->email;
+      $sus->name  = $r->name;
+      $sus->save();
+    }
+
+    $exam = Exam::where('email', $r->email)->first();
+
+    if(!$exam){
+      $exam = new Exam;
+      $exam->email = $r->email;
+      $exam->name  = $r->name;
+      $exam->country = "N/A";
+      $exam->temp_token = Str::random(20);
+      $exam->save();
+    }
+
+    return $this->certGener($exam);
+
+    exit;
+
+
     if($r->has('mode') && $r->mode =="exam"){
 
       $r->validate([

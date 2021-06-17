@@ -35,7 +35,7 @@
 		<br>		
 		<h2>{{ Str::upper($student->name) }}</h2>
 		<div style="max-width: 600px; margin: 0 auto 0">
-			<p>Por demostrar compromiso y asistencia durante los 4 días de capacitación introductoria a EXCEL, NÓMINA Y MACROS online. Que tuvo lugar entre los días 27 de Marzo de 2021 y el 03 de Abril de 2021 de manera virtual y en vivo.</p>	
+			<p>Por demostrar compromiso y asistencia durante al evento en vivo sobre <i>NUEVAS PRÁCTICAS CON EXCEL</i> el día 18 de mayo de 2021 (Duración 1 hora).</p>	
 		</div>		
 		<br>
 		<br>

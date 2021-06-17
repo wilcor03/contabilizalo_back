@@ -4,7 +4,7 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<title>Examen Soy Contabilizers - Curso Gratuito Nómina + Excel + Macros</title>
+	<title>Examen Soy Contabilizers - Webinar Nuevas Practicas con Excel</title>
 </head>
 <body>
 <div class="container">	
@@ -12,7 +12,7 @@
 	<section class="jumbotron text-center">
     <div class="container">    	
       <h1 class="jumbotron-heading">Examen para certificación</h1>
-      <p class="lead text-muted">Examen para certificación #soyContabilizer - Curso Gratuito introductorio a Nómina - Excel y Macros Básicos</p> 
+      <p class="lead text-muted">Examen para certificación #soyContabilizer - <i>Nuevas prácticas con Excel</i> Webinar en Vivo 18 de mayo de 2021</p> 
       
     </div><!-- end container -->     
   </section>

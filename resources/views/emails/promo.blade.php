@@ -8,9 +8,10 @@
 <p style="text-align: justify;">Aquí tendremos un trato más cercano, serás el primero en enterarte de todas las noticias y estarás acompañado de personas con tu mismo objetivo de ser un experto en el manejo de Excel.</p>
 <p>Nos vemos dentro</p>
 <p>Si no te has registrado al evento de hoy te dejo el enlace de registro clic aquí</p>
+<p><a href="https://t.me/joinchat/LwPHxjXARb9jOWMx">Unirme al grupo Telegram >></a></p>
 <p><a href="https://event.webinarjam.com/channel/contabilizalo">Registrarme al Evento gratuito>></a></p>
 <ul>
-	<li>Certificamos tu asistencia.</li>
+	<li>✅  Certificamos tu asistencia.</li>
 </ul>
 <p>¡Nos vemos en la sesión!</p>
 </div>

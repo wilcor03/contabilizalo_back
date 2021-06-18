@@ -3,23 +3,24 @@
 <br>
 # Hola, {{ strtoupper($suscriber->name) }}<br>
 <div style="text-align: justify;">
-<h2 style="text-align: justify;">¿Aún no te has registrado?</h2>
-<p>Registrate al gran evento en vivo totalmente gratis donde compartiré la forma de automatizar las tareas cotidianas con Excel y las nuevas prácticas que están disponibles para hacer tu vida más fácil:<p>
-<ul style="text-align: justify; font-size: 16px;">
-<li>Power Pivot</li>
-<li>Power Query</li>
-<li>Introducción a lenguaje DAX</li>
-<li>Dashboard</li>
+<h2 style="text-align: justify;">¿Ya estás en nuestros grupos privados?</h2>
+<p>Hoy es el gran día, nuestro evento en vivo inicia a las 8:00 PM hora Colombia<p>
+<p style="text-align: justify;">Aquí tendremos un trato más cercano, serás el primero en enterarte de todas las noticias y estarás acompañado de personas con tu mismo objetivo de ser un experto en el manejo de Excel.</p>
+<p>Nos vemos dentro</p>
+<p>Si no te has registrado al evento de hoy te dejo el enlace de registro clic aquí</p>
+<p><a href="https://event.webinarjam.com/channel/contabilizalo">Registrarme al Evento gratuito>></a></p>
+<ul>
+	<li>Certificamos tu asistencia.</li>
 </ul>
-<p style="text-align: justify;">Los cupos son limitados, registrate y asegura tu cupo; recuerda  entregamos certificado de asistencia.</p>
+<p>¡Nos vemos en la sesión!</p>
 </div>
 
-@component('mail::button', ['url' => 'https://event.webinarjam.com/channel/contabilizalo', 'color' => 'green'])
-Registrarme
+@component('mail::button', ['url' => 'https://t.me/joinchat/LwPHxjXARb9jOWMx', 'color' => 'green'])
+Unirme al Grupo Telegram
 @endcomponent
 
 @component('mail::panel')
-Saludos,<br>
+Un abrazo,<br>
 # Wilmer Cordoba
 ConTabilizalo.com
 <hr>

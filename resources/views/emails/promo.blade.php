@@ -5,10 +5,12 @@
 <div style="text-align: justify;">
 <h2 style="text-align: justify;">¿Ya estás en nuestros grupos privados?</h2>
 <p>Hoy es el gran día, nuestro evento en vivo inicia a las 8:00 PM hora Colombia<p>
+<h2>¿Todavía no te has unido a nuestro grupo privado de Telegram?</h2>
 <p style="text-align: justify;">Aquí tendremos un trato más cercano, serás el primero en enterarte de todas las noticias y estarás acompañado de personas con tu mismo objetivo de ser un experto en el manejo de Excel.</p>
+
+<p><a href="https://t.me/joinchat/LwPHxjXARb9jOWMx">Unirme al grupo Telegram >></a></p>
 <p>Nos vemos dentro</p>
 <p>Si no te has registrado al evento de hoy te dejo el enlace de registro clic aquí</p>
-<p><a href="https://t.me/joinchat/LwPHxjXARb9jOWMx">Unirme al grupo Telegram >></a></p>
 <p><a href="https://event.webinarjam.com/channel/contabilizalo">Registrarme al Evento gratuito>></a></p>
 <ul>
 	<li>✅  Certificamos tu asistencia.</li>

@@ -18,6 +18,9 @@
   <main role="main">
     <div class="row">
       <div class="col">
+        
+      </div>
+      <div class="col">        
         <div class="card text-center">
           <!--<div class="card-header">
             Featured
@@ -72,10 +75,7 @@
             Este formulario se desactivará a las 23:59 horas del 18 de mayo 2021 (h. Colombia)
           </div>
         </div>
-      </div>
-      <div class="col">
-        
-      </div>
+      </div>      
     </div>
   </div>
 

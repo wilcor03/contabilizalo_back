@@ -15,16 +15,18 @@
       </a>
     </div>
   </nav>	
-  <main role="main">
-    <div class="row">
+  <main role="main"><br>
+    <h3 style="text-align: center;">Este evento ya finalizo...</h3>
+
+    <!--<div class="row">
       <div class="col">
         
       </div>
       <div class="col">        
         <div class="card text-center">
-          <!--<div class="card-header">
+          <div class="card-header">
             Featured
-          </div>-->
+          </div>
           <div class="card-body">
             <h5 class="card-title text-success">Descarga de Certificado</h5>
             <p class="card-text">Certificación #soyContabilizer - <i><strong>Nuevas prácticas con Excel</strong></i> Webinar en Vivo 18 de Junio de 2021.</p>
@@ -77,7 +79,7 @@
         </div>
       </div>      
     </div>
-  </div>
+  </div>-->
 
   <!--<div class="card text-center">
     <div class="card-header">
@@ -157,6 +159,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script type="text/javascript">
 	$(function(){
+
+    setTimeout(function(){
+      window.location.href="https://certificate.contabilizalo.com/excel-para-contadores-y-financieros/"
+    }, 2000);
 
     $('#btnsender').click(function(){
 

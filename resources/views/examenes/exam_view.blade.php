@@ -12,8 +12,7 @@
 	<section class="jumbotron text-center">
     <div class="container">    	
       <h1 class="jumbotron-heading">Examen para certificación</h1>
-      <p class="lead text-muted">Examen para certificación #soyContabilizer - <i>Nuevas prácticas con Excel</i> Webinar en Vivo 18 de Junio de 2021</p> 
-      
+      <p class="lead text-muted">Examen para certificación #soyContabilizer - <i>Nuevas prácticas con Excel</i> Webinar en Vivo 18 de Junio de 2021</p>      
     </div><!-- end container -->     
   </section>
   <section>  	

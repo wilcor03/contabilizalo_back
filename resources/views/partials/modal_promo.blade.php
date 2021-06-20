@@ -18,7 +18,7 @@
 						
 					<a href="{{ route('promo.apl.renta') }}">
 				        <picture class="text-center">
-						   {!! Html::image('images/banner-10.png', 'webinar Excel con super poderes', ['class' => 'img-responsive']) !!}
+						   {!! Html::image('images/banner_contabilizalo_promo_excel_sp.png', 'webinar Excel con super poderes', ['class' => 'img-responsive']) !!}
 						</picture>
 					</a>
 

@@ -16,7 +16,7 @@
 				  <iframe id="video" class="embed-responsive-item" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				</div>-->
 						
-					<a href="http://bit.ly/Inscribirme_al_Evento_Ahora">
+					<a target="_blank" href="http://bit.ly/Inscribirme_al_Evento_Ahora">
 				        <picture class="text-center">
 						   {!! Html::image('images/banner-10.png', 'webinar Excel con super poderes', ['class' => 'img-responsive']) !!}
 						</picture>

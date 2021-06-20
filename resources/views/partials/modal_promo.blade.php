@@ -1,23 +1,26 @@
-<!-- Modal -->
+      <!-- Button trigger modal -->
+<button style="display: none;" id="btnmodal" type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">  
+</button>
+
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-	  <div class="modal-dialog" role="document">
-	    <div class="modal-content">
-	      <div class="modal-header">
-	        <button id="closeModal" type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-	        <h5>CURSO DE MACROS Y VBA EXCEL.</h5>
-	      </div>
-	      <div class="modal-body">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Evento en vivo Gratuito</h4>
+      </div>
+      <div class="modal-body">
 
-	      	<div class="embed-responsive embed-responsive-16by9">
+	      	<!--<div class="embed-responsive embed-responsive-16by9">
 				  <iframe id="video" class="embed-responsive-item" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				</div>
+				</div>-->
 						
-					<!--<a href="{{ route('promo.apl.renta') }}">
-	        <picture class="text-center">
-					   {!! Html::image('images/banner promo renta naturales seminario.png', 'Renta personas naturales', ['class' => 'img-responsive']) !!}
-					</picture>
-					</a>-->
+					<a href="{{ route('promo.apl.renta') }}">
+				        <picture class="text-center">
+						   {!! Html::image('images/banner-10.png', 'webinar Excel con super poderes', ['class' => 'img-responsive']) !!}
+						</picture>
+					</a>
 
 	      	<!--<a href="https://elportal.contabilizalo.com" title="Solicita cotizaciones gratis">
 	        <picture class="text-center">
@@ -46,7 +49,7 @@
 						<p style="font-size: 16px;" class="text-danger">
 							<strong>Automatiza todas las tareas repetitivas. ¿Que tal si pudieras hacer todo tu trabajo con un solo click?.</strong>
 						</p>
-						<a class="btn btn-success btn-lg" href="{{ route('promo.excel-vba') }}" title="Video Curso Macros y VBA Excel">Más Detalles <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
+						<a target="_blank" class="btn btn-success btn-lg" href="http://bit.ly/Inscribirme_al_Evento_Ahora" title="Video Curso Macros y VBA Excel">Registrarme Gratis <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></a>
 					</div>
 	      
 	      </div><!-- modal body-->

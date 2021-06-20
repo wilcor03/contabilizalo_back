@@ -43,6 +43,7 @@
     
     <div class="container-fluid">      
       @yield('content')     
+      @include('partials.modal_promo')
     </div> <!-- end container -->
     @include('layouts.Blog.partials.footer')
 

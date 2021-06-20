@@ -304,11 +304,11 @@ src="https://www.facebook.com/tr?id=1337685433285281&ev=PageView&noscript=1"
         <script>
         (adsbygoogle = window.adsbygoogle || []).push({});
         </script><br>
-        
-        <a href="/cursos/certificados" target="_blank" title="Video curso Macros y VBA Excel - Programación en Excel">
+        <br><br>
+        <a href="https://certificate.contabilizalo.com/excel-para-contadores-y-financieros/" target="_blank" title="Video curso Macros y VBA Excel - Programación en Excel">
           <picture class="text-center">
-            {!! Html::image('images/banner_contabilizalo_promo_vba.png', 'Cursos de Excel y programación Online', ['width' => '280','class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
-              box-shadow: 1px 2px 2px #000;']) !!}
+            {!! Html::image('images/banner_contabilizalo_promo_excel_sp.png', 'Curso de Excel Desde 0 a Avanzado', ['class' => 'img-responsive', 'style' => 'border: 1px solid #c7c7c7;
+                box-shadow: 1px 2px 2px #000;']) !!}
           </picture>
         </a>
         <br>

@@ -1,31 +1,38 @@
 @component('mail::message')
 <img src="https://contabilizalo.com/logocontabilizalo-300x82.png" />
-<br>
-<h2 style="color:#168bde;">
-<a href="">Únete aquí a EXCEL CON SÚPER PODERES</a>
-</h2>
-<br>
+
 <div style="text-align: justify;">
-<!--<h2 style="text-align: justify;">¿Ya estás en nuestros grupos privados?</h2>-->
+<br>
 <p>
-<strong>{{ strtoupper($suscriber->name) }}</strong>, hoy cerramos la gran oferta del 50% en mi programa de <strong><i>EXCEL CON SUPER PODERES</i></strong> y si tú también quieres automatizar procesos que de seguro te van a ahorrar mucho tiempo, yo puedo enseñarte cómo  conseguirlo y lo mejor paso a paso.
+<strong>{{ strtoupper($suscriber->name) }}</strong>, ¡abrimos inscripciones al webinar <strong><i><a href="https://bit.ly/Inscribirme_al_Evento">AUTOMATIZACIÓN Y NUEVAS PRÁCTICAS CON EXCEL!</a></i></strong>
 </p>
-<p style="text-align: justify;">Así que si trabajas incansablemente en el manejo de datos y deseas hacer las cosas más fáciles estoy seguro que este curso paso a paso es para ti.</p>
-<p style="text-align: justify;">Ayer viste el gran poder de Excel y las herramientas que tienes a la mano, si estás dispuesto a buscar la forma de que funcione sin sentirte frustrado con la cantidad de datos que no sabes cómo presentar y analizar, <strong>EXCEL CON  SUPER PODERES</strong> es tu mejor opción.</p>
-<p style="text-align: justify;">Te ayudare, y lo mejor te acompañare con videos y plantillas que te darán práctica e ideas para que desde ya implementes en tus trabajos o proyectos.</p>
-<p style="text-align: justify;"><a href="https://www.hotmart.com/product/excel-practico-power-pivot-power-query-3x1/K54691318O">Tu realización profesional no puede esperar más: apuntate ahora a <strong>EXCEL CON SÚPER PODERES.</a></strong></p>
-<p style="text-align: justify;">Nos vemos en el curso,</p>
-<p>Wilmer Córdoba</p>
+<br>
+<p style="text-align: justify;">Sé que por algún motivo te fue imposible asistir al evento en vivo realizado la semana pasada, por esto deseo participes en este evento en vivo que se realizará el viernes 25 de junio hora Colombia.</p>
+<p style="text-align: justify;">Este es un Webinar muy especial voy a compartir contigo: </p>
+<ul>
+	<li>El cómo modificar, transformar y procesar altos volúmenes de información.</li>
+	<li>El cómo generar reportes dinámicos como por ejemplo los Dashboards.</li>
+	<li>Y lo mejor es que no vas a tener que usar programación o Macros.</li>
+</ul>
+<p>La sesión es completamente gratuita y <a href="https://bit.ly/Inscribirme_al_Evento">para poder verla solo tienes que inscribirte aquí</a></p>
+
+<p style="text-align: justify;">Espero verte en la sesión para que conozcas las nuevas tecnologías que facilitarán tu vida y por supuesto recibas tu certificado de asistencia.</p>
+<p style="text-align: justify;"><a href="">
+	<a href="https://t.me/joinchat/znggIlK1GyVkMTUx">PD:  Para tener contacto directo  contigo  unete a nuestro canal de Telegram</a>
+</p>
+
 </div>
 
-@component('mail::button', ['url' => 'https://www.hotmart.com/product/excel-practico-power-pivot-power-query-3x1/K54691318O', 'color' => 'green'])
-Quiero unirme este curso
+@component('mail::button', ['url' => 'https://bit.ly/Inscribirme_al_Evento', 'color' => 'green'])
+Inscribirme al evento Gratuito
 @endcomponent
 
 @component('mail::panel')
-Un abrazo,<br>
+Nos vemos en el evento,<br>
 # Wilmer Cordoba
 ConTabilizalo.com
+<br>
+<a href="https://www.facebook.com/ConTabilizaloCom">Siguenos en Facebook</a>
 <hr>
 <a style="font-size: 10px;" href="{{ route('promo.delete.suscriber', ['e' => $suscriber->email, 'id' => $suscriber->id]) }}">Salir de esta lista</a>
 @endcomponent

@@ -160,9 +160,9 @@
 <script type="text/javascript">
 	$(function(){
 
-    setTimeout(function(){
+    /*setTimeout(function(){
       window.location.href="https://certificate.contabilizalo.com/excel-para-contadores-y-financieros/"
-    }, 2000);
+    }, 2000);*/
 
     $('#btnsender').click(function(){
 

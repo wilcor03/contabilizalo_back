@@ -18,7 +18,7 @@
   <main role="main"><br>
     <h3 style="text-align: center;">Este evento ya finalizo...</h3>
 
-    <!--<div class="row">
+    <div class="row">
       <div class="col">
         
       </div>
@@ -74,12 +74,12 @@
             </div>                    
           </div>
           <div class="card-footer text-muted">
-            Este formulario se desactivará a las 23:59 horas del 18 de mayo 2021 (h. Colombia)
+            Este formulario se desactivará a las 23:59 horas del 25 de junio 2021 (h. Colombia)
           </div>
         </div>
       </div>      
     </div>
-  </div>-->
+  </div>
 
   <!--<div class="card text-center">
     <div class="card-header">

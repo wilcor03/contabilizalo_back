@@ -18,7 +18,7 @@
 		</p>
 	@endif
 
-	@if(request()->has('wb'))
+	@if(request()->has('wb') && !request()->has('day'))
 		<p class="text-muted">
 			la persona: <strong>{{ Str::upper($student->name) }}</strong> reposa en nuestra base de datos como asistente efectivo a la capacitación virtual durante el día 18 de mayo de 2021 de manera Gratuita.
 		</p>

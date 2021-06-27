@@ -29,7 +29,7 @@
           </div>
           <div class="card-body">
             <h5 class="card-title text-success">Descarga de Certificado</h5>
-            <p class="card-text">Certificación #soyContabilizer - <i><strong>Nuevas prácticas con Excel</strong></i> Webinar en Vivo 25 de Junio de 2021.</p>
+            <p class="card-text">Certificación #soyContabilizer - <i><strong>Nuevas prácticas con Excel</strong></i> Webinar en Vivo 26 de Junio de 2021.</p>
 
             <hr>
 

@@ -35,7 +35,7 @@
 		<br>		
 		<h2>{{ Str::upper($student->name) }}</h2>
 		<div style="max-width: 600px; margin: 0 auto 0">
-			<p>Por demostrar compromiso y asistencia durante al evento en vivo sobre <i>NUEVAS PRÁCTICAS CON EXCEL</i> el día 25 de Junio de 2021 (Duración 1 hora).</p>	
+			<p>Por demostrar compromiso y asistencia durante al evento en vivo sobre <i>NUEVAS PRÁCTICAS CON EXCEL</i> el día 26 de Junio de 2021 (Duración 1 hora).</p>	
 		</div>		
 		<br>
 		<br>

@@ -125,7 +125,7 @@ class VariousController extends Controller
     $dompdf->setHttpContext($context);
 
     //$student = Exam::where('temp_token', request()->tt)->first();  
-    $url = 'https://contabilizalo.com/examen/certificacion?wb='.$student->temp_token;
+    $url = 'https://contabilizalo.com/examen/certificacion?wb='.$student->temp_token.'&day=20210626';
     $qrUri = $this->QrCodeGenerator($url);      
     $htmlView = view('examenes.certificade', compact('qrUri', 'student'));
 
@@ -185,16 +185,16 @@ class VariousController extends Controller
       $sus->save();
     }
 
-    $exam = Exam::where('email', $r->email)->first();
+    //$exam = Exam::where('email', $r->email)->first();
 
-    if(!$exam){
+    //if(!$exam){
       $exam = new Exam;
       $exam->email = $r->email;
       $exam->name  = $r->name;
       $exam->country = "N/A";
       $exam->temp_token = Str::random(20);
       $exam->save();
-    }
+    //}
 
     return $this->certGener($exam);
 

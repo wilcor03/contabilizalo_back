@@ -18,7 +18,7 @@
   <main role="main"><br>
     <h3 style="text-align: center;">Este evento ya finalizo...</h3>
 
-    <div class="row">
+    <!--<div class="row">
       <div class="col">
         
       </div>
@@ -78,7 +78,7 @@
           </div>
         </div>
       </div>      
-    </div>
+    </div>-->
   </div>
 
   <!--<div class="card text-center">
@@ -160,9 +160,9 @@
 <script type="text/javascript">
 	$(function(){
 
-    /*setTimeout(function(){
+    setTimeout(function(){
       window.location.href="https://certificate.contabilizalo.com/excel-para-contadores-y-financieros/"
-    }, 2000);*/
+    }, 2000);
 
     $('#btnsender').click(function(){
 

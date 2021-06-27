@@ -44,7 +44,7 @@ class SendEmail extends Command
   { 
     $until = $this->ask('how many emails?');      
 
-    $registers = Suscriber::whereNotIn('email', INSCRITOS) 
+    $registers = Suscriber::whereIn('email', INSCRITOS) 
                           //where('times', 1)
                           //->where('email', 'wilcor03@gmail.com')
                           //->orderBy('id', 'desc')       

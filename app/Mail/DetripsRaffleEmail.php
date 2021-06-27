@@ -31,6 +31,6 @@ class DetripsRaffleEmail extends Mailable
      */
     public function build()
     {
-        return $this->subject(strtoupper($this->suscriber->name).', ¡Una Gran noticia!')->markdown('emails.promo');
+        return $this->subject('[Por 48 horas] Grabación Sesión “Automatización y Nuevas Prácticas Con Excel”')->markdown('emails.promo');
     }
 }

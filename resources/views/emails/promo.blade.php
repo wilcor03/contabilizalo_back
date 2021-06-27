@@ -4,27 +4,28 @@
 <div style="text-align: justify;">
 <br>
 <p>
-<strong>{{ strtoupper($suscriber->name) }}</strong>, ¡abrimos inscripciones al webinar <strong><i><a href="https://bit.ly/Inscribirme_al_Evento">AUTOMATIZACIÓN Y NUEVAS PRÁCTICAS CON EXCEL!</a></i></strong>
+<strong>Hola, {{ strtoupper($suscriber->name) }}
 </p>
 <br>
-<p style="text-align: justify;">Sé que por algún motivo te fue imposible asistir al evento en vivo realizado la semana pasada, por esto deseo participes en este evento en vivo que se realizará el viernes 25 de junio hora Colombia.</p>
-<p style="text-align: justify;">Este es un Webinar muy especial voy a compartir contigo: </p>
-<ul>
-	<li>El cómo modificar, transformar y procesar altos volúmenes de información.</li>
-	<li>El cómo generar reportes dinámicos como por ejemplo los Dashboards.</li>
-	<li>Y lo mejor es que no vas a tener que usar programación o Macros.</li>
-</ul>
-<p>La sesión es completamente gratuita y <a href="https://bit.ly/Inscribirme_al_Evento">para poder verla solo tienes que inscribirte aquí</a></p>
+<p style="text-align: justify;">Aún estoy emocionado con lo que sucedió en la sesión en directo <strong><i>“Automatización y Nuevas Prácticas Con Excel”</i></strong> que he impartido hace apenas unas horas.</p>
+<p style="text-align: justify;">¡Tantas personas se han dado cuenta de las herramientas que han omitido en su día a día y a la vez, es tan normal seguir haciendo trabajos mecánicos que quitan mucho tiempo, dejando de lado el poder de la AUTOMATIZACIÓN...</p>
 
-<p style="text-align: justify;">Espero verte en la sesión para que conozcas las nuevas tecnologías que facilitarán tu vida y por supuesto recibas tu certificado de asistencia.</p>
-<p style="text-align: justify;"><a href="">
-	<a href="https://t.me/joinchat/znggIlK1GyVkMTUx">PD:  Para tener contacto directo  contigo  unete a nuestro canal de Telegram</a>
+<p style="text-align: justify;">
+	...¿Verdad?, Así que, si a ti también te pasa, es hora de poner manos a la obra!
 </p>
 
+<p style="text-align: justify;">
+	<a href="https://youtu.be/Bd8WXarE__I">Si no pudiste entrar en directo en la sesión o te gustaría verla otra vez, aquí tienes la grabación. Pero ten en cuenta que sólo estará disponible por 48 horas.</a>
+</p>
+
+<p style="text-align: justify;">Además, te comparto la super oferta del 50% que tenemos para ti de nuestro curso <strong><i><a href="https://certificate.contabilizalo.com/excel-para-contadores-y-financieros/">EXCEL CON SÚPER PODERES</a></i></strong></p>
+
+<p style="text-align: justify;">¿Qué esperas para adquirirla?  aprende paso a paso ahora.</p>
+<p><a href="https://go.hotmart.com/K54691318O?dp=1">Clic aquí para obtener la oferta al 50%</a></p>
 </div>
 
-@component('mail::button', ['url' => 'https://bit.ly/Inscribirme_al_Evento', 'color' => 'green'])
-Inscribirme al evento Gratuito
+@component('mail::button', ['url' => 'https://go.hotmart.com/K54691318O?dp=1', 'color' => 'green'])
+Obtener Curso con 50% + Módulos adicionales
 @endcomponent
 
 @component('mail::panel')

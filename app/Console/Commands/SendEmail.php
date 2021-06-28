@@ -46,7 +46,7 @@ class SendEmail extends Command
 
     $registers = Suscriber:://whereIn('email', INSCRITOS) 
                           //where('times', 1)
-                          where('email', 'contabilizalo.com@gmail.com')
+                          where('email', 'wilcor03@gmail.com')
                           //->orderBy('id', 'desc')       
                           //->take((int)$until)
                           ->get();

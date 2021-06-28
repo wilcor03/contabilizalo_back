@@ -4,32 +4,36 @@
 <div style="text-align: justify;">
 <br>
 <p>
-<strong>Hola, {{ strtoupper($suscriber->name) }}
+<strong>Hola, {{ strtoupper($suscriber->name) }},
 </p>
 <br>
-<p style="text-align: justify;">Aún estoy emocionado con lo que sucedió en la sesión en directo <strong><i>“Automatización y Nuevas Prácticas Con Excel”</i></strong> que he impartido hace apenas unas horas.</p>
-<p style="text-align: justify;">¡Tantas personas se han dado cuenta de las herramientas que han omitido en su día a día y a la vez, es tan normal seguir haciendo trabajos mecánicos que quitan mucho tiempo, dejando de lado el poder de la AUTOMATIZACIÓN...</p>
-
-<p style="text-align: justify;">
-	...¿Verdad?, Así que, si a ti también te pasa, es hora de poner manos a la obra!
-</p>
-
-<p style="text-align: justify;">
-	<a href="https://youtu.be/Bd8WXarE__I">Si no pudiste entrar en directo en la sesión o te gustaría verla otra vez, aquí tienes la grabación. Pero ten en cuenta que sólo estará disponible por 48 horas.</a>
-</p>
-
-<p style="text-align: justify;">Además, te comparto la super oferta del 50% que tenemos para ti de nuestro curso <strong><i><a href="https://certificate.contabilizalo.com/excel-para-contadores-y-financieros/">EXCEL CON SÚPER PODERES</a></i></strong></p>
-
-<p style="text-align: justify;">¿Qué esperas para adquirirla?  aprende paso a paso ahora.</p>
-<p><a href="https://go.hotmart.com/K54691318O?dp=1">Clic aquí para obtener la oferta al 50%</a></p>
+<p style="text-align: justify;">Hola, se que estuviste en el evento en vivo <strong><i>NUEVAS PRÁCTICAS CON EXCEL 2021</i></strong> y también sé que te encanto.</p>
+<p style="text-align: justify;">Así que no dejes de darle otro nivel a tu Excel con herramientas avanzadas como <strong>POWER PIVOT</strong>, <strong>POWER QUERY</strong> y la elaboración de <strong>Dashboards</strong>:</p>
+<p style="text-align: justify;">Tu empleo del día a día y/o tu emprendimiento requieren que automatices los procesos y ahorres tiempo.</p>
+<p style="text-align: justify;">Tendrás más de 7 módulos disponibles ahora mismo para ti, además, si te inscribes ahora ahorras el 50% y obtienes dos módulos adicionales: <strong>INTRODUCCIÓN A POWER BI</strong> y <strong>POWER MAPS.</strong></p>
+<p><a href="https://payment.hotmart.com/K54691318O?off=ke8jrqug&checkoutMode=10&bid=1624389589716">Obtener Excel con Super poderes con el 50% de descuento >></a></p>
 </div>
 
-@component('mail::button', ['url' => 'https://go.hotmart.com/K54691318O?dp=1', 'color' => 'green'])
-Obtener Curso con 50% + Módulos adicionales
+@component('mail::button', ['url' => 'https://payment.hotmart.com/K54691318O?off=ke8jrqug&checkoutMode=10&bid=1624389589716', 'color' => 'green'])
+Quiero este super pack
 @endcomponent
 
+<p>
+	<strong>Ventajas:</strong>
+	<ul>
+		<li>Acceso de por vida</li>
+		<li>Garantía <strong>HOTMART</strong></li>
+		<li>Acceso a la plataforma 24/7</li>
+		<li>Reuniones en vivo para refuerzo</li>
+		<li>Plantillas y material de descarga</li>
+		<li>Certificado de finalización</li>
+		<li>Actualizaciones periódicas gratuitas</li>
+		<li>y mucho más...</li>
+	</ul>
+</p>
+
 @component('mail::panel')
-Nos vemos en el evento,<br>
+Te veré en el curso,<br>
 # Wilmer Cordoba
 ConTabilizalo.com
 <br>

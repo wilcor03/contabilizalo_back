@@ -7,6 +7,8 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Contracts\Queue\ShouldQueue;
 
+use Illuminate\Support\Str;
+
 class DetripsRaffleEmail extends Mailable
 {
     use Queueable, SerializesModels;
@@ -31,6 +33,6 @@ class DetripsRaffleEmail extends Mailable
      */
     public function build()
     {
-        return $this->subject('[Por 48 horas] Grabación Sesión “Automatización y Nuevas Prácticas Con Excel”')->markdown('emails.promo');
+        return $this->subject(Str::limit($this->suscriber->name, 10). ", [Aún estás a Tiempo] Excel con Super Poderes")->markdown('emails.promo');
     }
 }

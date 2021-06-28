@@ -18,7 +18,7 @@
   <main role="main"><br>
     <h3 style="text-align: center;">Este evento ya finalizo...</h3>
 
-    <!--<div class="row">
+    <div class="row">
       <div class="col">
         
       </div>
@@ -29,7 +29,7 @@
           </div>
           <div class="card-body">
             <h5 class="card-title text-success">Descarga de Certificado</h5>
-            <p class="card-text">Certificación #soyContabilizer - <i><strong>Nuevas prácticas con Excel</strong></i> Webinar en Vivo 26 de Junio de 2021.</p>
+            <p class="card-text">Certificación #soyContabilizer - <i><strong>Nuevas prácticas con Excel</strong></i> Webinar en Vivo 28 de Junio de 2021.</p>
 
             <hr>
 
@@ -74,11 +74,11 @@
             </div>                    
           </div>
           <div class="card-footer text-muted">
-            Este formulario se desactivará a las 23:59 horas del 25 de junio 2021 (h. Colombia)
+            Este formulario se desactivará a las 23:59 horas del 28 de junio 2021 (h. Colombia)
           </div>
         </div>
       </div>      
-    </div>-->
+    </div>
   </div>
 
   <!--<div class="card text-center">

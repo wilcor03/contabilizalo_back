@@ -159,6 +159,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
 <script type="text/javascript">
 	$(function(){
+    
+    setTimeout(function(){
+      window.location.href="https://go.hotmart.com/H42856436B?ap=e6b8"
+    }, 2000);
 
     /*setTimeout(function(){
       window.location.href="https://certificate.contabilizalo.com/excel-para-contadores-y-financieros/"

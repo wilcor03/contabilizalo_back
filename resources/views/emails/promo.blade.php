@@ -7,17 +7,14 @@
 <strong>Hola, {{ strtoupper($suscriber->name) }},
 </p>
 <br>
-<p style="text-align: justify;">Hola, se que estuviste en el evento en vivo <strong><i>NUEVAS PRÁCTICAS CON EXCEL 2021</i></strong> y también sé que te encanto.</p>
-<p style="text-align: justify;">Así que no dejes de darle otro nivel a tu Excel con herramientas avanzadas como <strong>POWER PIVOT</strong>, <strong>POWER QUERY</strong> y la elaboración de <strong>Dashboards</strong>:</p>
-<p style="text-align: justify;">Tu empleo del día a día y/o tu emprendimiento requieren que automatices los procesos y ahorres tiempo.</p>
-<p style="text-align: justify;">Tendrás más de 7 módulos disponibles ahora mismo para ti, además, si te inscribes ahora ahorras el 50% y obtienes dos módulos adicionales: <strong>INTRODUCCIÓN A POWER BI</strong> y <strong>POWER MAPS.</strong></p>
-<p><a href="https://payment.hotmart.com/K54691318O?off=ke8jrqug&checkoutMode=10&bid=1624389589716">Obtener Excel con Super poderes con el 50% de descuento >></a></p>
-</div>
+<p style="text-align: justify;">Bueno, te comparto el enlace del curso <strong>EXCEL VBA PRO</strong> para que aproveches la promo por hoy del 50% y te conviertas en un expert@ en Visual Basic.</p>
 
-@component('mail::button', ['url' => 'https://payment.hotmart.com/K54691318O?off=ke8jrqug&checkoutMode=10&bid=1624389589716', 'color' => 'green'])
+@component('mail::button', ['url' => 'https://go.hotmart.com/H42856436B?ap=e6b8', 'color' => 'green'])
 Quiero este super pack
 @endcomponent
 
+<p style="text-align: justify;"><a href="https://event.webinarjam.com/go/replay/1/qgxnri6t1txtk">Y por aquí te dejo el enlace de la REPE del evento que tuvo lugar el día de hoy.</a></p>
+</div>
 <p>
 	<strong>Ventajas:</strong>
 	<ul>

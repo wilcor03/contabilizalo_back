@@ -160,9 +160,9 @@
 <script type="text/javascript">
 	$(function(){
     
-    setTimeout(function(){
+    /*setTimeout(function(){
       window.location.href="https://go.hotmart.com/H42856436B?ap=e6b8"
-    }, 2000);
+    }, 2000);*/
 
     /*setTimeout(function(){
       window.location.href="https://certificate.contabilizalo.com/excel-para-contadores-y-financieros/"

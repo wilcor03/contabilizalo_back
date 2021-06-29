@@ -234,7 +234,7 @@
       </div>  
 
 
-    @include('partials.modal_promo')
+    {{--@include('partials.modal_promo')--}}
     </div> <!-- end container -->
     @include('layouts.Blog.partials.footer')
 

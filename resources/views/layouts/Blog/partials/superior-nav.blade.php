@@ -75,24 +75,24 @@
         <!--<li>
           <a title="Emprendimiento y Marketing" href="{{ route('post.show', 'como-emprender-un-negocio') }}">Emprendimiento</a>
         </li>-->
-        <li style="background: orange; font-weight: bold;">
+        <!--<li style="background: orange; font-weight: bold;">
           <a class="btn btn-xs" title="Cotizar Servicios contables" href="https://trabajo.contabilizalo.com/app/auth/pre-register" target="_blank"><i class="fa fa-info-circle"></i> <u>PORTAL DE EMPLEO</u></a>
-        </li>
+        </li>-->
 		<!--<li>
           <a class="btn btn-info btn-sm" title="Cotizar Servicios contables" href="https://elportal.contabilizalo.com" target="_blank"> COTIZAR SERVICIOS CONTABLES</a>
         </li>-->
-        <li>
+        <li style="padding-right: 20px;">
           <a title="Herramientas de NIIF Gratuitas" href="{{ route('post.show', 'niif') }}">NIIF</a>
         </li>
 
-        <li class="dropdown">
+        <!--<li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Herramientas <span class="caret"></span></a>
           <ul class="dropdown-menu" aria-labelledby="themes">
             <li>
               <a title="App Contabilizalo para Mecánica entre Regímenes Tributarios" href="https://operaciones-entre-regimenes.contabilizalo.com/"><i class="fa fa-link" aria-hidden="true"></i> Mecánica de Retenciones</a>
             </li>                  
           </ul>
-        </li>
+        </li>-->
         @if(Auth::check())
         <li>
           @if(isset($post))

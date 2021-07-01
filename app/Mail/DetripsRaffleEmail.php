@@ -33,6 +33,6 @@ class DetripsRaffleEmail extends Mailable
      */
     public function build()
     {
-        return $this->subject("[Repe y Enlaces], Hola ".Str::limit($this->suscriber->name, 8))->markdown('emails.promo');
+        return $this->subject("Esto te hará imparable")->markdown('emails.promo');
     }
 }

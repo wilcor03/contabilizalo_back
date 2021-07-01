@@ -159,9 +159,9 @@ const INSCRITOS = [
 'alexperdomoq@gmail.com',
 'jgrm75@gmail.com',
 
+//segunda tanda
 
-
-/*'Airam_lupita21@hotmail.com',
+'Airam_lupita21@hotmail.com',
 'jacintatorres6365@gmail.com',
 'gutierrezescobar84@gmail.com',
 'elmar1801@hotmail.com',
@@ -1003,11 +1003,11 @@ const INSCRITOS = [
 'mhrafa_18@hotmail.com',
 'gina-0809@hotmail.com',
 'marino134mm@gmail.com',
-'jmchampa25@gmail.com'*/
+'jmchampa25@gmail.com'
 
+//tercera tanta
 
-
-  /*'maricelavelandia@hotmail.com',
+'maricelavelandia@hotmail.com',
 'Carlosjjimenez717@gmail.com',
 'aneuditejada7@gmail.com',
 'johnnytorrez06@gmail.com',
@@ -1280,7 +1280,7 @@ const INSCRITOS = [
 'brayandph18@gmail.com',
 'eraiap11@hotmail.com',
 'infomedicc@gmail.com',
-'centralpuntosas@gmail.com'*/
+'centralpuntosas@gmail.com'
 ];
 
 /*$sus = Exam::all();

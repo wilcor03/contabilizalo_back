@@ -1003,7 +1003,7 @@ const INSCRITOS = [
 'mhrafa_18@hotmail.com',
 'gina-0809@hotmail.com',
 'marino134mm@gmail.com',
-'jmchampa25@gmail.com'
+'jmchampa25@gmail.com',
 
 //tercera tanta
 
